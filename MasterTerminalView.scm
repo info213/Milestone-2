@@ -1,4 +1,4 @@
-/* JADE COMMAND FILE NAME P:\University\INFO213\Assignments\Milestone-2\MasterTerminalView.jcf */
+/* JADE COMMAND FILE NAME MasterTerminalView.jcf */
 jadeVersionNumber "18.0.01";
 schemaDefinition
 MasterTerminalView subschemaOf MasterTerminal completeDefinition, patchVersioningEnabled = false;
@@ -146,6 +146,8 @@ typeDefinitions
 	jadeMethodDefinitions
 		btnCancel_click(btn: Button input) updating, number = 1001;
 		setModifiedTimeStamp "barry" "18.0.01" 2019:06:02:18:17:18.339;
+		btnOk_click(btn: Button input) updating, number = 1006;
+		setModifiedTimeStamp "barry" "18.0.01" 2019:06:04:14:31:59.948;
 		cboRows_displayRow(
 			combobox: ComboBox input; 
 			obj: Object; 
@@ -161,6 +163,7 @@ typeDefinitions
  
 	eventMethodMappings
 		btnCancel_click = click of Button;
+		btnOk_click = click of Button;
 		cboRows_displayRow = displayRow of ComboBox;
 		load = load of Form;
 	)
@@ -190,6 +193,8 @@ typeDefinitions
 	jadeMethodDefinitions
 		addLogBtn_click(btn: Button input) updating, number = 1003;
 		setModifiedTimeStamp "barry" "18.0.01" 2019:06:03:15:19:30.222;
+		deleteLogBtn_click(btn: Button input) updating, number = 1004;
+		setModifiedTimeStamp "barry" "18.0.01" 2019:06:04:14:47:57.210;
 		load() updating, number = 1002;
 		setModifiedTimeStamp "barry" "18.0.01" 2019:06:03:15:09:21.252;
 		logListBox_displayRow(
@@ -197,10 +202,11 @@ typeDefinitions
 			obj: Object; 
 			lstIndex: Integer; 
 			bcontinue: Boolean io): String updating, number = 1001;
-		setModifiedTimeStamp "barry" "18.0.01" 2019:06:03:14:54:39.861;
+		setModifiedTimeStamp "barry" "18.0.01" 2019:06:04:14:18:22.407;
  
 	eventMethodMappings
 		addLogBtn_click = click of Button;
+		deleteLogBtn_click = click of Button;
 		load = load of Form;
 		logListBox_displayRow = displayRow of ListBox;
 	)
@@ -315,7 +321,7 @@ MasterTerminalViewDb
 	(
 		setModifiedTimeStamp "barry" "18.0.01" 2019:05:31:11:57:43.405;
 	databaseFileDefinitions
-		"masterterminalview" number=52;
+		"masterterminalview" number=57;
 		setModifiedTimeStamp "barry" "18.0.01" 2019:05:31:11:57:43.405;
 	defaultFileDefinition "masterterminalview";
 	classMapDefinitions
@@ -364,11 +370,11 @@ areaListbox_displayRow(listbox: ListBox input; obj: Object; lstIndex: Integer; b
 
 vars
 	log: Log;
-
+	
 begin
 	log := obj.Log;
 	return log.description;
-
+	
 end;
 }
 
@@ -395,6 +401,23 @@ vars
 
 begin
 	self.unloadForm();
+end;
+
+}
+
+btnOk_click
+{
+btnOk_click(btn: Button input) updating;
+
+vars
+	log: Log;
+begin
+	if (isDataValid) then
+		beginTransaction;
+		log:= create Log(txtSpecies.text, txtDescription.text, txtLength.text.Integer,
+							cboRows.text.Integer);
+		commitTransaction;
+	endif;
 end;
 
 }
@@ -476,9 +499,9 @@ vars
 	log: Log;
 	row: Integer;
 begin
-
+	
 	row := cboRows.text.Integer;
-
+	
 	beginTransaction;
 	log := create Log(txtSpecies.text, txtDescription.text, txtLength.text.Integer, row)persistent;
 	commitTransaction;
@@ -502,6 +525,26 @@ end;
 
 }
 
+deleteLogBtn_click
+{
+deleteLogBtn_click(btn: Button input) updating;
+
+vars
+	log: Log;
+begin
+
+	log:= logListBox.itemObject[logListBox.listIndex].Log;
+	
+	logListBox.displayCollection(null, false, 0, null, "");
+	
+	beginTransaction;
+		app.myTerminal.allLogs.remove(log);
+		delete log;
+	commitTransaction;
+end;
+
+}
+
 load
 {
 load() updating;
@@ -520,11 +563,11 @@ logListBox_displayRow(listbox: ListBox input; obj: Object; lstIndex: Integer; bc
 
 vars
 	log: Log;
-
+	
 begin
 	log := obj.Log;
-	return log.description;
-
+	return log.getInfo();
+	
 end;
 }
 
@@ -562,11 +605,11 @@ lotListBox_displayRow(listbox: ListBox input; obj: Object; lstIndex: Integer; bc
 
 vars
 	log: Log;
-
+	
 begin
 	log := obj.Log;
 	return log.description;
-
+	
 end;
 }
 
@@ -669,11 +712,11 @@ rowListBox_displayRow(listbox: ListBox input; obj: Object; lstIndex: Integer; bc
 
 vars
 	row: Row;
-
+	
 begin
 	row := obj.Row;
 	return row.rowID.String;
-
+	
 end;
 }
 
