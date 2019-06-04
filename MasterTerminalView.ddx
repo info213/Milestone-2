@@ -379,7 +379,11 @@
 	</Form>
 
 	<Form locale="5129" name="LogDetails">
+<<<<<<< HEAD
 		<_painterModifiedTimeStamp>2019:06:04:14:56:08.288</_painterModifiedTimeStamp>
+=======
+		<_painterModifiedTimeStamp>2019:06:04:15:34:30.338</_painterModifiedTimeStamp>
+>>>>>>> 3da8f1f88b47a2d0cba8b752f404d2d134075a2a
 		<allowDocking>0</allowDocking>
 		<backBrush/>
 		<backBrushStyle>0</backBrushStyle>
@@ -401,7 +405,7 @@
 		<helpKeyword/>
 		<icon/>
 		<ignoreSkin>false</ignoreSkin>
-		<left>335</left>
+		<left>633</left>
 		<maxButton>true</maxButton>
 		<mdiChild>0</mdiChild>
 		<mdiFrame>false</mdiFrame>
@@ -419,7 +423,7 @@
 		<securityLevelEnabled>0</securityLevelEnabled>
 		<securityLevelVisible>0</securityLevelVisible>
 		<skinCategoryName/>
-		<top>9</top>
+		<top>40</top>
 		<visible>true</visible>
 		<webBrowserAutoRefreshInterval>0</webBrowserAutoRefreshInterval>
 		<webBrowserAutoRefreshURL/>
@@ -447,7 +451,7 @@
 				<boundaryColor>-2147483633</boundaryColor>
 				<boundaryWidth>1</boundaryWidth>
 				<bubbleHelp/>
-				<caption>StatusLine2</caption>
+				<caption>LogStatus</caption>
 				<clipControls>true</clipControls>
 				<description/>
 				<dragCursor/>
@@ -1057,7 +1061,11 @@
 	</Form>
 
 	<Form locale="5129" name="AddLog">
+<<<<<<< HEAD
 		<_painterModifiedTimeStamp>2019:06:04:14:56:08.288</_painterModifiedTimeStamp>
+=======
+		<_painterModifiedTimeStamp>2019:06:04:15:34:30.342</_painterModifiedTimeStamp>
+>>>>>>> 3da8f1f88b47a2d0cba8b752f404d2d134075a2a
 		<allowDocking>0</allowDocking>
 		<backBrush/>
 		<backBrushStyle>0</backBrushStyle>
@@ -1113,14 +1121,18 @@
 	</Form>
 
 	<Form locale="5129" name="LogListForm">
+<<<<<<< HEAD
 		<_painterModifiedTimeStamp>2019:06:04:14:56:08.288</_painterModifiedTimeStamp>
+=======
+		<_painterModifiedTimeStamp>2019:06:04:16:09:25.126</_painterModifiedTimeStamp>
+>>>>>>> 3da8f1f88b47a2d0cba8b752f404d2d134075a2a
 		<allowDocking>0</allowDocking>
 		<backBrush/>
 		<backBrushStyle>0</backBrushStyle>
 		<backColor>-2147483633</backColor>
 		<borderStyle>2</borderStyle>
 		<bubbleHelp/>
-		<caption>LogListForm</caption>
+		<caption>Log List</caption>
 		<clientHeight>350</clientHeight>
 		<clientWidth>407</clientWidth>
 		<clipControls>true</clipControls>
@@ -1783,7 +1795,11 @@
 	</Form>
 
 	<Form locale="5129" name="MainMenu">
+<<<<<<< HEAD
 		<_painterModifiedTimeStamp>2019:06:04:14:56:08.288</_painterModifiedTimeStamp>
+=======
+		<_painterModifiedTimeStamp>2019:06:04:16:09:23.080</_painterModifiedTimeStamp>
+>>>>>>> 3da8f1f88b47a2d0cba8b752f404d2d134075a2a
 		<allowDocking>0</allowDocking>
 		<backBrush/>
 		<backBrushStyle>0</backBrushStyle>
@@ -1808,7 +1824,7 @@
 		<left>0</left>
 		<maxButton>true</maxButton>
 		<mdiChild>0</mdiChild>
-		<mdiFrame>false</mdiFrame>
+		<mdiFrame>true</mdiFrame>
 		<minButton>true</minButton>
 		<minimumHeight>0</minimumHeight>
 		<minimumWidth>0</minimumWidth>
@@ -2038,8 +2054,747 @@
 		</menuList>
 	</Form>
 
+<<<<<<< HEAD
 	<Form locale="5129" name="RowListForm">
 		<_painterModifiedTimeStamp>2019:06:04:14:56:08.288</_painterModifiedTimeStamp>
+=======
+	<Form locale="5129" name="RowDetials">
+		<_painterModifiedTimeStamp>2019:06:04:15:36:15.683</_painterModifiedTimeStamp>
+>>>>>>> 3da8f1f88b47a2d0cba8b752f404d2d134075a2a
+		<allowDocking>0</allowDocking>
+		<backBrush/>
+		<backBrushStyle>0</backBrushStyle>
+		<backColor>-2147483633</backColor>
+		<borderStyle>2</borderStyle>
+		<bubbleHelp/>
+		<caption>RowDetials</caption>
+		<clientHeight>274</clientHeight>
+		<clientWidth>302</clientWidth>
+		<clipControls>true</clipControls>
+		<controlBox>true</controlBox>
+		<description/>
+		<disableEvents>false</disableEvents>
+		<disableReason/>
+		<dragCursor/>
+		<enabled>true</enabled>
+		<height>313</height>
+		<helpContextId>0</helpContextId>
+		<helpKeyword/>
+		<icon/>
+		<ignoreSkin>false</ignoreSkin>
+		<left>243</left>
+		<maxButton>true</maxButton>
+		<mdiChild>0</mdiChild>
+		<mdiFrame>false</mdiFrame>
+		<minButton>true</minButton>
+		<minimumHeight>0</minimumHeight>
+		<minimumWidth>0</minimumWidth>
+		<mouseCursor/>
+		<mousePointer>0</mousePointer>
+		<name>RowDetials</name>
+		<paintedDialogBaseUnits>1048584</paintedDialogBaseUnits>
+		<printerForm>false</printerForm>
+		<scaleForm>true</scaleForm>
+		<scrollBars>0</scrollBars>
+		<secureForm>false</secureForm>
+		<securityLevelEnabled>0</securityLevelEnabled>
+		<securityLevelVisible>0</securityLevelVisible>
+		<skinCategoryName/>
+		<top>18</top>
+		<visible>true</visible>
+		<webBrowserAutoRefreshInterval>0</webBrowserAutoRefreshInterval>
+		<webBrowserAutoRefreshURL/>
+		<webBrowserDisableBackButton>false</webBrowserDisableBackButton>
+		<webEncodingType/>
+		<webFileName/>
+		<width>318</width>
+		<windowState>0</windowState>
+		<controlList>
+			<StatusLine name="rowStatusLine">
+				<alignment>0</alignment>
+				<autoSize>true</autoSize>
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483633</backColor>
+				<bevelColor>-2147483628</bevelColor>
+				<bevelInner>1</bevelInner>
+				<bevelInnerWidth>1</bevelInnerWidth>
+				<bevelOuter>2</bevelOuter>
+				<bevelOuterWidth>1</bevelOuterWidth>
+				<bevelShadowColor>-2147483632</bevelShadowColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>1</borderStyle>
+				<boundaryBrush>0</boundaryBrush>
+				<boundaryColor>-2147483633</boundaryColor>
+				<boundaryWidth>1</boundaryWidth>
+				<bubbleHelp/>
+				<caption>RowStatus</caption>
+				<clipControls>true</clipControls>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483630</foreColor>
+				<form name="RowDetials" />
+				<height>21</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<ignoreSkin>false</ignoreSkin>
+				<left>0</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>rowStatusLine</name>
+				<parent name="RowDetials" />
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<skinCategoryName/>
+				<tabIndex>12</tabIndex>
+				<tag/>
+				<top>253</top>
+				<visible>true</visible>
+				<width>302</width>
+				<wordWrap>false</wordWrap>
+			</StatusLine>
+			<Button name="btnCancel">
+				<autoSize>1</autoSize>
+				<backColor>-2147483633</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>0</borderStyle>
+				<bubbleHelp/>
+				<buttonPicture>0</buttonPicture>
+				<cancel>false</cancel>
+				<caption>Cancel</caption>
+				<default>false</default>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483630</foreColor>
+				<form name="RowDetials" />
+				<height>23</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<ignoreSkin>false</ignoreSkin>
+				<left>168</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>btnCancel</name>
+				<parent name="RowDetials" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>37</parentBottomOffset>
+				<parentRightOffset>54</parentRightOffset>
+				<picture/>
+				<pictureDisabled/>
+				<pictureDown/>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<skinCategoryName/>
+				<style>0</style>
+				<tabIndex>11</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<top>214</top>
+				<value>false</value>
+				<visible>true</visible>
+				<width>80</width>
+			</Button>
+			<Button name="btnOk">
+				<autoSize>1</autoSize>
+				<backColor>-2147483633</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>0</borderStyle>
+				<bubbleHelp/>
+				<buttonPicture>0</buttonPicture>
+				<cancel>false</cancel>
+				<caption>Ok</caption>
+				<default>false</default>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483630</foreColor>
+				<form name="RowDetials" />
+				<height>23</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<ignoreSkin>false</ignoreSkin>
+				<left>58</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>btnOk</name>
+				<parent name="RowDetials" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>36</parentBottomOffset>
+				<parentRightOffset>164</parentRightOffset>
+				<picture/>
+				<pictureDisabled/>
+				<pictureDown/>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<skinCategoryName/>
+				<style>0</style>
+				<tabIndex>10</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<top>215</top>
+				<value>false</value>
+				<visible>true</visible>
+				<width>80</width>
+			</Button>
+			<ComboBox name="cboAreas">
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483643</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>2</borderStyle>
+				<bubbleHelp/>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="RowDetials" />
+				<hasPictures>false</hasPictures>
+				<hasPlusMinus>false</hasPlusMinus>
+				<hasTreeLines>false</hasTreeLines>
+				<height>20</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<ignoreSkin>false</ignoreSkin>
+				<left>167</left>
+				<listWidth>0</listWidth>
+				<maxLength>0</maxLength>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>cboAreas</name>
+				<parent name="RowDetials" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>94</parentBottomOffset>
+				<parentRightOffset>20</parentRightOffset>
+				<pictureClosed/>
+				<pictureLeaf/>
+				<pictureMinus/>
+				<pictureOpen/>
+				<picturePlus/>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<sortCased>false</sortCased>
+				<sorted>true</sorted>
+				<style>2</style>
+				<tabIndex>8</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<top>160</top>
+				<visible>true</visible>
+				<width>115</width>
+			</ComboBox>
+			<TextBox name="txtSpecies">
+				<alignment>0</alignment>
+				<autoTab>false</autoTab>
+				<backColor>-2147483643</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>2</borderStyle>
+				<bubbleHelp/>
+				<case>0</case>
+				<dataType>0</dataType>
+				<decimals>0</decimals>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="RowDetials" />
+				<formatOut/>
+				<height>21</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<hintBackColor>-2147483648</hintBackColor>
+				<hintForeColor>-2147483648</hintForeColor>
+				<hintText/>
+				<ignoreSkin>false</ignoreSkin>
+				<integralHeight>false</integralHeight>
+				<left>167</left>
+				<maxLength>0</maxLength>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>txtSpecies</name>
+				<parent name="RowDetials" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>130</parentBottomOffset>
+				<parentRightOffset>19</parentRightOffset>
+				<passwordField>false</passwordField>
+				<readOnly>false</readOnly>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<scrollBars>0</scrollBars>
+				<scrollHorizontal>false</scrollHorizontal>
+				<scrollVertical>false</scrollVertical>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<selectionStyle>0</selectionStyle>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<tabIndex>7</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<text/>
+				<textOffset>0</textOffset>
+				<top>123</top>
+				<visible>true</visible>
+				<wantReturn>false</wantReturn>
+				<width>116</width>
+			</TextBox>
+			<TextBox name="txtMaxLength">
+				<alignment>0</alignment>
+				<autoTab>false</autoTab>
+				<backColor>-2147483643</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>2</borderStyle>
+				<bubbleHelp/>
+				<case>0</case>
+				<dataType>0</dataType>
+				<decimals>0</decimals>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="RowDetials" />
+				<formatOut/>
+				<height>21</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<hintBackColor>-2147483648</hintBackColor>
+				<hintForeColor>-2147483648</hintForeColor>
+				<hintText/>
+				<ignoreSkin>false</ignoreSkin>
+				<integralHeight>false</integralHeight>
+				<left>167</left>
+				<maxLength>0</maxLength>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>txtMaxLength</name>
+				<parent name="RowDetials" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>172</parentBottomOffset>
+				<parentRightOffset>18</parentRightOffset>
+				<passwordField>false</passwordField>
+				<readOnly>false</readOnly>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<scrollBars>0</scrollBars>
+				<scrollHorizontal>false</scrollHorizontal>
+				<scrollVertical>false</scrollVertical>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<selectionStyle>0</selectionStyle>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<tabIndex>6</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<text/>
+				<textOffset>0</textOffset>
+				<top>81</top>
+				<visible>true</visible>
+				<wantReturn>false</wantReturn>
+				<width>117</width>
+			</TextBox>
+			<TextBox name="txtMinLength">
+				<alignment>0</alignment>
+				<autoTab>false</autoTab>
+				<backColor>-2147483643</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>2</borderStyle>
+				<bubbleHelp/>
+				<case>0</case>
+				<dataType>0</dataType>
+				<decimals>0</decimals>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="RowDetials" />
+				<formatOut/>
+				<height>21</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<hintBackColor>-2147483648</hintBackColor>
+				<hintForeColor>-2147483648</hintForeColor>
+				<hintText/>
+				<ignoreSkin>false</ignoreSkin>
+				<integralHeight>false</integralHeight>
+				<left>165</left>
+				<maxLength>0</maxLength>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>txtMinLength</name>
+				<parent name="RowDetials" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>203</parentBottomOffset>
+				<parentRightOffset>17</parentRightOffset>
+				<passwordField>false</passwordField>
+				<readOnly>false</readOnly>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<scrollBars>0</scrollBars>
+				<scrollHorizontal>false</scrollHorizontal>
+				<scrollVertical>false</scrollVertical>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<selectionStyle>0</selectionStyle>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<tabIndex>5</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<text/>
+				<textOffset>0</textOffset>
+				<top>50</top>
+				<visible>true</visible>
+				<wantReturn>false</wantReturn>
+				<width>120</width>
+			</TextBox>
+			<Label name="lblArea">
+				<alignment>1</alignment>
+				<autoSize>false</autoSize>
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483633</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>0</borderStyle>
+				<bubbleHelp/>
+				<caption>Area:</caption>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName>Tahoma</fontName>
+				<fontSize>9.75</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="RowDetials" />
+				<formatOut/>
+				<height>24</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<hyperlink/>
+				<ignoreSkin>false</ignoreSkin>
+				<left>128</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>lblArea</name>
+				<noPrefix>false</noPrefix>
+				<parent name="RowDetials" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>94</parentBottomOffset>
+				<parentRightOffset>140</parentRightOffset>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<tabIndex>4</tabIndex>
+				<tag/>
+				<top>156</top>
+				<transparent>false</transparent>
+				<visible>true</visible>
+				<width>34</width>
+				<wordWrap>false</wordWrap>
+			</Label>
+			<Label name="lblSpecies">
+				<alignment>1</alignment>
+				<autoSize>false</autoSize>
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483633</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>0</borderStyle>
+				<bubbleHelp/>
+				<caption>Species:</caption>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName>Tahoma</fontName>
+				<fontSize>9.75</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="RowDetials" />
+				<formatOut/>
+				<height>24</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<hyperlink/>
+				<ignoreSkin>false</ignoreSkin>
+				<left>111</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>lblSpecies</name>
+				<noPrefix>false</noPrefix>
+				<parent name="RowDetials" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>129</parentBottomOffset>
+				<parentRightOffset>140</parentRightOffset>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<tabIndex>3</tabIndex>
+				<tag/>
+				<top>121</top>
+				<transparent>false</transparent>
+				<visible>true</visible>
+				<width>51</width>
+				<wordWrap>false</wordWrap>
+			</Label>
+			<Label name="lblMaxLength">
+				<alignment>1</alignment>
+				<autoSize>false</autoSize>
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483633</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>0</borderStyle>
+				<bubbleHelp/>
+				<caption>Maximum Length (m):</caption>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName>Tahoma</fontName>
+				<fontSize>9.75</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="RowDetials" />
+				<formatOut/>
+				<height>24</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<hyperlink/>
+				<ignoreSkin>false</ignoreSkin>
+				<left>33</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>lblMaxLength</name>
+				<noPrefix>false</noPrefix>
+				<parent name="RowDetials" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>171</parentBottomOffset>
+				<parentRightOffset>140</parentRightOffset>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<tabIndex>2</tabIndex>
+				<tag/>
+				<top>79</top>
+				<transparent>false</transparent>
+				<visible>true</visible>
+				<width>129</width>
+				<wordWrap>false</wordWrap>
+			</Label>
+			<Label name="lblMinLength">
+				<alignment>1</alignment>
+				<autoSize>false</autoSize>
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483633</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>0</borderStyle>
+				<bubbleHelp/>
+				<caption>Minimum Length (m):</caption>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName>Tahoma</fontName>
+				<fontSize>9.75</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="RowDetials" />
+				<formatOut/>
+				<height>24</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<hyperlink/>
+				<ignoreSkin>false</ignoreSkin>
+				<left>34</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>lblMinLength</name>
+				<noPrefix>false</noPrefix>
+				<parent name="RowDetials" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>205</parentBottomOffset>
+				<parentRightOffset>143</parentRightOffset>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<tabIndex>1</tabIndex>
+				<tag/>
+				<top>45</top>
+				<transparent>false</transparent>
+				<visible>true</visible>
+				<width>125</width>
+				<wordWrap>false</wordWrap>
+			</Label>
+		</controlList>
+		<menuList>
+		</menuList>
+	</Form>
+
+	<Form locale="5129" name="AddRow">
+		<_painterModifiedTimeStamp>2019:06:04:15:43:19.290</_painterModifiedTimeStamp>
+		<allowDocking>0</allowDocking>
+		<backBrush/>
+		<backBrushStyle>0</backBrushStyle>
+		<backColor>-2147483633</backColor>
+		<borderStyle>2</borderStyle>
+		<bubbleHelp/>
+		<caption>AddRow</caption>
+		<clientHeight>267</clientHeight>
+		<clientWidth>312</clientWidth>
+		<clipControls>true</clipControls>
+		<controlBox>true</controlBox>
+		<description/>
+		<disableEvents>false</disableEvents>
+		<disableReason/>
+		<dragCursor/>
+		<enabled>true</enabled>
+		<height>306</height>
+		<helpContextId>0</helpContextId>
+		<helpKeyword/>
+		<icon/>
+		<ignoreSkin>false</ignoreSkin>
+		<left>243</left>
+		<maxButton>true</maxButton>
+		<mdiChild>0</mdiChild>
+		<mdiFrame>false</mdiFrame>
+		<minButton>true</minButton>
+		<minimumHeight>0</minimumHeight>
+		<minimumWidth>0</minimumWidth>
+		<mouseCursor/>
+		<mousePointer>0</mousePointer>
+		<name>AddRow</name>
+		<paintedDialogBaseUnits>1048584</paintedDialogBaseUnits>
+		<printerForm>false</printerForm>
+		<scaleForm>true</scaleForm>
+		<scrollBars>0</scrollBars>
+		<secureForm>false</secureForm>
+		<securityLevelEnabled>0</securityLevelEnabled>
+		<securityLevelVisible>0</securityLevelVisible>
+		<skinCategoryName/>
+		<top>18</top>
+		<visible>true</visible>
+		<webBrowserAutoRefreshInterval>0</webBrowserAutoRefreshInterval>
+		<webBrowserAutoRefreshURL/>
+		<webBrowserDisableBackButton>false</webBrowserDisableBackButton>
+		<webEncodingType/>
+		<webFileName/>
+		<width>328</width>
+		<windowState>0</windowState>
+		<controlList>
+		</controlList>
+		<menuList>
+		</menuList>
+	</Form>
+
+	<Form locale="5129" name="RowListForm">
+		<_painterModifiedTimeStamp>2019:06:04:16:10:14.994</_painterModifiedTimeStamp>
 		<allowDocking>0</allowDocking>
 		<backBrush/>
 		<backBrushStyle>0</backBrushStyle>
@@ -2048,7 +2803,7 @@
 		<bubbleHelp/>
 		<caption>RowListForm</caption>
 		<clientHeight>350</clientHeight>
-		<clientWidth>407</clientWidth>
+		<clientWidth>463</clientWidth>
 		<clipControls>true</clipControls>
 		<controlBox>true</controlBox>
 		<description/>
@@ -2086,7 +2841,7 @@
 		<webBrowserDisableBackButton>false</webBrowserDisableBackButton>
 		<webEncodingType/>
 		<webFileName/>
-		<width>423</width>
+		<width>479</width>
 		<windowState>0</windowState>
 		<controlList>
 			<StatusLine name="rowStatus">
@@ -2138,7 +2893,7 @@
 				<tag/>
 				<top>329</top>
 				<visible>true</visible>
-				<width>407</width>
+				<width>463</width>
 				<wordWrap>false</wordWrap>
 			</StatusLine>
 			<Button name="deleteRowBtn">
@@ -2175,7 +2930,7 @@
 				<parent name="RowListForm" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>321</parentBottomOffset>
-				<parentRightOffset>129</parentRightOffset>
+				<parentRightOffset>185</parentRightOffset>
 				<picture/>
 				<pictureDisabled/>
 				<pictureDown/>
@@ -2229,7 +2984,7 @@
 				<parent name="RowListForm" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>322</parentBottomOffset>
-				<parentRightOffset>224</parentRightOffset>
+				<parentRightOffset>280</parentRightOffset>
 				<picture/>
 				<pictureDisabled/>
 				<pictureDown/>
@@ -2283,7 +3038,7 @@
 				<parent name="RowListForm" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>322</parentBottomOffset>
-				<parentRightOffset>316</parentRightOffset>
+				<parentRightOffset>372</parentRightOffset>
 				<picture/>
 				<pictureDisabled/>
 				<pictureDown/>
@@ -2343,7 +3098,7 @@
 				<parent name="RowListForm" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>29</parentBottomOffset>
-				<parentRightOffset>3</parentRightOffset>
+				<parentRightOffset>4</parentRightOffset>
 				<pictureClosed/>
 				<pictureLeaf/>
 				<pictureMinus/>
@@ -2366,7 +3121,7 @@
 				<tag/>
 				<top>31</top>
 				<visible>true</visible>
-				<width>401</width>
+				<width>456</width>
 			</ListBox>
 		</controlList>
 		<menuList>
