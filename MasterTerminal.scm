@@ -1,35 +1,63 @@
-/* JADE COMMAND FILE NAME C:\Users\barry\INFO213\MasterTerminal.jcf */
+/* JADE COMMAND FILE NAME F:\Projects\JADE\INFO213\Milestone-2\MasterTerminal.jcf */
 jadeVersionNumber "18.0.01";
 schemaDefinition
 MasterTerminal subschemaOf RootSchema completeDefinition, patchVersioningEnabled = false;
 		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:24:14:17:29.492;
 importedPackageDefinitions
 constantDefinitions
+	categoryDefinition MasterTerminal
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:22:32:25.349;
+		City:                          String = "Auckland";
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:22:32:59.066;
+		Country:                       String = "New Zealand";
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:22:33:19.847;
+		State:                         String = "Auckland";
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:22:34:20.409;
+		StreetAddress:                 String = "Level 1, Ports of Auckland Building/1 Sunderland St, Parnell";
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:22:34:53.525;
 localeDefinitions
 	5129 "English (New Zealand)" schemaDefaultLocale;
 		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:24:14:17:29.474;
 libraryDefinitions
 typeHeaders
-	MasterTerminal subclassOf RootSchemaApp transient, sharedTransientAllowed, transientAllowed, subclassSharedTransientAllowed, subclassTransientAllowed, highestOrdinal = 1, number = 2055;
-	Area subclassOf Object highestSubId = 1, highestOrdinal = 4, number = 2060;
+	MasterTerminal subclassOf RootSchemaApp transient, sharedTransientAllowed, transientAllowed, subclassSharedTransientAllowed, subclassTransientAllowed, highestOrdinal = 3, number = 2055;
+	Cargo subclassOf Object abstract, highestOrdinal = 3, number = 2054;
+	Log subclassOf Cargo highestOrdinal = 3, number = 2067;
+	Distribution subclassOf Object abstract, highestSubId = 3, highestOrdinal = 7, number = 2090;
+	Voyage subclassOf Distribution number = 2091;
 	GMasterTerminal subclassOf RootSchemaGlobal transient, sharedTransientAllowed, transientAllowed, subclassSharedTransientAllowed, subclassTransientAllowed, number = 2056;
-	Log subclassOf Object highestOrdinal = 10, number = 2058;
-	LogSpecification subclassOf Object highestOrdinal = 4, number = 2051;
-	Lot subclassOf Object highestOrdinal = 2, number = 2065;
-	Row subclassOf Object highestSubId = 1, highestOrdinal = 11, number = 2059;
-	Terminal subclassOf Object highestSubId = 7, highestOrdinal = 17, number = 2062;
+	Location subclassOf Object highestOrdinal = 4, number = 2070;
+	Entity subclassOf Location abstract, highestOrdinal = 1, number = 2072;
+	Customer subclassOf Entity number = 2073;
+	Person subclassOf Entity highestOrdinal = 3, number = 2075;
+	Supplier subclassOf Entity number = 2074;
+	Terminal subclassOf Location highestSubId = 1, highestOrdinal = 6, number = 2071;
+	LogRow subclassOf Object highestSubId = 1, highestOrdinal = 3, number = 2083;
+	LogSpecification subclassOf Object highestOrdinal = 3, number = 2068;
+	Lot subclassOf Object highestOrdinal = 5, number = 2092;
+	StorageArea subclassOf Object abstract, highestSubId = 1, highestOrdinal = 3, number = 2078;
+	LogArea subclassOf StorageArea highestSubId = 2, highestOrdinal = 2, number = 2079;
+	Vehicle subclassOf Object abstract, highestSubId = 1, highestOrdinal = 3, number = 2076;
+	Ship subclassOf Vehicle number = 2093;
 	SMasterTerminal subclassOf RootSchemaSession transient, sharedTransientAllowed, transientAllowed, subclassSharedTransientAllowed, subclassTransientAllowed, number = 2057;
-	AreaByIdDict subclassOf MemberKeyDictionary loadFactor = 66, number = 2064;
-	LogByIdDict subclassOf MemberKeyDictionary loadFactor = 66, number = 2061;
-	LotByIdDict subclassOf MemberKeyDictionary loadFactor = 66, number = 2066;
-	RowByIdDict subclassOf MemberKeyDictionary loadFactor = 66, number = 2063;
+	MainForm subclassOf Form transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 16, number = 2053;
+	CargoByIdDict subclassOf MemberKeyDictionary loadFactor = 66, number = 2080;
+	LogByIdDict subclassOf CargoByIdDict loadFactor = 66, number = 2081;
+	LogRowBySpecificationDict subclassOf MemberKeyDictionary duplicatesAllowed, loadFactor = 66, number = 2084;
+	LotArray subclassOf Array number = 2095;
+	PersonArray subclassOf Array number = 2077;
+	StorageAreaArray subclassOf Array number = 2082;
+	VehicleArray subclassOf Array number = 2094;
  
 interfaceDefs
 membershipDefinitions
-	AreaByIdDict of Area ;
+	CargoByIdDict of Cargo ;
 	LogByIdDict of Log ;
-	LotByIdDict of Lot ;
-	RowByIdDict of Row ;
+	LogRowBySpecificationDict of LogRow ;
+	LotArray of Lot ;
+	PersonArray of Person ;
+	StorageAreaArray of StorageArea ;
+	VehicleArray of Vehicle ;
  
 typeDefinitions
 	Object completeDefinition
@@ -43,34 +71,111 @@ typeDefinitions
 	)
 	MasterTerminal completeDefinition
 	(
-		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:24:21:11:30.361;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:02:08:37.690;
 	referenceDefinitions
-		myTerminal:                    Terminal  readonly, number = 1, ordinal = 1;
-		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:24:20:44:16.206;
+		terminal:                      Terminal  readonly, number = 1, ordinal = 3;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:22:21:20.147;
  
 	jadeMethodDefinitions
+		findLogSpecification(
+			grade: Integer; 
+			species: String; 
+			treatment: String; 
+			new: Boolean): LogSpecification updating, number = 1002;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:22:05:38.233;
 		initialize() updating, number = 1001;
-		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:24:21:15:56.346;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:22:36:15.397;
 	)
-	Area completeDefinition
+	Cargo completeDefinition
 	(
-		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:24:16:08:46.233;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:01:23:43.055;
 	attributeDefinitions
-		areaID:                        Integer protected, number = 1, ordinal = 1;
-		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:24:15:07:51.267;
+		id:                            Binary[30] readonly, number = 1, ordinal = 1;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:02:08:53.689;
 	referenceDefinitions
-		myRows:                        RowByIdDict  implicitMemberInverse, subId = 1, number = 3, ordinal = 4;
-		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:25:12:44:21.657;
-		myTerminal:                    Terminal  protected, number = 2, ordinal = 3;
-		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:24:20:52:42.689;
+		distribution:                  Distribution  readonly, number = 3, ordinal = 3;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:02:44:52.816;
+		storageArea:                   StorageArea   explicitEmbeddedInverse, readonly, number = 2, ordinal = 2;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:23:15:58.852;
  
 	jadeMethodDefinitions
-		create() updating, number = 1001;
-		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:24:20:54:30.738;
-		getID(): String number = 1002;
-		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:24:21:08:19.750;
-		getInfo(): String number = 1003;
-		setModifiedTimeStamp "barry" "18.0.01" 2019:06:04:15:21:15.263;
+		create(id: String) updating, number = 1001;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:02:14:40.939;
+	)
+	Log completeDefinition
+	(
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:01:20:09.586;
+	referenceDefinitions
+		logArea:                       LogArea   explicitEmbeddedInverse, readonly, number = 1, ordinal = 1;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:23:16:30.735;
+		logRow:                        LogRow   explicitEmbeddedInverse, readonly, number = 3, ordinal = 3;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:23:36:11.993;
+		specification:                 LogSpecification  readonly, number = 2, ordinal = 2;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:23:34:02.371;
+ 
+	jadeMethodDefinitions
+		create(
+			id: String; 
+			specification: LogSpecification) updating, number = 1001;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:02:14:51.902;
+	)
+	Distribution completeDefinition
+	(
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:04:11:09.416;
+	attributeDefinitions
+		arrivalDate:                   Date readonly, number = 2, ordinal = 2;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:02:26:37.389;
+		dischargeDate:                 Date readonly, number = 1, ordinal = 1;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:02:26:19.078;
+	referenceDefinitions
+		allLots:                       LotArray   explicitInverse, readonly, subId = 3, number = 7, ordinal = 7;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:02:46:19.909;
+		arrivalLocation:               Location  readonly, number = 3, ordinal = 3;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:02:27:27.972;
+		dischargeLocation:             Location  readonly, number = 4, ordinal = 4;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:02:27:39.367;
+		vehicles:                      VehicleArray   explicitInverse, readonly, subId = 2, number = 6, ordinal = 6;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:02:44:28.726;
+ 
+	jadeMethodDefinitions
+		allocateLot(lot: Lot input): Boolean updating, number = 1001;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:04:59:21.802;
+		allocateVehicle(vehicle: Vehicle input) updating, number = 1002;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:04:57:47.736;
+		create(
+			arrivalDate: Date; 
+			arrivalLocation: Location; 
+			dischargeDate: Date; 
+			dischargeLocation: Location) updating, number = 1005;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:05:04:21.933;
+		deallocateLot(
+			lot: Lot input; 
+			recursive: Boolean) updating, number = 1004;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:05:01:57.636;
+		deallocateVehicle(
+			vehicle: Vehicle input; 
+			recursive: Boolean) updating, number = 1003;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:05:02:11.696;
+		isReceiving(): Boolean number = 1006;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:05:07:09.359;
+	)
+	Voyage completeDefinition
+	(
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:02:25:42.631;
+ 
+	jadeMethodDefinitions
+		allocateVehicle(ship: Ship input) updating, number = 1001;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:04:57:57.238;
+		create(
+			arrivalDate: Date; 
+			arrivalLocation: Location; 
+			dischargeDate: Date; 
+			dischargeLocation: Location) updating, number = 1003;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:05:05:44.591;
+		deallocateVehicle(
+			ship: Ship input; 
+			recursive: Boolean) updating, number = 1002;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:04:44:32.733;
 	)
 	Global completeDefinition
 	(
@@ -86,151 +191,286 @@ typeDefinitions
 	(
  
 	jadeMethodDefinitions
-		createArea() updating, number = 1001;
-		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:24:22:20:39.640;
-		createLog() updating, number = 1003;
-		setModifiedTimeStamp "barry" "18.0.01" 2019:06:03:14:36:10.481;
-		createRow() updating, number = 1002;
-		setModifiedTimeStamp "barry" "18.0.01" 2019:06:03:14:36:58.983;
+		createLog() number = 1005;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:02:13:43.168;
 		loadGrades() updating, number = 1011;
-		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:04:16:12:38.617;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:22:37:07.210;
 		loadSpecies() updating, number = 1008;
-		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:04:16:08:09.101;
-		logsInRow() number = 1005;
-		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:25:12:43:12.148;
-		logsInRow2() number = 1006;
-		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:25:12:43:07.648;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:22:21:30.953;
+		loadTreatments() updating, number = 1001;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:22:21:33.279;
 		openFile(): String number = 1010;
 		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:04:16:02:41.198;
 		parseStringArray(tag: String): StringArray number = 1009;
 		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:04:16:05:14.759;
 		purgeTestObjects() updating, number = 1004;
-		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:04:16:03:53.018;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:03:29:40.846;
+		testType() number = 1002;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:22:31:47.301;
 	)
-	Log completeDefinition
+	JadeTestCase completeDefinition
 	(
-		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:24:22:40:07.667;
+		setModifiedTimeStamp "cnwnhs1" "99.0.00" 31016 2017:08:01:15:34:51.891;
+	)
+	Location completeDefinition
+	(
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:22:09:09.536;
 	attributeDefinitions
-		description:                   String[31] protected, number = 4, ordinal = 4;
-		setModifiedTimeStamp "barry" "18.0.01" 2019:06:04:14:12:52.375;
-		length:                        Decimal[12,2] protected, number = 2, ordinal = 2;
-		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:24:22:16:11.221;
-		logID:                         Integer protected, number = 1, ordinal = 1;
-		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:24:14:21:09.662;
-		species:                       String[31] protected, number = 3, ordinal = 3;
-		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:24:14:21:44.549;
-	referenceDefinitions
-		myRow:                         Row  protected, number = 5, ordinal = 10;
-		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:24:22:40:25.556;
-		myTerminal:                    Terminal  protected, number = 6, ordinal = 8;
-		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:24:20:50:30.957;
+		city:                          String[31] readonly, number = 2, ordinal = 2;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:22:13:37.354;
+		country:                       String[31] readonly, number = 4, ordinal = 4;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:22:14:05.179;
+		state:                         String[31] readonly, number = 3, ordinal = 3;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:22:13:49.384;
+		streetAddress:                 String[101] readonly, number = 1, ordinal = 1;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:22:36:57.711;
  
 	jadeMethodDefinitions
 		create(
-			cSpecies: String; 
-			cDescription: String; 
-			cLength: Decimal; 
-			cRow: Integer) updating, number = 1001;
-		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:25:12:33:12.057;
-		getID(): String number = 1002;
-		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:24:21:38:34.854;
-		getInfo(): String number = 1003;
-		setModifiedTimeStamp "barry" "18.0.01" 2019:06:04:14:17:40.391;
+			streetAddress: String; 
+			city: String; 
+			state: String; 
+			country: String) updating, number = 1001;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:22:30:42.359;
 	)
-	LogSpecification completeDefinition
+	Entity completeDefinition
 	(
-		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:04:15:09:34.441;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:22:15:11.132;
 	attributeDefinitions
-		grade:                         Integer number = 2, ordinal = 2;
-		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:04:15:10:15.196;
-		species:                       String[31] number = 1, ordinal = 1;
-		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:04:15:10:06.617;
-		treatment:                     String[31] protected, number = 4, ordinal = 4;
-		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:04:15:10:40.038;
-		type:                          String[31] protected, number = 3, ordinal = 3;
-		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:04:15:10:27.205;
-	)
-	Lot completeDefinition
-	(
-		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:24:16:28:24.529;
-	attributeDefinitions
-		lotID:                         Integer protected, number = 1, ordinal = 1;
-		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:24:16:40:44.956;
-	referenceDefinitions
-		myTerminal:                    Terminal  protected, number = 2, ordinal = 2;
-		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:24:20:51:00.653;
-	)
-	Row completeDefinition
-	(
-		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:25:12:47:06.818;
-	attributeDefinitions
-		maxLength:                     Decimal[12,2] protected, number = 3, ordinal = 3;
-		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:24:22:16:26.253;
-		minLength:                     Decimal[12,2] protected, number = 2, ordinal = 2;
-		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:24:22:16:32.734;
-		rowID:                         Integer protected, number = 1, ordinal = 1;
-		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:24:14:43:37.862;
-		species:                       String[31] protected, number = 4, ordinal = 4;
-		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:24:14:47:06.502;
-	referenceDefinitions
-		myArea:                        Area  protected, number = 5, ordinal = 11;
-		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:25:12:47:20.897;
-		myLogs:                        LogByIdDict  implicitMemberInverse, subId = 1, number = 7, ordinal = 10;
-		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:25:12:32:49.875;
-		myTerminal:                    Terminal  protected, number = 6, ordinal = 9;
-		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:24:20:51:10.686;
+		name:                          String[31] readonly, number = 1, ordinal = 1;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:22:15:40.517;
  
 	jadeMethodDefinitions
 		create(
-			cMinLength: Decimal; 
-			cMaxLength: Decimal; 
-			cSpecies: String; 
-			cMyArea: Integer) updating, number = 1001;
-		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:25:12:47:30.308;
-		getID(): String number = 1002;
-		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:24:21:32:30.007;
-		getInfo(): String number = 1003;
-		setModifiedTimeStamp "barry" "18.0.01" 2019:06:04:15:16:45.540;
+			streetAddress: String; 
+			city: String; 
+			state: String; 
+			country: String; 
+			name: String) updating, number = 1001;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:22:29:51.483;
+		isCustomer(): Boolean number = 1002;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:22:20:48.733;
+		isPerson(): Boolean number = 1004;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:22:42:54.313;
+		isSupplier(): Boolean number = 1003;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:22:31:09.271;
+	)
+	Customer completeDefinition
+	(
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:22:15:21.412;
+ 
+	jadeMethodDefinitions
+		create(
+			streetAddress: String; 
+			city: String; 
+			state: String; 
+			country: String; 
+			name: String) updating, number = 1001;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:22:27:44.698;
+	)
+	Person completeDefinition
+	(
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:22:42:19.660;
+	attributeDefinitions
+		firstName:                     String[31] readonly, number = 1, ordinal = 1;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:22:41:00.220;
+		lastName:                      String[31] readonly, number = 2, ordinal = 2;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:22:41:07.130;
+	referenceDefinitions
+		vehicle:                       Vehicle   explicitEmbeddedInverse, readonly, number = 3, ordinal = 3;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:02:39:26.124;
+ 
+	jadeMethodDefinitions
+		create(
+			streetAddress: String; 
+			city: String; 
+			state: String; 
+			country: String; 
+			firstName: String; 
+			lastName: String) updating, number = 1001;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:22:42:39.308;
+	)
+	Supplier completeDefinition
+	(
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:22:15:27.147;
+ 
+	jadeMethodDefinitions
+		create(
+			streetAddress: String; 
+			city: String; 
+			state: String; 
+			country: String; 
+			name: String) updating, number = 1001;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:22:27:55.709;
 	)
 	Terminal completeDefinition
 	(
-		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:04:15:57:53.158;
-	attributeDefinitions
-		areaID:                        Integer protected, number = 6, ordinal = 6;
-		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:24:16:11:16.956;
-		logID:                         Integer protected, number = 4, ordinal = 4;
-		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:24:16:10:50.362;
-		lotID:                         Integer protected, number = 7, ordinal = 7;
-		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:24:16:28:08.441;
-		rowID:                         Integer protected, number = 5, ordinal = 5;
-		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:24:16:10:59.908;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:22:12:21.550;
 	referenceDefinitions
-		allAreas:                      AreaByIdDict  implicitMemberInverse, subId = 2, number = 3, ordinal = 3;
-		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:24:16:11:26.545;
-		allGrades:                     IntegerArray  number = 10, ordinal = 16;
-		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:04:15:58:17.901;
-		allLogs:                       LogByIdDict  implicitMemberInverse, subId = 1, number = 1, ordinal = 1;
-		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:24:18:00:12.881;
-		allLots:                       LotByIdDict  implicitMemberInverse, subId = 3, number = 8, ordinal = 8;
-		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:24:18:00:22.323;
-		allRows:                       RowByIdDict  implicitMemberInverse, subId = 4, number = 2, ordinal = 9;
-		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:24:18:02:51.544;
-		allSpecies:                    StringArray  number = 9, ordinal = 14;
-		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:04:15:57:06.066;
-		allTreatments:                 StringArray  number = 11, ordinal = 17;
-		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:04:15:58:32.551;
+		allGrades:                     IntegerArray  readonly, number = 1, ordinal = 1;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:22:11:18.974;
+		allSpecies:                    StringArray  readonly, number = 2, ordinal = 5;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:22:12:31.366;
+		allTreatments:                 StringArray  readonly, number = 3, ordinal = 3;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:22:11:41.242;
+		storageAreas:                  StorageAreaArray   explicitInverse, readonly, subId = 1, number = 4, ordinal = 6;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:23:22:13.790;
  
 	jadeMethodDefinitions
-		create() updating, number = 1005;
-		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:04:15:59:12.673;
-		nextAreaID(): Integer updating, number = 1002;
-		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:24:17:42:37.571;
-		nextLogID(): Integer updating, number = 1001;
-		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:24:17:42:38.590;
-		nextLotID(): Integer updating, number = 1004;
-		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:24:17:42:39.391;
-		nextRowID(): Integer updating, number = 1003;
-		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:24:17:42:40.194;
+		allocateCargo(
+			cargo: Cargo input; 
+			force: Boolean): Boolean updating, number = 1008;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:04:26:53.465;
+		allocateStorageArea(storageArea: StorageArea input) updating, number = 1005;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:02:52:13.731;
+		create(
+			streetAddress: String; 
+			city: String; 
+			state: String; 
+			country: String) updating, number = 1001;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:22:17:30.976;
+		deallocateStorageArea(storageArea: StorageArea) updating, number = 1006;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:02:50:50.818;
+		receiveCargo(distribution: Distribution input) updating, number = 1007;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:04:28:28.056;
+		registerGrade(grade: Integer): Boolean updating, number = 1002;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:22:12:47.162;
+		registerSpecies(species: String): Boolean updating, number = 1003;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:22:12:58.001;
+		registerTreatment(treatment: String): Boolean updating, number = 1004;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:22:13:08.069;
+	)
+	LogRow completeDefinition
+	(
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:00:17:50.424;
+	referenceDefinitions
+		allLogs:                       LogByIdDict   explicitInverse, readonly, subId = 1, number = 3, ordinal = 3;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:23:36:11.995;
+		logArea:                       LogArea   explicitEmbeddedInverse, readonly, number = 2, ordinal = 2;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:23:26:56.939;
+		specification:                 LogSpecification  readonly, number = 1, ordinal = 1;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:23:23:53.225;
+ 
+	jadeMethodDefinitions
+		allocateLog(
+			log: Log input; 
+			recursive: Boolean) updating, number = 1002;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:03:10:34.150;
+		create(specification: LogSpecification) updating, number = 1001;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:23:33:24.785;
+		deallocateLog(log: Log) updating, number = 1003;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:01:03:46.921;
+	)
+	LogSpecification completeDefinition
+	(
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:21:48:45.802;
+	attributeDefinitions
+		grade:                         Integer readonly, number = 1, ordinal = 1;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:21:52:05.693;
+		species:                       String[31] readonly, number = 2, ordinal = 2;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:21:52:23.216;
+		treatment:                     String[31] readonly, number = 3, ordinal = 3;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:21:52:31.658;
+ 
+	jadeMethodDefinitions
+		create(
+			grade: Integer; 
+			species: String; 
+			treatment: String) updating, number = 1001;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:21:59:27.733;
+		matches(
+			grade: Integer; 
+			species: String; 
+			treatment: String): Boolean number = 1002;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:00:42:16.686;
+		matchesSpecification(specification: LogSpecification): Boolean number = 1003;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:22:05:02.287;
+	)
+	Lot completeDefinition
+	(
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:03:43:46.697;
+	referenceDefinitions
+		customer:                      Customer  readonly, number = 2, ordinal = 2;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:02:32:53.795;
+		distribution:                  Distribution   explicitEmbeddedInverse, readonly, number = 5, ordinal = 5;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:02:46:19.909;
+		storageArea:                   StorageArea  readonly, number = 1, ordinal = 1;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:02:32:26.647;
+		supplier:                      Supplier  readonly, number = 3, ordinal = 3;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:02:33:04.656;
+		vehicle:                       Vehicle   explicitEmbeddedInverse, number = 4, ordinal = 4;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:04:45:39.309;
+ 
+	jadeMethodDefinitions
+		create(
+			customer: Customer; 
+			supplier: Supplier; 
+			vehicle: Vehicle; 
+			storageArea: StorageArea) updating, number = 1001;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:03:47:17.871;
+	)
+	StorageArea completeDefinition
+	(
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:23:11:29.720;
+	referenceDefinitions
+		allCargo:                      CargoByIdDict   explicitInverse, readonly, subId = 1, number = 1, ordinal = 2;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:23:15:58.852;
+		terminal:                      Terminal   explicitEmbeddedInverse, readonly, number = 2, ordinal = 3;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:23:22:13.790;
+ 
+	jadeMethodDefinitions
+		allocateCargo(
+			cargo: Cargo input; 
+			force: Boolean) updating, number = 1001;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:04:17:39.451;
+		canAllocateCargo(cargo: Cargo): Boolean abstract, number = 1003;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:04:19:35.787;
+		deallocateCargo(cargo: Cargo) updating, number = 1002;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:01:03:02.962;
+	)
+	LogArea completeDefinition
+	(
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:22:53:13.515;
+	referenceDefinitions
+		allLogs:                       LogByIdDict   explicitInverse, readonly, subId = 1, number = 1, ordinal = 1;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:23:16:30.735;
+		logRows:                       LogRowBySpecificationDict   explicitInverse, readonly, subId = 2, number = 2, ordinal = 2;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:23:26:56.939;
+ 
+	jadeMethodDefinitions
+		allocateCargo(
+			log: Log input; 
+			force: Boolean) updating, number = 1001;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:03:32:48.824;
+		allocateRow(row: LogRow input) updating, number = 1003;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:04:37:04.238;
+		canAllocateCargo(log: Log): Boolean number = 1005;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:04:20:42.881;
+		deallocateCargo(log: Log) updating, number = 1002;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:01:01:57.996;
+		deallocateRow(row: LogRow) updating, number = 1004;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:04:38:41.026;
+	)
+	Vehicle completeDefinition
+	(
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:04:02:34.149;
+	referenceDefinitions
+		distribution:                  Distribution   explicitEmbeddedInverse, readonly, number = 3, ordinal = 3;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:02:44:28.726;
+		drivers:                       PersonArray   explicitInverse, readonly, subId = 1, number = 1, ordinal = 1;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:02:39:26.124;
+		lot:                           Lot   explicitEmbeddedInverse, number = 2, ordinal = 2;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:04:45:39.309;
+ 
+	jadeMethodDefinitions
+		allocateDriver(driver: Person input) updating, number = 1001;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:02:42:08.929;
+		deallocateDriver(driver: Person) updating, number = 1002;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:02:41:36.402;
+	)
+	Ship completeDefinition
+	(
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:02:38:35.571;
 	)
 	WebSession completeDefinition
 	(
@@ -249,6 +489,29 @@ typeDefinitions
 	Form completeDefinition
 	(
 	)
+	MainForm completeDefinition
+	(
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:21:30:01.852;
+	referenceDefinitions
+		menuCargo:                     MenuItem  number = 1, ordinal = 5;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:21:23:32.671;
+		menuCargoLogs:                 MenuItem  number = 2, ordinal = 6;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:21:23:32.671;
+		menuCargoLogsSpecifications:   MenuItem  number = 5, ordinal = 16;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:21:30:01.852;
+		menuDistributionVoyages:       MenuItem  number = 7, ordinal = 11;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:21:23:32.672;
+		menuDistributions:             MenuItem  number = 6, ordinal = 10;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:21:23:32.672;
+		menuStorage:                   MenuItem  number = 3, ordinal = 7;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:21:23:32.672;
+		menuStorageLogs:               MenuItem  number = 4, ordinal = 8;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:21:23:32.672;
+		menuVehicles:                  MenuItem  number = 10, ordinal = 14;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:21:23:32.672;
+		menuVehiclesShips:             MenuItem  number = 11, ordinal = 15;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:21:23:32.672;
+	)
 	Collection completeDefinition
 	(
 	)
@@ -261,42 +524,65 @@ typeDefinitions
 	MemberKeyDictionary completeDefinition
 	(
 	)
-	AreaByIdDict completeDefinition
+	CargoByIdDict completeDefinition
 	(
-		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:24:15:23:08.337;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:22:59:15.432;
 	)
 	LogByIdDict completeDefinition
 	(
-		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:24:14:30:38.615;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:23:02:40.305;
 	)
-	LotByIdDict completeDefinition
+	LogRowBySpecificationDict completeDefinition
 	(
-		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:24:17:17:35.978;
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:23:28:09.039;
 	)
-	RowByIdDict completeDefinition
+	List completeDefinition
 	(
-		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:24:15:22:38.963;
+	)
+	Array completeDefinition
+	(
+	)
+	LotArray completeDefinition
+	(
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:02:45:50.985;
+	)
+	PersonArray completeDefinition
+	(
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:22:45:26.677;
+	)
+	StorageAreaArray completeDefinition
+	(
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:23:21:10.548;
+	)
+	VehicleArray completeDefinition
+	(
+		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:02:43:39.619;
 	)
  
 memberKeyDefinitions
-	AreaByIdDict completeDefinition
+	CargoByIdDict completeDefinition
 	(
-		areaID;
+		id;
 	)
 	LogByIdDict completeDefinition
 	(
-		logID;
+		id;
 	)
-	LotByIdDict completeDefinition
+	LogRowBySpecificationDict completeDefinition
 	(
-		lotID;
-	)
-	RowByIdDict completeDefinition
-	(
-		rowID;
+		specification;
 	)
  
 inverseDefinitions
+	allCargo of StorageArea manual peerOf storageArea of Cargo automatic;
+	allLogs of LogArea manual peerOf logArea of Log automatic;
+	allLogs of LogRow manual peerOf logRow of Log automatic;
+	allLots of Distribution manual peerOf distribution of Lot automatic;
+	vehicles of Distribution manual peerOf distribution of Vehicle automatic;
+	drivers of Vehicle manual peerOf vehicle of Person automatic;
+	storageAreas of Terminal manual peerOf terminal of StorageArea automatic;
+	logRows of LogArea manual peerOf logArea of LogRow automatic;
+	lot of Vehicle peerOf vehicle of Lot;
 databaseDefinitions
 MasterTerminalDb
 	(
@@ -309,31 +595,71 @@ MasterTerminalDb
 		SMasterTerminal in "_environ";
 		MasterTerminal in "_usergui";
 		GMasterTerminal in "masterterminal";
+		Cargo in "masterterminal";
 		Log in "masterterminal";
-		Row in "masterterminal";
-		Area in "masterterminal";
-		LogByIdDict in "masterterminal";
-		Terminal in "masterterminal";
-		RowByIdDict in "masterterminal";
-		AreaByIdDict in "masterterminal";
-		Lot in "masterterminal";
-		LotByIdDict in "masterterminal";
 		LogSpecification in "masterterminal";
+		Location in "masterterminal";
+		Terminal in "masterterminal";
+		Entity in "masterterminal";
+		Customer in "masterterminal";
+		Supplier in "masterterminal";
+		Person in "masterterminal";
+		Vehicle in "masterterminal";
+		PersonArray in "masterterminal";
+		StorageArea in "masterterminal";
+		LogArea in "masterterminal";
+		CargoByIdDict in "masterterminal";
+		LogByIdDict in "masterterminal";
+		StorageAreaArray in "masterterminal";
+		LogRow in "masterterminal";
+		LogRowBySpecificationDict in "masterterminal";
+		Distribution in "masterterminal";
+		Voyage in "masterterminal";
+		Lot in "masterterminal";
+		Ship in "masterterminal";
+		VehicleArray in "masterterminal";
+		LotArray in "masterterminal";
 	)
 schemaViewDefinitions
 exportedPackageDefinitions
 typeSources
 	MasterTerminal (
 	jadeMethodSources
+findLogSpecification
+{
+findLogSpecification(grade: Integer; species, treatment: String; new: Boolean): LogSpecification updating;
+
+vars
+	logSpecification: LogSpecification;
+
+begin
+	foreach logSpecification in LogSpecification.instances where logSpecification.matches(grade, species, treatment) do
+		return logSpecification;
+	endforeach;
+	
+	if new then
+		beginTransaction;
+			logSpecification := create LogSpecification(grade, species, treatment);
+		commitTransaction;
+		
+		return logSpecification;
+	endif;
+	
+	return null;
+end;
+
+}
+
 initialize
 {
 initialize() updating;
 
 begin
-	self.myTerminal := Terminal.firstInstance();
-	if self.myTerminal = null then
+	self.terminal := Terminal.firstInstance();
+
+	if self.terminal = null then
 		beginTransaction;
-		create self.myTerminal persistent;
+			self.terminal := create Terminal(StreetAddress, City, State, Country) persistent;
 		commitTransaction;
 	endif;
 end;
@@ -341,39 +667,185 @@ end;
 }
 
 	)
-	Area (
+	Cargo (
 	jadeMethodSources
 create
 {
-create() updating;
+create(id: String) updating;
 
 begin
-	self.myTerminal := app.myTerminal;
-	self.areaID := app.myTerminal.nextAreaID();
-	self.myTerminal.allAreas.add(self);
+	if id = null then
+		self.id := app.generateUuid(VariantDce);
+	else
+		self.id := id.asUuid;
+	endif;
 end;
 
 }
 
-getID
+	)
+	Log (
+	jadeMethodSources
+create
 {
-getID(): String;
+create(id: String; specification: LogSpecification) ::super(id) updating;
 
 begin
-	return self.areaID.String;
+	self.specification := specification;
 end;
 
 }
 
-getInfo
+	)
+	Distribution (
+	jadeMethodSources
+allocateLot
 {
-getInfo(): String;
+allocateLot(lot: Lot input): Boolean updating;
 
 vars
-	returnString: String;
+	vehicle: Vehicle;
+
 begin
-	returnString:= self.areaID.String & ": Total Rows: " & self.myRows.size.String;
-	return returnString;
+	if lot.vehicle <> null then
+		if lot.distribution <> null then
+			lot.distribution.deallocateLot(lot, true);
+		endif;
+	
+		beginTransaction;
+			self.allLots.add(lot);
+			self.vehicles.add(lot.vehicle);
+		commitTransaction;
+		
+		return true;
+	endif;
+
+	foreach vehicle in self.vehicles where vehicle.lot = null do
+		beginTransaction;
+			self.allLots.add(lot);
+			
+			lot.vehicle := vehicle;
+		commitTransaction;
+		
+		return true;
+	endforeach;
+
+	return false;
+end;
+
+}
+
+allocateVehicle
+{
+allocateVehicle(vehicle: Vehicle input) updating;
+
+begin
+	if vehicle.distribution <> null then
+		vehicle.distribution.deallocateVehicle(vehicle, true);
+	endif;
+
+	if vehicle.lot <> null then
+		beginTransaction;
+			self.allLots.add(vehicle.lot);
+		commitTransaction;
+	endif;
+	
+	beginTransaction;
+		self.vehicles.add(vehicle);
+	commitTransaction;
+end;
+
+}
+
+create
+{
+create(arrivalDate: Date; arrivalLocation: Location; dischargeDate: Date; dischargeLocation: Location) updating;
+
+begin
+	self.arrivalDate := arrivalDate;
+	self.arrivalLocation := arrivalLocation;
+	self.dischargeDate := dischargeDate;
+	self.dischargeLocation := dischargeLocation;
+end;
+
+}
+
+deallocateLot
+{
+deallocateLot(lot: Lot input; recursive: Boolean) updating;
+
+begin
+	if self.allLots.includes(lot) then
+		if recursive then
+			deallocateVehicle(lot.vehicle, false);
+		endif;
+	
+		beginTransaction;
+			self.allLots.remove(lot);
+		commitTransaction;
+	endif;
+end;
+
+}
+
+deallocateVehicle
+{
+deallocateVehicle(vehicle: Vehicle input; recursive: Boolean) updating;
+
+begin
+	if self.vehicles.includes(vehicle) then
+		if recursive and vehicle.lot <> null then
+			deallocateLot(vehicle.lot, false);
+		endif;
+	
+		beginTransaction;
+			self.vehicles.remove(vehicle);
+		commitTransaction;
+	endif;
+end;
+
+}
+
+isReceiving
+{
+isReceiving(): Boolean;
+
+begin
+	return self.arrivalLocation = app.terminal;
+end;
+
+}
+
+	)
+	Voyage (
+	jadeMethodSources
+allocateVehicle
+{
+allocateVehicle(ship: Ship input) updating;
+
+begin
+	inheritMethod(ship);
+end;
+
+}
+
+create
+{
+create(arrivalDate: Date; arrivalLocation: Location; dischargeDate: Date; dischargeLocation: Location)
+		::super(arrivalDate, arrivalLocation, dischargeDate, dischargeLocation) updating;
+		
+begin
+
+end;
+
+}
+
+deallocateVehicle
+{
+deallocateVehicle(ship: Ship input; recursive: Boolean) updating;
+
+begin
+	inheritMethod(ship, recursive);
 end;
 
 }
@@ -381,98 +853,23 @@ end;
 	)
 	JadeScript (
 	jadeMethodSources
-createArea
-{
-createArea() updating;
-
-vars
-	area: Area;
-
-begin
-	app.initialize();
-	beginTransaction;
-	
-	area := create Area();
-	
-	commitTransaction;
-	
-	write "Created new Area with ID: " & area.getID();
-end;
-
-}
-
 createLog
 {
-createLog() updating;
+createLog();
 
 vars
-
 	log: Log;
-	species: String;
-	description: String;
-	length: Decimal[12, 3];
-	rowNumber: Integer;
-	row: Row;
-	
+	logSpecification: LogSpecification;
+
 begin
 	app.initialize();
 	
-	read species;
-	read description;
-	read length;
-	read rowNumber;
+	logSpecification := create LogSpecification(0, "oak", "idk") transient;
+	log := create Log(null, logSpecification) transient;
 	
-	row := app.myTerminal.allRows[rowNumber];
-	
-	if row = null then
-	
-		write "Row does not exist!";
-		
-	else
-	
-		if row.getPropertyValue("species").String = species.trimBlanks() then
-			if row.getPropertyValue("minLength").Decimal <= length then
-				if row.getPropertyValue("maxLength").Decimal >= length then
-					beginTransaction;
-					log := create Log(species, description, length, rowNumber);
-					commitTransaction;
-					write "Created new Log with ID: " & log.getID.String;
-				else write "Too Long!";
-				endif;
-			else write "Too Short!";
-			endif;
-		else write "Wrong Species!";
-		endif;
-	endif;
-end;
-}
-
-createRow
-{
-createRow() updating;
-
-vars
-	row: Row;
-	minLength: Decimal[12, 3];
-	maxLength: Decimal[12, 3];
-	species: String;
-	area: Integer;
-	
-begin
-	app.initialize();
-	
-	read minLength;
-	read maxLength;
-	read species;
-	read area;
-	
-	beginTransaction;
-	
-	row := create Row(minLength, maxLength, species, area);
-	
-	commitTransaction;
-	
-	write "Created new Row with ID: " & row.getID.String;
+epilog
+	delete log;
+	delete logSpecification;
 end;
 
 }
@@ -491,9 +888,9 @@ begin
 	gradesArray := parseStringArray("grade");
 	
 	beginTransaction;
-	foreach grade in gradesArray where not app.myTerminal.allGrades.includes(grade.Integer) do
-		app.myTerminal.allGrades.add(grade.Integer);
-	endforeach;
+		foreach grade in gradesArray do
+			app.terminal.registerGrade(grade.Integer);
+		endforeach;
 	commitTransaction;
 	
 epilog
@@ -516,9 +913,9 @@ begin
 	speciesArray := parseStringArray("treeType");
 	
 	beginTransaction;
-	foreach species in speciesArray where not app.myTerminal.allSpecies.includes(species) do
-		app.myTerminal.allSpecies.add(species);
-	endforeach;
+		foreach species in speciesArray do
+			app.terminal.registerSpecies(species);
+		endforeach;
 	commitTransaction;
 	
 epilog
@@ -527,50 +924,27 @@ end;
 
 }
 
-logsInRow
+loadTreatments
 {
-logsInRow();
+loadTreatments() updating;
 
 vars
-	log: Log;
-	row: Integer;
+	treatment: String;
+	treatmentsArray: StringArray;
 
 begin
 	app.initialize();
 	
-	read row;
+	treatmentsArray := parseStringArray("treatment");
 	
-	write "All Logs in Row " & row.String & ":";
+	beginTransaction;
+		foreach treatment in treatmentsArray do
+			app.terminal.registerTreatment(treatment);
+		endforeach;
+	commitTransaction;
 	
-	foreach log in app.myTerminal.allLogs 
-		where log.getPropertyValue("myRow").Row.getID().Integer = row.Integer do
-		write "Log ID: " & log.getPropertyValue("logID").String;
-	endforeach;
-
-end;
-
-}
-
-logsInRow2
-{
-logsInRow2();
-
-vars
-
-	log: Log;
-	row: Integer;
-	
-begin
-	app.initialize();
-	
-	read row;
-	
-	write "All Logs in Row " & row.String & ":";
-	
-	foreach log in app.myTerminal.allRows[row].myLogs do
-		write "Log ID: " & log.getPropertyValue("logID").String;
-	endforeach;
-
+epilog
+	delete treatmentsArray;
 end;
 
 }
@@ -640,112 +1014,142 @@ vars
 
 begin
 	beginTransaction;
-	Log.instances.purge();
-	Row.instances.purge();
-	Area.instances.purge();
-	Lot.instances.purge();
-	Terminal.instances.purge();
-	StringArray.instances.purge();
-	IntegerArray.instances.purge();
+		Log.instances.purge();
+		CargoByIdDict.instances.purge();
+		LogByIdDict.instances.purge();
+		LogRowBySpecificationDict.instances.purge();
+		StringArray.instances.purge();
+		IntegerArray.instances.purge();
+		PersonArray.instances.purge();
+		StorageAreaArray.instances.purge();
+		Location.instances.purge();
+		Customer.instances.purge();
+		Person.instances.purge();
+		Supplier.instances.purge();
+		Terminal.instances.purge();
+		LogRow.instances.purge();
+		LogSpecification.instances.purge();
+		LogArea.instances.purge();
 	commitTransaction;
 end;
 
 }
 
-	)
-	Log (
-	jadeMethodSources
-create
+testType
 {
-create(cSpecies, cDescription: String; cLength: Decimal; cRow: Integer) updating;
-
-begin
-	self.myTerminal := app.myTerminal;
-	
-	self.logID := app.myTerminal.nextLogID();
-	
-	self.species := cSpecies.trimBlanks();
-	self.description := cDescription.trimBlanks();
-	self.length := cLength.Decimal;
-	self.myRow := self.myTerminal.allRows[cRow];
-	
-	self.myRow.myLogs.add(self);
-	self.myTerminal.allLogs.add(self);
-	
-end;
-
-}
-
-getID
-{
-getID(): String;
-
-begin
-	return self.logID.String;
-end;
-
-}
-
-getInfo
-{
-getInfo(): String;
+testType();
 
 vars
-	returnString: String;
+	customer: Customer;
+
 begin
-	returnString:= self.logID.String & ": " & self.species & ", " & self.description
-					& ", Length: " & self.length.String;
-	return returnString;
+	customer := create Customer("", "", "", "", "") transient;
+	
+	write "Customer: " & customer.isCustomer().String;
+	write "Supplier: " & customer.isSupplier().String;
+	
+epilog
+	delete customer;
 end;
 
 }
 
 	)
-	Row (
+	Location (
 	jadeMethodSources
 create
 {
-create(cMinLength, cMaxLength: Decimal; cSpecies: String; cMyArea: Integer) updating;
+create(streetAddress, city, state, country: String) updating;
 
 begin
-	self.myTerminal := app.myTerminal;
-	
-	self.rowID := app.myTerminal.nextRowID();
-	
-	self.maxLength := cMaxLength.Decimal;
-	self.minLength := cMinLength.Decimal;
-	self.species := cSpecies.trimBlanks();
-	self.myArea := self.myTerminal.allAreas[cMyArea];
-	
-	self.myArea.myRows.add(self);
-	
-	self.myTerminal.allRows.add(self);
+	self.streetAddress := streetAddress;
+	self.city := city;
+	self.state := state;
+	self.country := country;
 end;
 
 }
 
-getID
+	)
+	Entity (
+	jadeMethodSources
+create
 {
-getID(): String;
+create(streetAddress, city, state, country, name: String) ::super(streetAddress, city, state, country) updating;
 
 begin
-	return self.rowID.String;
+	self.name := name;
 end;
-
 
 }
 
-getInfo
+isCustomer
 {
-getInfo(): String;
+isCustomer(): Boolean;
 
-vars
-	returnString: String;
 begin
-	returnString:= self.rowID.String & ": Species Held: " & self.species & ", Min Length (m): " &
-					minLength.String & ", Max Length (m): " & self.maxLength.String & ", Total Logs: "
-					& self.myLogs.size.String;
-	return returnString;
+	return self.class() = Customer;
+end;
+
+}
+
+isPerson
+{
+isPerson(): Boolean;
+
+begin
+	return self.class() = Person;
+end;
+
+}
+
+isSupplier
+{
+isSupplier(): Boolean;
+
+begin
+	return self.class() = Supplier;
+end;
+
+}
+
+	)
+	Customer (
+	jadeMethodSources
+create
+{
+create(streetAddress, city, state, country, name: String) ::super(streetAddress, city, state, country, name) updating;
+
+begin
+
+end;
+
+}
+
+	)
+	Person (
+	jadeMethodSources
+create
+{
+create(streetAddress, city, state, country, firstName, lastName: String)
+	::super(streetAddress, city, state, country, lastName & ", " & firstName) updating;
+
+begin
+	self.firstName := firstName;
+	self.lastName := lastName;
+end;
+
+}
+
+	)
+	Supplier (
+	jadeMethodSources
+create
+{
+create(streetAddress, city, state, country, name: String) ::super(streetAddress, city, state, country, name) updating;
+
+begin
+
 end;
 
 }
@@ -753,58 +1157,422 @@ end;
 	)
 	Terminal (
 	jadeMethodSources
+allocateCargo
+{
+allocateCargo(cargo: Cargo input; force: Boolean): Boolean updating;
+
+vars
+	storageArea: StorageArea;
+
+begin
+	foreach storageArea in self.storageAreas where storageArea.canAllocateCargo(cargo) do
+		storageArea.allocateCargo(cargo, force);
+		
+		return true;
+	endforeach;
+	
+	return false;
+end;
+
+}
+
+allocateStorageArea
+{
+allocateStorageArea(storageArea: StorageArea input) updating;
+
+begin
+	if storageArea.terminal <> null then
+		storageArea.terminal.deallocateStorageArea(storageArea);
+	endif;
+	
+	self.storageAreas.add(storageArea);
+end;
+
+}
+
 create
 {
-create() updating;
+create(streetAddress, city, state, country: String) ::super(streetAddress, city, state, country) updating;
 
 begin
-	create self.allGrades persistent;
-	create self.allSpecies persistent;
-	create self.allTreatments persistent;
+	create self.allGrades;
+	create self.allSpecies;
+	create self.allTreatments;
+end;
+}
+
+deallocateStorageArea
+{
+deallocateStorageArea(storageArea: StorageArea) updating;
+
+begin
+	if self.storageAreas.includes(storageArea) then
+		beginTransaction;
+			self.storageAreas.remove(storageArea);
+		commitTransaction;
+	endif;
 end;
 
 }
 
-nextAreaID
+receiveCargo
 {
-nextAreaID(): Integer updating;
+receiveCargo(distribution: Distribution input) updating;
+
+vars
+	lot: Lot;
+	cargo: Cargo;
+	storageArea: StorageArea;
 
 begin
-	self.areaID := self.areaID + 1;
-	return self.areaID;
+	foreach lot in distribution.allLots do
+		foreach cargo in lot.storageArea.allCargo do
+			if not allocateCargo(cargo, true) then
+				// TODO: Raise exception (no log area)
+			endif;
+		endforeach;
+	endforeach;
 end;
 
 }
 
-nextLogID
+registerGrade
 {
-nextLogID(): Integer updating;
+registerGrade(grade: Integer): Boolean updating;
 
 begin
-	self.logID := self.logID + 1;
-	return self.logID;
+	if self.allGrades.includes(grade) then
+		return false;
+	endif;
+
+	beginTransaction;
+		self.allGrades.add(grade);
+	commitTransaction;
+	
+	return true;
+end;
+}
+
+registerSpecies
+{
+registerSpecies(species: String): Boolean updating;
+
+begin
+	if self.allSpecies.includes(species) then
+		return false;
+	endif;
+
+	beginTransaction;
+		self.allSpecies.add(species);
+	commitTransaction;
+	
+	return true;
+end;
+}
+
+registerTreatment
+{
+registerTreatment(treatment: String): Boolean updating;
+
+begin
+	if self.allTreatments.includes(treatment) then
+		return false;
+	endif;
+
+	beginTransaction;
+		self.allTreatments.add(treatment);
+	commitTransaction;
+	
+	return true;
 end;
 
 }
 
-nextLotID
+	)
+	LogRow (
+	jadeMethodSources
+allocateLog
 {
-nextLotID(): Integer updating;
+allocateLog(log: Log input; recursive: Boolean) updating;
+
+vars
+	nonConstLog: Log;
 
 begin
-	self.lotID := self.lotID + 1;
-	return self.lotID;
+	if log.logRow <> null then
+		log.logRow.deallocateLog(log);
+	endif;
+	
+	beginTransaction;
+		self.allLogs.add(log);
+	commitTransaction;
+	
+	if recursive and self.logArea <> null then
+		self.logArea.allocateCargo(log, false);
+	endif;
 end;
 
 }
 
-nextRowID
+create
 {
-nextRowID(): Integer updating;
+create(specification: LogSpecification) updating;
 
 begin
-	self.rowID := self.rowID + 1;
-	return self.rowID;
+	self.specification := specification;
+end;
+
+}
+
+deallocateLog
+{
+deallocateLog(log: Log) updating;
+
+begin
+	if self.allLogs.includes(log) then
+		beginTransaction;
+			self.allLogs.remove(log);
+		commitTransaction;
+	endif;
+end;
+
+}
+
+	)
+	LogSpecification (
+	jadeMethodSources
+create
+{
+create(grade: Integer; species, treatment: String) updating;
+
+begin
+	self.grade := grade;
+	self.species := species;
+	self.treatment := treatment;
+end;
+
+}
+
+matches
+{
+matches(grade: Integer; species, treatment: String): Boolean;
+
+begin
+	return grade = self.grade and species.toLower() = self.species.toLower() and treatment.toLower() = self.treatment.toLower();
+end;
+
+}
+
+matchesSpecification
+{
+matchesSpecification(specification: LogSpecification): Boolean;
+
+begin
+	return matches(specification.grade, specification.species, specification.treatment);
+end;
+
+}
+
+	)
+	Lot (
+	jadeMethodSources
+create
+{
+create(customer: Customer; supplier: Supplier; vehicle: Vehicle; storageArea: StorageArea) updating;
+
+begin
+	self.customer := customer;
+	self.supplier := supplier;
+	self.vehicle := vehicle;
+	self.storageArea := storageArea;
+end;
+
+}
+
+	)
+	StorageArea (
+	jadeMethodSources
+allocateCargo
+{
+allocateCargo(cargo: Cargo input; force: Boolean) updating;
+
+begin
+	if cargo.storageArea <> null then
+		cargo.storageArea.deallocateCargo(cargo);
+	endif;
+
+	beginTransaction;
+		self.allCargo.add(cargo);
+	commitTransaction;
+end;
+
+}
+
+canAllocateCargo
+{
+canAllocateCargo(cargo: Cargo): Boolean abstract;
+}
+
+deallocateCargo
+{
+deallocateCargo(cargo: Cargo) updating;
+
+begin
+	if self.allCargo.includes(cargo) then
+		beginTransaction;
+			self.allCargo.remove(cargo);
+		commitTransaction;
+	endif;
+end;
+
+}
+
+	)
+	LogArea (
+	jadeMethodSources
+allocateCargo
+{
+allocateCargo(log: Log input; force: Boolean) updating;
+
+vars
+	logRow: LogRow;
+
+begin
+	inheritMethod(log, force);
+	
+	beginTransaction;
+		self.allLogs.add(log);
+	commitTransaction;
+	
+	if force then
+		if log.logRow <> null then
+			log.logRow.deallocateLog(log);
+		endif;
+		
+		foreach logRow in self.logRows where logRow.specification.matchesSpecification(log.specification) do
+			logRow.allocateLog(log, false);
+			
+			return;
+		endforeach;
+		
+		beginTransaction;
+			logRow := create LogRow(log.specification);
+		commitTransaction;
+		
+		allocateRow(logRow);
+		logRow.allocateLog(log, false);
+	endif;
+end;
+
+}
+
+allocateRow
+{
+allocateRow(row: LogRow input) updating;
+
+vars
+	log: Log;
+	logArea: LogArea;
+
+begin
+	if row.logArea <> null then
+		row.logArea.deallocateRow(row);
+	endif;
+
+	foreach log in row.allLogs do
+		allocateCargo(log, false);
+	endforeach;
+	
+	beginTransaction;
+		logRows.add(row);
+	commitTransaction;
+end;
+
+}
+
+canAllocateCargo
+{
+canAllocateCargo(log: Log): Boolean;
+
+vars
+	logRow: LogRow;
+
+begin
+	foreach logRow in self.logRows where logRow.specification.matchesSpecification(log.specification) do
+		return true;
+	endforeach;
+	
+	return false;
+end;
+
+}
+
+deallocateCargo
+{
+deallocateCargo(log: Log) updating;
+
+begin
+	inheritMethod(log);
+	
+	if self.allLogs.includes(log) then
+		beginTransaction;
+			self.allLogs.remove(log);
+		commitTransaction;
+	endif;
+end;
+
+}
+
+deallocateRow
+{
+deallocateRow(row: LogRow) updating;
+
+vars
+	log: Log;
+
+begin
+	if self.logRows.includes(row) then
+		foreach log in row.allLogs do
+			deallocateCargo(log);
+		endforeach;
+	
+		beginTransaction;
+			self.logRows.remove(row);
+		commitTransaction;
+	endif;
+end;
+
+}
+
+	)
+	Vehicle (
+	jadeMethodSources
+allocateDriver
+{
+allocateDriver(driver: Person input) updating;
+
+begin
+	if driver.vehicle <> null then
+		driver.vehicle.deallocateDriver(driver);
+	endif;
+	
+	beginTransaction;
+		self.drivers.add(driver);
+	commitTransaction;
+end;
+
+}
+
+deallocateDriver
+{
+deallocateDriver(driver: Person) updating;
+
+begin
+	if self.drivers.includes(driver) then
+		beginTransaction;
+			self.drivers.remove(driver);
+		commitTransaction;
+	endif;
 end;
 
 }
