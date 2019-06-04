@@ -1,4 +1,4 @@
-/* JADE COMMAND FILE NAME MasterTerminal.jcf */
+/* JADE COMMAND FILE NAME C:\Users\barry\INFO213\MasterTerminal.jcf */
 jadeVersionNumber "18.0.01";
 schemaDefinition
 MasterTerminal subschemaOf RootSchema completeDefinition, patchVersioningEnabled = false;
@@ -68,6 +68,8 @@ typeDefinitions
 		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:24:20:54:30.738;
 		getID(): String number = 1002;
 		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:24:21:08:19.750;
+		getInfo(): String number = 1003;
+		setModifiedTimeStamp "barry" "18.0.01" 2019:06:04:15:21:15.263;
 	)
 	Global completeDefinition
 	(
@@ -165,6 +167,8 @@ typeDefinitions
 		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:25:12:47:30.308;
 		getID(): String number = 1002;
 		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:24:21:32:30.007;
+		getInfo(): String number = 1003;
+		setModifiedTimeStamp "barry" "18.0.01" 2019:06:04:15:16:45.540;
 	)
 	Terminal completeDefinition
 	(
@@ -326,6 +330,19 @@ getID(): String;
 
 begin
 	return self.areaID.String;
+end;
+
+}
+
+getInfo
+{
+getInfo(): String;
+
+vars
+	returnString: String;
+begin
+	returnString:= self.areaID.String & ": Total Rows: " & self.myRows.size.String;
+	return returnString;
 end;
 
 }
@@ -575,6 +592,21 @@ begin
 	return self.rowID.String;
 end;
 
+
+}
+
+getInfo
+{
+getInfo(): String;
+
+vars
+	returnString: String;
+begin
+	returnString:= self.rowID.String & ": Species Held: " & self.species & ", Min Length (m): " &
+					minLength.String & ", Max Length (m): " & self.maxLength.String & ", Total Logs: "
+					& self.myLogs.size.String;
+	return returnString;
+end;
 
 }
 
