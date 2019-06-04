@@ -1,4 +1,4 @@
-/* JADE COMMAND FILE NAME P:\University\INFO213\Assignments\Milestone-2\MasterTerminal.jcf */
+/* JADE COMMAND FILE NAME MasterTerminal.jcf */
 jadeVersionNumber "18.0.01";
 schemaDefinition
 MasterTerminal subschemaOf RootSchema completeDefinition, patchVersioningEnabled = false;
@@ -100,8 +100,8 @@ typeDefinitions
 	(
 		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:24:22:40:07.667;
 	attributeDefinitions
-		description:                   String[31] number = 4, ordinal = 4;
-		setModifiedTimeStamp "barry" "18.0.01" 2019:06:03:14:54:18.248;
+		description:                   String[31] protected, number = 4, ordinal = 4;
+		setModifiedTimeStamp "barry" "18.0.01" 2019:06:04:14:12:52.375;
 		length:                        Decimal[12,2] protected, number = 2, ordinal = 2;
 		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:24:22:16:11.221;
 		logID:                         Integer protected, number = 1, ordinal = 1;
@@ -123,6 +123,8 @@ typeDefinitions
 		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:25:12:33:12.057;
 		getID(): String number = 1002;
 		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:24:21:38:34.854;
+		getInfo(): String number = 1003;
+		setModifiedTimeStamp "barry" "18.0.01" 2019:06:04:14:17:40.391;
 	)
 	Lot completeDefinition
 	(
@@ -341,11 +343,11 @@ vars
 begin
 	app.initialize();
 	beginTransaction;
-
+	
 	area := create Area();
-
+	
 	commitTransaction;
-
+	
 	write "Created new Area with ID: " & area.getID();
 end;
 
@@ -363,23 +365,23 @@ vars
 	length: Decimal[12, 3];
 	rowNumber: Integer;
 	row: Row;
-
+	
 begin
 	app.initialize();
-
+	
 	read species;
 	read description;
 	read length;
 	read rowNumber;
-
+	
 	row := app.myTerminal.allRows[rowNumber];
-
+	
 	if row = null then
-
+	
 		write "Row does not exist!";
-
+		
 	else
-
+	
 		if row.getPropertyValue("species").String = species.trimBlanks() then
 			if row.getPropertyValue("minLength").Decimal <= length then
 				if row.getPropertyValue("maxLength").Decimal >= length then
@@ -407,21 +409,21 @@ vars
 	maxLength: Decimal[12, 3];
 	species: String;
 	area: Integer;
-
+	
 begin
 	app.initialize();
-
+	
 	read minLength;
 	read maxLength;
 	read species;
 	read area;
-
+	
 	beginTransaction;
-
+	
 	row := create Row(minLength, maxLength, species, area);
-
+	
 	commitTransaction;
-
+	
 	write "Created new Row with ID: " & row.getID.String;
 end;
 
@@ -437,12 +439,12 @@ vars
 
 begin
 	app.initialize();
-
+	
 	read row;
-
+	
 	write "All Logs in Row " & row.String & ":";
-
-	foreach log in app.myTerminal.allLogs
+	
+	foreach log in app.myTerminal.allLogs 
 		where log.getPropertyValue("myRow").Row.getID().Integer = row.Integer do
 		write "Log ID: " & log.getPropertyValue("logID").String;
 	endforeach;
@@ -459,14 +461,14 @@ vars
 
 	log: Log;
 	row: Integer;
-
+	
 begin
 	app.initialize();
-
+	
 	read row;
-
+	
 	write "All Logs in Row " & row.String & ":";
-
+	
 	foreach log in app.myTerminal.allRows[row].myLogs do
 		write "Log ID: " & log.getPropertyValue("logID").String;
 	endforeach;
@@ -502,17 +504,17 @@ create(cSpecies, cDescription: String; cLength: Decimal; cRow: Integer) updating
 
 begin
 	self.myTerminal := app.myTerminal;
-
+	
 	self.logID := app.myTerminal.nextLogID();
-
+	
 	self.species := cSpecies.trimBlanks();
 	self.description := cDescription.trimBlanks();
 	self.length := cLength.Decimal;
 	self.myRow := self.myTerminal.allRows[cRow];
-
+	
 	self.myRow.myLogs.add(self);
 	self.myTerminal.allLogs.add(self);
-
+	
 end;
 
 }
@@ -527,6 +529,20 @@ end;
 
 }
 
+getInfo
+{
+getInfo(): String;
+
+vars
+	returnString: String;
+begin
+	returnString:= self.logID.String & ": " & self.species & ", " & self.description
+					& ", Length: " & self.length.String;
+	return returnString;
+end;
+
+}
+
 	)
 	Row (
 	jadeMethodSources
@@ -536,16 +552,16 @@ create(cMinLength, cMaxLength: Decimal; cSpecies: String; cMyArea: Integer) upda
 
 begin
 	self.myTerminal := app.myTerminal;
-
+	
 	self.rowID := app.myTerminal.nextRowID();
-
+	
 	self.maxLength := cMaxLength.Decimal;
 	self.minLength := cMinLength.Decimal;
 	self.species := cSpecies.trimBlanks();
 	self.myArea := self.myTerminal.allAreas[cMyArea];
-
+	
 	self.myArea.myRows.add(self);
-
+	
 	self.myTerminal.allRows.add(self);
 end;
 
