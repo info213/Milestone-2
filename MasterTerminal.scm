@@ -1,4 +1,4 @@
-/* JADE COMMAND FILE NAME MasterTerminal.jcf */
+/* JADE COMMAND FILE NAME P:\University\INFO213\Assignments\Milestone-2\MasterTerminal.jcf */
 jadeVersionNumber "18.0.01";
 schemaDefinition
 MasterTerminal subschemaOf RootSchema completeDefinition, patchVersioningEnabled = false;
@@ -14,9 +14,10 @@ typeHeaders
 	Area subclassOf Object highestSubId = 1, highestOrdinal = 4, number = 2060;
 	GMasterTerminal subclassOf RootSchemaGlobal transient, sharedTransientAllowed, transientAllowed, subclassSharedTransientAllowed, subclassTransientAllowed, number = 2056;
 	Log subclassOf Object highestOrdinal = 10, number = 2058;
+	LogSpecification subclassOf Object highestOrdinal = 4, number = 2051;
 	Lot subclassOf Object highestOrdinal = 2, number = 2065;
 	Row subclassOf Object highestSubId = 1, highestOrdinal = 11, number = 2059;
-	Terminal subclassOf Object highestSubId = 4, highestOrdinal = 9, number = 2062;
+	Terminal subclassOf Object highestSubId = 7, highestOrdinal = 17, number = 2062;
 	SMasterTerminal subclassOf RootSchemaSession transient, sharedTransientAllowed, transientAllowed, subclassSharedTransientAllowed, subclassTransientAllowed, number = 2057;
 	AreaByIdDict subclassOf MemberKeyDictionary loadFactor = 66, number = 2064;
 	LogByIdDict subclassOf MemberKeyDictionary loadFactor = 66, number = 2061;
@@ -89,12 +90,20 @@ typeDefinitions
 		setModifiedTimeStamp "barry" "18.0.01" 2019:06:03:14:36:10.481;
 		createRow() updating, number = 1002;
 		setModifiedTimeStamp "barry" "18.0.01" 2019:06:03:14:36:58.983;
+		loadGrades() updating, number = 1011;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:04:16:12:38.617;
+		loadSpecies() updating, number = 1008;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:04:16:08:09.101;
 		logsInRow() number = 1005;
 		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:25:12:43:12.148;
 		logsInRow2() number = 1006;
 		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:25:12:43:07.648;
+		openFile(): String number = 1010;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:04:16:02:41.198;
+		parseStringArray(tag: String): StringArray number = 1009;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:04:16:05:14.759;
 		purgeTestObjects() updating, number = 1004;
-		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:24:22:44:28.441;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:04:16:03:53.018;
 	)
 	Log completeDefinition
 	(
@@ -125,6 +134,19 @@ typeDefinitions
 		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:24:21:38:34.854;
 		getInfo(): String number = 1003;
 		setModifiedTimeStamp "barry" "18.0.01" 2019:06:04:14:17:40.391;
+	)
+	LogSpecification completeDefinition
+	(
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:04:15:09:34.441;
+	attributeDefinitions
+		grade:                         Integer number = 2, ordinal = 2;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:04:15:10:15.196;
+		species:                       String[31] number = 1, ordinal = 1;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:04:15:10:06.617;
+		treatment:                     String[31] protected, number = 4, ordinal = 4;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:04:15:10:40.038;
+		type:                          String[31] protected, number = 3, ordinal = 3;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:04:15:10:27.205;
 	)
 	Lot completeDefinition
 	(
@@ -168,7 +190,7 @@ typeDefinitions
 	)
 	Terminal completeDefinition
 	(
-		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:24:18:01:11.948;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:04:15:57:53.158;
 	attributeDefinitions
 		areaID:                        Integer protected, number = 6, ordinal = 6;
 		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:24:16:11:16.956;
@@ -181,14 +203,22 @@ typeDefinitions
 	referenceDefinitions
 		allAreas:                      AreaByIdDict  implicitMemberInverse, subId = 2, number = 3, ordinal = 3;
 		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:24:16:11:26.545;
+		allGrades:                     IntegerArray  number = 10, ordinal = 16;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:04:15:58:17.901;
 		allLogs:                       LogByIdDict  implicitMemberInverse, subId = 1, number = 1, ordinal = 1;
 		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:24:18:00:12.881;
 		allLots:                       LotByIdDict  implicitMemberInverse, subId = 3, number = 8, ordinal = 8;
 		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:24:18:00:22.323;
 		allRows:                       RowByIdDict  implicitMemberInverse, subId = 4, number = 2, ordinal = 9;
 		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:24:18:02:51.544;
+		allSpecies:                    StringArray  number = 9, ordinal = 14;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:04:15:57:06.066;
+		allTreatments:                 StringArray  number = 11, ordinal = 17;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:04:15:58:32.551;
  
 	jadeMethodDefinitions
+		create() updating, number = 1005;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:04:15:59:12.673;
 		nextAreaID(): Integer updating, number = 1002;
 		setModifiedTimeStamp "Brad" "18.0.01" 2019:05:24:17:42:37.571;
 		nextLogID(): Integer updating, number = 1001;
@@ -284,6 +314,7 @@ MasterTerminalDb
 		AreaByIdDict in "masterterminal";
 		Lot in "masterterminal";
 		LotByIdDict in "masterterminal";
+		LogSpecification in "masterterminal";
 	)
 schemaViewDefinitions
 exportedPackageDefinitions
@@ -429,6 +460,56 @@ end;
 
 }
 
+loadGrades
+{
+loadGrades() updating;
+
+vars
+	grade: String;
+	gradesArray: StringArray;
+
+begin
+	app.initialize();
+	
+	gradesArray := parseStringArray("grade");
+	
+	beginTransaction;
+	foreach grade in gradesArray where not app.myTerminal.allGrades.includes(grade.Integer) do
+		app.myTerminal.allGrades.add(grade.Integer);
+	endforeach;
+	commitTransaction;
+	
+epilog
+	delete gradesArray;
+end;
+
+}
+
+loadSpecies
+{
+loadSpecies() updating;
+
+vars
+	species: String;
+	speciesArray: StringArray;
+
+begin
+	app.initialize();
+	
+	speciesArray := parseStringArray("treeType");
+	
+	beginTransaction;
+	foreach species in speciesArray where not app.myTerminal.allSpecies.includes(species) do
+		app.myTerminal.allSpecies.add(species);
+	endforeach;
+	commitTransaction;
+	
+epilog
+	delete speciesArray;
+end;
+
+}
+
 logsInRow
 {
 logsInRow();
@@ -477,6 +558,63 @@ end;
 
 }
 
+openFile
+{
+openFile(): String;
+
+vars
+	ex: Exception;
+	fileDialogue: CMDFileOpen;
+
+begin
+	create fileDialogue transient;
+	
+	fileDialogue.open();
+	
+	return fileDialogue.fileName;
+	
+epilog
+	delete fileDialogue;
+	
+end;
+
+}
+
+parseStringArray
+{
+parseStringArray(tag: String): StringArray;
+
+vars
+	xml: JadeXMLDocument;
+	element: JadeXMLElement;
+	elements: JadeXMLElementArray;
+	fileName: String;
+	
+	stringArray: StringArray;
+
+begin
+	create xml transient;
+	create elements transient;
+	create stringArray transient;
+
+	fileName := openFile();
+	
+	xml.parseFile(fileName);
+	xml.getElementsByTagName(tag, elements);
+	
+	foreach element in elements do
+		stringArray.add(element.textData);
+	endforeach;
+	
+	return stringArray;
+	
+epilog
+	delete xml;
+	delete elements;
+end;
+
+}
+
 purgeTestObjects
 {
 purgeTestObjects() updating;
@@ -490,6 +628,8 @@ begin
 	Area.instances.purge();
 	Lot.instances.purge();
 	Terminal.instances.purge();
+	StringArray.instances.purge();
+	IntegerArray.instances.purge();
 	commitTransaction;
 end;
 
@@ -581,6 +721,18 @@ end;
 	)
 	Terminal (
 	jadeMethodSources
+create
+{
+create() updating;
+
+begin
+	create self.allGrades persistent;
+	create self.allSpecies persistent;
+	create self.allTreatments persistent;
+end;
+
+}
+
 nextAreaID
 {
 nextAreaID(): Integer updating;

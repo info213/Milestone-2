@@ -1,4 +1,4 @@
-/* JADE COMMAND FILE NAME MasterTerminalView.jcf */
+/* JADE COMMAND FILE NAME P:\University\INFO213\Assignments\Milestone-2\MasterTerminalView.jcf */
 jadeVersionNumber "18.0.01";
 schemaDefinition
 MasterTerminalView subschemaOf MasterTerminal completeDefinition, patchVersioningEnabled = false;
@@ -194,7 +194,7 @@ typeDefinitions
 		addLogBtn_click(btn: Button input) updating, number = 1003;
 		setModifiedTimeStamp "barry" "18.0.01" 2019:06:03:15:19:30.222;
 		deleteLogBtn_click(btn: Button input) updating, number = 1004;
-		setModifiedTimeStamp "barry" "18.0.01" 2019:06:04:14:47:57.210;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:04:14:58:07.457;
 		load() updating, number = 1002;
 		setModifiedTimeStamp "barry" "18.0.01" 2019:06:03:15:09:21.252;
 		logListBox_displayRow(
@@ -321,7 +321,7 @@ MasterTerminalViewDb
 	(
 		setModifiedTimeStamp "barry" "18.0.01" 2019:05:31:11:57:43.405;
 	databaseFileDefinitions
-		"masterterminalview" number=57;
+		"masterterminalview" number=52;
 		setModifiedTimeStamp "barry" "18.0.01" 2019:05:31:11:57:43.405;
 	defaultFileDefinition "masterterminalview";
 	classMapDefinitions
@@ -533,9 +533,9 @@ vars
 	log: Log;
 begin
 
-	log:= logListBox.itemObject[logListBox.listIndex].Log;
+	log := logListBox.itemObject[logListBox.listIndex].Log;
 	
-	logListBox.displayCollection(null, false, 0, null, "");
+	logListBox.listCollection(null, false, 0);
 	
 	beginTransaction;
 		app.myTerminal.allLogs.remove(log);
