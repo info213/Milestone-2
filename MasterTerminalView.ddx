@@ -379,11 +379,7 @@
 	</Form>
 
 	<Form locale="5129" name="LogDetails">
-<<<<<<< HEAD
-		<_painterModifiedTimeStamp>2019:06:04:14:56:08.288</_painterModifiedTimeStamp>
-=======
 		<_painterModifiedTimeStamp>2019:06:04:15:34:30.338</_painterModifiedTimeStamp>
->>>>>>> 3da8f1f88b47a2d0cba8b752f404d2d134075a2a
 		<allowDocking>0</allowDocking>
 		<backBrush/>
 		<backBrushStyle>0</backBrushStyle>
@@ -1061,11 +1057,7 @@
 	</Form>
 
 	<Form locale="5129" name="AddLog">
-<<<<<<< HEAD
-		<_painterModifiedTimeStamp>2019:06:04:14:56:08.288</_painterModifiedTimeStamp>
-=======
 		<_painterModifiedTimeStamp>2019:06:04:15:34:30.342</_painterModifiedTimeStamp>
->>>>>>> 3da8f1f88b47a2d0cba8b752f404d2d134075a2a
 		<allowDocking>0</allowDocking>
 		<backBrush/>
 		<backBrushStyle>0</backBrushStyle>
@@ -1121,11 +1113,7 @@
 	</Form>
 
 	<Form locale="5129" name="LogListForm">
-<<<<<<< HEAD
-		<_painterModifiedTimeStamp>2019:06:04:14:56:08.288</_painterModifiedTimeStamp>
-=======
 		<_painterModifiedTimeStamp>2019:06:04:16:09:25.126</_painterModifiedTimeStamp>
->>>>>>> 3da8f1f88b47a2d0cba8b752f404d2d134075a2a
 		<allowDocking>0</allowDocking>
 		<backBrush/>
 		<backBrushStyle>0</backBrushStyle>
@@ -1795,11 +1783,7 @@
 	</Form>
 
 	<Form locale="5129" name="MainMenu">
-<<<<<<< HEAD
-		<_painterModifiedTimeStamp>2019:06:04:14:56:08.288</_painterModifiedTimeStamp>
-=======
 		<_painterModifiedTimeStamp>2019:06:04:16:09:23.080</_painterModifiedTimeStamp>
->>>>>>> 3da8f1f88b47a2d0cba8b752f404d2d134075a2a
 		<allowDocking>0</allowDocking>
 		<backBrush/>
 		<backBrushStyle>0</backBrushStyle>
@@ -2054,13 +2038,8 @@
 		</menuList>
 	</Form>
 
-<<<<<<< HEAD
-	<Form locale="5129" name="RowListForm">
-		<_painterModifiedTimeStamp>2019:06:04:14:56:08.288</_painterModifiedTimeStamp>
-=======
 	<Form locale="5129" name="RowDetials">
 		<_painterModifiedTimeStamp>2019:06:04:15:36:15.683</_painterModifiedTimeStamp>
->>>>>>> 3da8f1f88b47a2d0cba8b752f404d2d134075a2a
 		<allowDocking>0</allowDocking>
 		<backBrush/>
 		<backBrushStyle>0</backBrushStyle>

@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-/* JADE COMMAND FILE NAME P:\University\INFO213\Assignments\Milestone-2\MasterTerminal.jcf */
-=======
 /* JADE COMMAND FILE NAME C:\Users\barry\INFO213\MasterTerminal.jcf */
->>>>>>> 3da8f1f88b47a2d0cba8b752f404d2d134075a2a
 jadeVersionNumber "18.0.01";
 schemaDefinition
 MasterTerminal subschemaOf RootSchema completeDefinition, patchVersioningEnabled = false;
