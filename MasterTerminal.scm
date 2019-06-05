@@ -1,4 +1,4 @@
-/* JADE COMMAND FILE NAME F:\Projects\JADE\INFO213\Milestone-2\MasterTerminal.jcf */
+/* JADE COMMAND FILE NAME P:\University\INFO213\Assignments\Milestone-2\MasterTerminal.jcf */
 jadeVersionNumber "18.0.01";
 schemaDefinition
 MasterTerminal subschemaOf RootSchema completeDefinition, patchVersioningEnabled = false;

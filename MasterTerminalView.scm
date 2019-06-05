@@ -1,4 +1,4 @@
-/* JADE COMMAND FILE NAME C:\Users\barry\INFO213\MasterTerminalView.jcf */
+/* JADE COMMAND FILE NAME P:\University\INFO213\Assignments\Milestone-2\MasterTerminalView.jcf */
 jadeVersionNumber "18.0.01";
 schemaDefinition
 MasterTerminalView subschemaOf MasterTerminal completeDefinition, patchVersioningEnabled = false;
@@ -13,15 +13,15 @@ typeHeaders
 	MasterTerminalView subclassOf MasterTerminal transient, sharedTransientAllowed, transientAllowed, subclassSharedTransientAllowed, subclassTransientAllowed, number = 2048;
 	GMasterTerminalView subclassOf GMasterTerminal transient, sharedTransientAllowed, transientAllowed, subclassSharedTransientAllowed, subclassTransientAllowed, number = 2049;
 	SMasterTerminalView subclassOf SMasterTerminal transient, sharedTransientAllowed, transientAllowed, subclassSharedTransientAllowed, subclassTransientAllowed, number = 2050;
-	AreaListForm subclassOf Form transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 5, number = 2073;
-	LogDetails subclassOf Form transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 11, number = 2068;
-	AddLog subclassOf LogDetails transient, transientAllowed, subclassTransientAllowed, number = 2070;
-	LogListForm subclassOf Form transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 5, number = 2054;
-	LotListForm subclassOf Form transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 5, number = 2072;
-	MainMenu subclassOf Form transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 8, number = 2053;
-	RowDetials subclassOf Form transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 11, number = 2067;
-	AddRow subclassOf RowDetials transient, transientAllowed, subclassTransientAllowed, number = 2074;
-	RowListForm subclassOf Form transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 5, number = 2071;
+	AreaListForm subclassOf Form transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 5, number = 2051;
+	LogDetails subclassOf Form transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 11, number = 2052;
+	AddLog subclassOf LogDetails transient, transientAllowed, subclassTransientAllowed, number = 2058;
+	LogListForm subclassOf Form transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 5, number = 2059;
+	LotListForm subclassOf Form transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 5, number = 2060;
+	MainMenu subclassOf Form transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 8, number = 2061;
+	RowDetials subclassOf Form transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 11, number = 2062;
+	AddRow subclassOf RowDetials transient, transientAllowed, subclassTransientAllowed, number = 2063;
+	RowListForm subclassOf Form transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 5, number = 2064;
  
 interfaceDefs
 membershipDefinitions

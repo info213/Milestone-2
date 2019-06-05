@@ -1,4 +1,4 @@
-/* JADE COMMAND FILE NAME F:\Projects\JADE\INFO213\Milestone-2\MasterTerminalTesting.jcf */
+/* JADE COMMAND FILE NAME P:\University\INFO213\Assignments\Milestone-2\MasterTerminalTesting.jcf */
 jadeVersionNumber "18.0.01";
 schemaDefinition
 MasterTerminalTesting subschemaOf MasterTerminal completeDefinition, patchVersioningEnabled = false;
@@ -74,6 +74,8 @@ typeDefinitions
 		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:03:35:13.755;
 		testLogAreaReallocation() unitTest, number = 1007;
 		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:04:40:22.764;
+		testLogReallocation() updating, unitTest, number = 1010;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:12:56:26.401;
 		testLogRowAllocation() unitTest, number = 1003;
 		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:03:13:30.722;
 		testLogRowReallocation() unitTest, number = 1005;
@@ -360,6 +362,66 @@ epilog
 	delete logArea1;
 	delete logArea2;
 	delete logSpecification;
+end;
+
+}
+
+testLogReallocation
+{
+testLogReallocation() unitTest, updating;
+
+vars
+	log: Log;
+	logRow: LogRow;
+	logArea1, logArea2: LogArea;
+	logSpecification: LogSpecification;
+	
+begin
+	beginTransaction;
+		logSpecification := create LogSpecification(0, "a", "d");
+		
+		logRow := create LogRow(logSpecification);
+		
+		log := create Log(null, logSpecification);
+		
+		logArea1 := create LogArea();
+		logArea2 := create LogArea();
+	commitTransaction;
+	
+	// Should add to logArea::logRows and set logRow::logArea
+	logArea1.allocateRow(logRow);
+	
+	assertTrue(logArea1.logRows.includes(logRow));
+	assertEquals(logRow.logArea, logArea1);
+	
+	logArea1.allocateCargo(log, true);
+	
+	assertTrue(logArea1.allLogs.includes(log));
+	assertTrue(logArea1.allCargo.includes(log));
+	assertTrue(logRow.allLogs.includes(log));
+	assertEquals(log.logRow, logRow);
+	
+	logArea2.allocateCargo(log, true);
+	
+	assertTrue(logArea1.logRows.includes(logRow));
+	assertEquals(logRow.logArea, logArea1);
+	
+	assertFalse(logArea1.allLogs.includes(log));
+	assertFalse(logArea1.allCargo.includes(log));
+	assertFalse(logRow.allLogs.includes(log));
+	
+	assertTrue(logArea2.allLogs.includes(log));
+	assertTrue(logArea2.allCargo.includes(log));
+	
+	assertFalse(logArea2.logRows.includes(logRow));
+epilog
+	beginTransaction;
+		delete log;
+		delete logArea1;
+		delete logArea2;
+		delete logRow;
+		delete logSpecification;
+	commitTransaction;
 end;
 
 }

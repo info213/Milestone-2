@@ -1,3 +1,4 @@
 #MULTIPLE_SCHEMA_EXTRACT
 MasterTerminal.scm MasterTerminal.ddx
 MasterTerminalTesting.scm MasterTerminalTesting.ddx
+MasterTerminalView.scm MasterTerminalView.ddx
