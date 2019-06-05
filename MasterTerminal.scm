@@ -1,4 +1,4 @@
-/* JADE COMMAND FILE NAME C:\Users\barry\INFO213\MasterTerminal.jcf */
+/* JADE COMMAND FILE NAME P:\University\INFO213\Assignments\Milestone-2\MasterTerminal.jcf */
 jadeVersionNumber "18.0.01";
 schemaDefinition
 MasterTerminal subschemaOf RootSchema completeDefinition, patchVersioningEnabled = false;
@@ -196,11 +196,11 @@ typeDefinitions
 		createLog() number = 1005;
 		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:02:13:43.168;
 		loadGrades() updating, number = 1011;
-		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:22:37:07.210;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:14:00:32.287;
 		loadSpecies() updating, number = 1008;
 		setModifiedTimeStamp "barry" "18.0.01" 2019:06:05:13:49:46.321;
 		loadTreatments() updating, number = 1001;
-		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:22:21:33.279;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:14:00:41.688;
 		openFile(): String number = 1010;
 		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:04:16:02:41.198;
 		parseStringArray(tag: String): StringArray number = 1009;
@@ -307,7 +307,7 @@ typeDefinitions
 	)
 	Terminal completeDefinition
 	(
-		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:22:12:21.550;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:13:56:02.752;
 	referenceDefinitions
 		allGrades:                     IntegerArray  readonly, number = 1, ordinal = 1;
 		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:22:11:18.974;
@@ -333,8 +333,6 @@ typeDefinitions
 		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:22:17:30.976;
 		deallocateStorageArea(storageArea: StorageArea) updating, number = 1006;
 		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:02:50:50.818;
-		getAllSpecies(): ObjectArray number = 1009;
-		setModifiedTimeStamp "barry" "18.0.01" 2019:06:05:13:45:43.094;
 		receiveCargo(distribution: Distribution input) updating, number = 1007;
 		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:04:28:28.056;
 		registerGrade(grade: Integer): Boolean updating, number = 1002;
@@ -899,11 +897,9 @@ begin
 	
 	gradesArray := parseStringArray("grade");
 	
-	beginTransaction;
-		foreach grade in gradesArray do
-			app.terminal.registerGrade(grade.Integer);
-		endforeach;
-	commitTransaction;
+	foreach grade in gradesArray do
+		app.terminal.registerGrade(grade.Integer);
+	endforeach;
 	
 epilog
 	delete gradesArray;
@@ -947,11 +943,9 @@ begin
 	
 	treatmentsArray := parseStringArray("treatment");
 	
-	beginTransaction;
-		foreach treatment in treatmentsArray do
-			app.terminal.registerTreatment(treatment);
-		endforeach;
-	commitTransaction;
+	foreach treatment in treatmentsArray do
+		app.terminal.registerTreatment(treatment);
+	endforeach;
 	
 epilog
 	delete treatmentsArray;
@@ -1221,23 +1215,6 @@ begin
 			self.storageAreas.remove(storageArea);
 		commitTransaction;
 	endif;
-end;
-
-}
-
-getAllSpecies
-{
-getAllSpecies(): ObjectArray;
-
-vars
-	objectArray: ObjectArray;
-
-begin
-	create objectArray transient;
-
-	objectArray.addAll(self.allSpecies);
-	
-	return objectArray;
 end;
 
 }

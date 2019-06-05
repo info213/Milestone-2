@@ -1,4 +1,4 @@
-/* JADE COMMAND FILE NAME C:\Users\barry\INFO213\MasterTerminalView.jcf */
+/* JADE COMMAND FILE NAME P:\University\INFO213\Assignments\Milestone-2\MasterTerminalView.jcf */
 jadeVersionNumber "18.0.01";
 schemaDefinition
 MasterTerminalView subschemaOf MasterTerminal completeDefinition, patchVersioningEnabled = false;
@@ -120,7 +120,7 @@ typeDefinitions
 	)
 	LogDetails completeDefinition
 	(
-		setModifiedTimeStamp "barry" "18.0.01" 2019:06:05:13:19:06.092;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:14:16:58.437;
 	referenceDefinitions
 		btnCancel:                     Button  number = 10, ordinal = 10;
 		setModifiedTimeStamp "barry" "18.0.01" 2019:06:02:18:15:17.410;
@@ -132,8 +132,6 @@ typeDefinitions
 		setModifiedTimeStamp "barry" "18.0.01" 2019:06:05:13:18:37.897;
 		cboLogTreatment:               ComboBox  number = 8, ordinal = 14;
 		setModifiedTimeStamp "barry" "18.0.01" 2019:06:05:13:18:37.897;
-		lblDescription:                Label  number = 3, ordinal = 3;
-		setModifiedTimeStamp "barry" "18.0.01" 2019:06:02:18:15:17.396;
 		lblGrade:                      Label  number = 12, ordinal = 15;
 		setModifiedTimeStamp "barry" "18.0.01" 2019:06:05:13:18:37.897;
 		lblLength:                     Label  number = 5, ordinal = 5;
@@ -144,8 +142,6 @@ typeDefinitions
 		setModifiedTimeStamp "barry" "18.0.01" 2019:06:05:13:18:37.897;
 		logStatus:                     StatusLine  number = 11, ordinal = 11;
 		setModifiedTimeStamp "barry" "18.0.01" 2019:06:02:18:23:20.967;
-		txtDescription:                TextBox  number = 4, ordinal = 4;
-		setModifiedTimeStamp "barry" "18.0.01" 2019:06:02:18:15:17.403;
 		txtLength:                     TextBox  number = 6, ordinal = 6;
 		setModifiedTimeStamp "barry" "18.0.01" 2019:06:02:18:15:17.406;
  
@@ -154,37 +150,32 @@ typeDefinitions
 		setModifiedTimeStamp "barry" "18.0.01" 2019:06:02:18:17:18.339;
 		btnOk_click(btn: Button input) updating, number = 1006;
 		setModifiedTimeStamp "barry" "18.0.01" 2019:06:04:15:47:22.009;
-		cboLogGrade_displayRow(
+		cboLogGrade_displayEntry(
 			combobox: ComboBox input; 
-			obj: Object; 
-			lstIndex: Integer; 
-			bcontinue: Boolean io): String updating, number = 1005;
-		setModifiedTimeStamp "barry" "18.0.01" 2019:06:05:13:22:06.545;
-		cboLogSpecies_displayRow(
+			obj: Any; 
+			lstIndex: Integer): String updating, number = 1005;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:14:02:50.772;
+		cboLogSpecies_displayEntry(
 			combobox: ComboBox input; 
-			obj: Object; 
-			lstIndex: Integer; 
-			bcontinue: Boolean io): String updating, number = 1007;
-		setModifiedTimeStamp "barry" "18.0.01" 2019:06:05:13:22:17.350;
-		cboLogTreatment_displayRow(
+			obj: Any; 
+			lstIndex: Integer): String updating, number = 1007;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:14:03:04.882;
+		cboLogTreatment_displayEntry(
 			combobox: ComboBox input; 
-			obj: Object; 
-			lstIndex: Integer; 
-			bcontinue: Boolean io): String updating, number = 1008;
-		setModifiedTimeStamp "barry" "18.0.01" 2019:06:05:13:22:25.619;
-		clearTextBoxes() number = 1002;
-		setModifiedTimeStamp "barry" "18.0.01" 2019:06:02:18:18:30.549;
+			obj: Any; 
+			lstIndex: Integer): String updating, number = 1008;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:14:04:20.559;
 		isDataValid(): Boolean protected, number = 1004;
-		setModifiedTimeStamp "barry" "18.0.01" 2019:06:03:15:20:11.357;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:14:23:38.584;
 		load() updating, number = 1003;
-		setModifiedTimeStamp "barry" "18.0.01" 2019:06:05:13:47:55.628;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:14:06:31.684;
  
 	eventMethodMappings
 		btnCancel_click = click of Button;
 		btnOk_click = click of Button;
-		cboLogGrade_displayRow = displayRow of ComboBox;
-		cboLogSpecies_displayRow = displayRow of ComboBox;
-		cboLogTreatment_displayRow = displayRow of ComboBox;
+		cboLogGrade_displayEntry = displayEntry of ComboBox;
+		cboLogSpecies_displayEntry = displayEntry of ComboBox;
+		cboLogTreatment_displayEntry = displayEntry of ComboBox;
 		load = load of Form;
 	)
 	AddLog completeDefinition
@@ -195,14 +186,14 @@ typeDefinitions
 		btnOk_click(btn: Button input) updating, number = 1002;
 		setModifiedTimeStamp "barry" "18.0.01" 2019:06:04:15:52:20.805;
 		createLog() updating, number = 1001;
-		setModifiedTimeStamp "barry" "18.0.01" 2019:06:03:15:18:12.185;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:14:25:05.074;
  
 	eventMethodMappings
 		btnOk_click = click of Button;
 	)
 	LogListForm completeDefinition
 	(
-		setModifiedTimeStamp "barry" "18.0.01" 2019:06:04:16:09:25.126;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:14:27:21.995;
 	referenceDefinitions
 		addLogBtn:                     Button  number = 2, ordinal = 2;
 		setModifiedTimeStamp "barry" "18.0.01" 2019:06:02:17:30:02.598;
@@ -220,20 +211,22 @@ typeDefinitions
 		setModifiedTimeStamp "barry" "18.0.01" 2019:06:03:15:19:30.222;
 		deleteLogBtn_click(btn: Button input) updating, number = 1004;
 		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:04:14:58:07.457;
+		editLogBtn_click(btn: Button input) updating, number = 1005;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:14:10:13.557;
 		load() updating, number = 1002;
-		setModifiedTimeStamp "barry" "18.0.01" 2019:06:05:13:42:21.128;
-		logListBox_displayRow(
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:14:27:01.561;
+		logListBox_displayEntry(
 			listbox: ListBox input; 
-			obj: Object; 
-			lstIndex: Integer; 
-			bcontinue: Boolean io): String updating, number = 1001;
-		setModifiedTimeStamp "barry" "18.0.01" 2019:06:05:13:23:05.280;
+			obj: Any; 
+			lstIndex: Integer): String updating, number = 1001;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:14:28:21.630;
  
 	eventMethodMappings
 		addLogBtn_click = click of Button;
 		deleteLogBtn_click = click of Button;
+		editLogBtn_click = click of Button;
 		load = load of Form;
-		logListBox_displayRow = displayRow of ListBox;
+		logListBox_displayEntry = displayEntry of ListBox;
 	)
 	LotListForm completeDefinition
 	(
@@ -269,7 +262,7 @@ typeDefinitions
 	)
 	MainMenu completeDefinition
 	(
-		setModifiedTimeStamp "barry" "18.0.01" 2019:06:04:16:09:23.080;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:14:13:56.205;
 	referenceDefinitions
 		menuArea:                      MenuItem  number = 7, ordinal = 7;
 		setModifiedTimeStamp "barry" "18.0.01" 2019:06:03:15:42:01.495;
@@ -410,7 +403,7 @@ MasterTerminalViewDb
 	(
 		setModifiedTimeStamp "barry" "18.0.01" 2019:05:31:11:57:43.405;
 	databaseFileDefinitions
-		"masterterminalview" number=58;
+		"masterterminalview" number=52;
 		setModifiedTimeStamp "barry" "18.0.01" 2019:05:31:11:57:43.405;
 	defaultFileDefinition "masterterminalview";
 	classMapDefinitions
@@ -504,52 +497,32 @@ end;
 
 }
 
-cboLogGrade_displayRow
+cboLogGrade_displayEntry
 {
-cboLogGrade_displayRow(combobox: ComboBox input; obj: Object; lstIndex: Integer; bcontinue: Boolean io):String updating;
-
-vars
+cboLogGrade_displayEntry(combobox: ComboBox input; obj: Any; lstIndex: Integer): String updating;
 
 begin
-	return Object.getInstanceIdForObject(obj).String;
+	return obj.String;
 end;
 
 }
 
-cboLogSpecies_displayRow
+cboLogSpecies_displayEntry
 {
-cboLogSpecies_displayRow(combobox: ComboBox input; obj: Object; lstIndex: Integer; bcontinue: Boolean io):String updating;
-
-vars
+cboLogSpecies_displayEntry(combobox: ComboBox input; obj: Any; lstIndex: Integer): String updating;
 
 begin
-	return Object.getInstanceIdForObject(obj).String;
+	return obj.String;
 end;
 
 }
 
-cboLogTreatment_displayRow
+cboLogTreatment_displayEntry
 {
-cboLogTreatment_displayRow(combobox: ComboBox input; obj: Object; lstIndex: Integer; bcontinue: Boolean io):String updating;
-
-vars
+cboLogTreatment_displayEntry(combobox: ComboBox input; obj: Any; lstIndex: Integer): String updating;
 
 begin
-	return Object.getInstanceIdForObject(obj).String;
-end;
-
-}
-
-clearTextBoxes
-{
-clearTextBoxes();
-
-vars
-
-begin
-	txtDescription.text := "";
-	txtLength.text := "";
-	txtSpecies.text := "";
+	return obj.String;
 end;
 
 }
@@ -561,22 +534,33 @@ isDataValid(): Boolean protected;
 vars
 
 begin
-	if txtSpecies.text = "" then
-		txtSpecies.setFocus();
-		logStatus.caption := "Please enter log species";
+	if cboLogGrade.text = "" then
+		cboLogGrade.setFocus();
+		logStatus.caption := "Please enter log grade";
+		
 		return false;
-	elseif txtDescription.text = "" then
-		txtSpecies.setFocus();
-		logStatus.caption := "Please enter log description";
+	elseif cboLogSpecies.text = "" then
+		cboLogSpecies.setFocus();
+		logStatus.caption := "Please enter log species";
+		
+		return false;
+	elseif cboLogTreatment.text = "" then
+		cboLogTreatment.setFocus();
+		logStatus.caption := "Please enter log treatment";
+		
 		return false;
 	elseif txtLength.text = "" then
 		txtLength.setFocus();
 		logStatus.caption := "Please enter log length (m)";
+		
 		return false;
-	elseif cboRows.text = "" then
-		logStatus.caption := "Please select an area to place log";
+	elseif not txtLength.text.isInteger() then
+		txtLength.setFocus();
+		logStatus.caption := "Log length must be an Integer";
+		
 		return false;
 	endif;
+	
 	return true;
 end;
 
@@ -586,20 +570,10 @@ load
 {
 load() updating;
 
-vars
-	allGrades, allSpecies, allTreatments: ObjectArray;
-
 begin
-	allSpecies := app.terminal.getAllSpecies();
-
-	// self.cboLogGrade.displayCollection(app.terminal.allGrades, true, 0, null, "");
-	self.cboLogSpecies.displayCollection(allSpecies, false, 0, null, "");
-	// self.cboLogTreatment.displayCollection(app.terminal.allTreatments, true, 0, null, "");
-	
-epilog
-	delete allGrades;
-	delete allSpecies;
-	delete allTreatments;
+	self.cboLogGrade.listCollection(app.terminal.allGrades, true, 0);
+	self.cboLogSpecies.listCollection(app.terminal.allSpecies, true, 0);
+	self.cboLogTreatment.listCollection(app.terminal.allTreatments, true, 0);
 end;
 
 }
@@ -623,18 +597,29 @@ end;
 
 createLog
 {
-createLog()updating;
+createLog() updating;
 
 vars
+	grade: Integer;
+	species, treatment: String;
+	
 	log: Log;
-	row: Integer;
+	logSpecification: LogSpecification;
+	
 begin
+	grade := cboLogGrade.text.Integer;
+	species := cboLogSpecies.text.String;
+	treatment := cboLogTreatment.text.String;
 	
-	row := cboRows.text.Integer;
+	if isDataValid() then
+		logSpecification := app.findLogSpecification(grade, species, treatment, true);
+		
+		beginTransaction;
+			log := create Log(null, logSpecification);
+		commitTransaction;
+	endif;
 	
-	beginTransaction;
-	log := create Log(txtSpecies.text, txtDescription.text, txtLength.text.Integer, row)persistent;
-	commitTransaction;
+	self.unloadForm();
 end;
 
 }
@@ -675,38 +660,34 @@ end;
 
 }
 
-load
+editLogBtn_click
 {
-load() updating;
-
-vars
-	logInstances: ObjectArray;
+editLogBtn_click(btn: Button input) updating;
 
 begin
-	create logInstances transient;
-
-	Log.allInstances(logInstances, 0, false);
-
-	self.logListBox.displayCollection(logInstances, false, 0, null, "");
 	
-epilog
-	delete logInstances;
 end;
 
 }
 
-logListBox_displayRow
+load
 {
-logListBox_displayRow(listbox: ListBox input; obj: Object; lstIndex: Integer; bcontinue: Boolean io):String updating;
+load() updating;
 
-vars
-	log: Log;
-	
 begin
-	log := obj.Log;
-	return log.specification.String;
-	
+	self.logListBox.listCollection(Log.instances, true, 0);
 end;
+
+}
+
+logListBox_displayEntry
+{
+logListBox_displayEntry(listbox: ListBox input; obj: Any; lstIndex: Integer): String updating;
+
+begin
+	return obj.Log.id.uuidAsString;
+end;
+
 }
 
 	)
