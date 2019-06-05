@@ -1,4 +1,4 @@
-/* JADE COMMAND FILE NAME C:\Users\barry\INFO213\MasterTerminal.jcf */
+/* JADE COMMAND FILE NAME P:\University\INFO213\Assignments\Milestone-2\MasterTerminal.jcf */
 jadeVersionNumber "18.0.01";
 schemaDefinition
 MasterTerminal subschemaOf RootSchema completeDefinition, patchVersioningEnabled = false;
@@ -22,7 +22,7 @@ libraryDefinitions
 typeHeaders
 	MasterTerminal subclassOf RootSchemaApp transient, sharedTransientAllowed, transientAllowed, subclassSharedTransientAllowed, subclassTransientAllowed, highestOrdinal = 3, number = 2055;
 	Cargo subclassOf Object abstract, highestOrdinal = 3, number = 2054;
-	Log subclassOf Cargo highestOrdinal = 3, number = 2067;
+	Log subclassOf Cargo highestOrdinal = 4, number = 2067;
 	Distribution subclassOf Object abstract, highestSubId = 3, highestOrdinal = 7, number = 2048;
 	Voyage subclassOf Distribution number = 2091;
 	GMasterTerminal subclassOf RootSchemaGlobal transient, sharedTransientAllowed, transientAllowed, subclassSharedTransientAllowed, subclassTransientAllowed, number = 2056;
@@ -103,10 +103,15 @@ typeDefinitions
 	jadeMethodDefinitions
 		create(id: String) updating, number = 1001;
 		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:02:14:40.939;
+		getInfo(): String number = 1002;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:18:50:27.075;
 	)
 	Log completeDefinition
 	(
-		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:01:20:09.586;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:18:50:30.861;
+	attributeDefinitions
+		length:                        Integer readonly, number = 4, ordinal = 4;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:08:14.460;
 	referenceDefinitions
 		logArea:                       LogArea   explicitEmbeddedInverse, readonly, number = 1, ordinal = 1;
 		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:23:16:30.735;
@@ -118,10 +123,9 @@ typeDefinitions
 	jadeMethodDefinitions
 		create(
 			id: String; 
-			specification: LogSpecification) updating, number = 1001;
-		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:02:14:51.902;
-		getInfo(): String number = 1002;
-		setModifiedTimeStamp "barry" "18.0.01" 2019:06:05:15:12:26.175;
+			specification: LogSpecification; 
+			length: Integer) updating, number = 1001;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:08:37.277;
 	)
 	Distribution completeDefinition
 	(
@@ -196,11 +200,17 @@ typeDefinitions
  
 	jadeMethodDefinitions
 		createLog() number = 1005;
-		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:02:13:43.168;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:08:53.118;
+		loadCustomers() updating, number = 1006;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:20:44:35.780;
 		loadGrades() updating, number = 1011;
 		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:14:00:32.287;
+		loadLogs() updating, number = 1012;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:20:41:19.028;
 		loadSpecies() updating, number = 1008;
 		setModifiedTimeStamp "barry" "18.0.01" 2019:06:05:13:49:46.321;
+		loadSuppliers() updating, number = 1013;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:20:44:33.014;
 		loadTreatments() updating, number = 1001;
 		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:14:00:41.688;
 		openFile(): String number = 1010;
@@ -253,7 +263,7 @@ typeDefinitions
 			name: String) updating, number = 1001;
 		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:22:29:51.483;
 		getInfo(): String number = 1005;
-		setModifiedTimeStamp "barry" "18.0.01" 2019:06:05:16:55:52.420;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:18:52:33.329;
 		isCustomer(): Boolean number = 1002;
 		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:22:20:48.733;
 		isPerson(): Boolean number = 1004;
@@ -367,7 +377,7 @@ typeDefinitions
 		deallocateLog(log: Log) updating, number = 1003;
 		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:01:03:46.921;
 		getInfo(): String number = 1004;
-		setModifiedTimeStamp "barry" "18.0.01" 2019:06:05:15:34:05.635;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:22:03.777;
 	)
 	LogSpecification completeDefinition
 	(
@@ -437,10 +447,12 @@ typeDefinitions
 		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:04:19:35.787;
 		deallocateCargo(cargo: Cargo) updating, number = 1002;
 		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:01:03:02.962;
+		getInfo(): String number = 1004;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:18:51:37.859;
 	)
 	LogArea completeDefinition
 	(
-		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:22:53:13.515;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:17:53:29.001;
 	referenceDefinitions
 		allLogs:                       LogByIdDict   explicitInverse, readonly, subId = 1, number = 1, ordinal = 1;
 		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:23:16:30.735;
@@ -460,8 +472,6 @@ typeDefinitions
 		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:01:01:57.996;
 		deallocateRow(row: LogRow) updating, number = 1004;
 		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:04:38:41.026;
-		getInfo(): String number = 1006;
-		setModifiedTimeStamp "barry" "18.0.01" 2019:06:05:15:37:56.956;
 	)
 	Vehicle completeDefinition
 	(
@@ -703,28 +713,26 @@ end;
 
 }
 
+getInfo
+{
+getInfo(): String;
+
+begin
+	return self.id.uuidAsString;
+end;
+
+}
+
 	)
 	Log (
 	jadeMethodSources
 create
 {
-create(id: String; specification: LogSpecification) ::super(id) updating;
+create(id: String; specification: LogSpecification; length: Integer) ::super(id) updating;
 
 begin
 	self.specification := specification;
-end;
-
-}
-
-getInfo
-{
-getInfo(): String;
-
-vars
-	returnString: String;
-begin
-	returnString := self.specification.getSpecifications;
-	return returnString;
+	self.length := length;
 end;
 
 }
@@ -898,11 +906,56 @@ begin
 	app.initialize();
 	
 	logSpecification := create LogSpecification(0, "oak", "idk") transient;
-	log := create Log(null, logSpecification) transient;
+	log := create Log(null, logSpecification, 7) transient;
 	
 epilog
 	delete log;
 	delete logSpecification;
+end;
+
+}
+
+loadCustomers
+{
+loadCustomers() updating; 
+
+vars
+	xml: JadeXMLDocument;
+	element: JadeXMLElement;
+	elements: JadeXMLElementArray;
+	fileName: String;
+	streetAddress, city, state, country, name, phoneNumber : String;
+	
+	customer: Customer;
+
+begin
+	app.initialize();
+
+	create xml transient;
+	create elements transient;
+
+	fileName := openFile();
+	
+	xml.parseFile(fileName);
+	xml.getElementsByTagName("customer", elements);
+	
+	foreach element in elements do
+		streetAddress := element.getElementByTagName("streetAddress").text;
+		city := element.getElementByTagName("city").text;
+		state := element.getElementByTagName("state").text;
+		country := element.getElementByTagName("country").text;
+		name := element.getElementByTagName("name").text;
+		phoneNumber := element.getElementByTagName("phoneNumber").text;
+		
+		beginTransaction;
+			customer := create Customer(streetAddress, city, state, country, name) persistent;
+		commitTransaction;
+	endforeach;
+
+	
+epilog
+	delete xml;
+	delete elements;
 end;
 
 }
@@ -930,6 +983,51 @@ end;
 
 }
 
+loadLogs
+{
+loadLogs() updating;
+
+vars
+	xml: JadeXMLDocument;
+	element: JadeXMLElement;
+	elements: JadeXMLElementArray;
+	fileName: String;
+	grade, length: Integer; 
+	species : String;
+	treatment : String;
+	id : String; 
+	log : Log;
+	logSpecification : LogSpecification;
+
+begin
+	app.initialize();  
+
+	create xml transient;
+	create elements transient;
+
+	fileName := openFile();
+	
+	xml.parseFile(fileName);
+	xml.getElementsByTagName("log", elements);
+	
+	foreach element in elements do
+			grade := element.getElementByTagName("grade").text.Integer;
+			id := element.getElementByTagName("id").text;
+			length := element.getElementByTagName("length").text.Integer; 
+			species := element.getElementByTagName("species").text; 
+			treatment := element.getElementByTagName("treatment").text; 
+			logSpecification := app.findLogSpecification(grade, species, treatment, true);
+			beginTransaction;
+				log := create Log(id, logSpecification, length);
+			commitTransaction; 
+	endforeach;
+	
+epilog
+	delete xml;
+	delete elements;
+end;
+}
+
 loadSpecies
 {
 loadSpecies() updating;
@@ -949,6 +1047,51 @@ begin
 	
 epilog
 	delete speciesArray;
+end;
+
+}
+
+loadSuppliers
+{
+loadSuppliers() updating; 
+
+vars
+	xml: JadeXMLDocument;
+	element: JadeXMLElement;
+	elements: JadeXMLElementArray;
+	fileName: String;
+	streetAddress, city, state, country, name, phoneNumber : String;
+
+	supplier: Supplier;
+	
+begin
+	app.initialize();
+
+	create xml transient;
+	create elements transient;
+
+	fileName := openFile();
+	
+	xml.parseFile(fileName);
+	xml.getElementsByTagName("supplier", elements);
+	
+	foreach element in elements do
+		streetAddress := element.getElementByTagName("streetAddress").text;
+		city := element.getElementByTagName("city").text;
+		state := element.getElementByTagName("state").text;
+		country := element.getElementByTagName("country").text;
+		name := element.getElementByTagName("name").text;
+		phoneNumber := element.getElementByTagName("phoneNumber").text;
+		
+		beginTransaction;
+			supplier := create Supplier(streetAddress, city, state, country, name) persistent;
+		commitTransaction;
+	endforeach;
+
+	
+epilog
+	delete xml;
+	delete elements;
 end;
 
 }
@@ -1118,15 +1261,14 @@ vars
 	returnString: String;
 begin
 	if self.isCustomer() then
-		returnString:= "Customer, ";
+		returnString := "Customer, ";
 	elseif self.isPerson() then
-		returnString:= "Person, ";
+		returnString := "Person, ";
 	elseif self.isSupplier() then
-		returnString:= "Supplier, ";
+		returnString := "Supplier, ";
 	endif;
 	
-	return returnString & name;
-
+	return Object.getObjectStringForObject(self) & ": " & returnString & name;
 end;
 }
 
@@ -1389,12 +1531,8 @@ getInfo
 {
 getInfo(): String;
 
-vars
-	returnString: String;
 begin
-	returnString:= self.specification.getSpecifications &
-					"      Total Logs in Row: " & self.allLogs.size.String;
-	return returnString;
+	return Object.getObjectStringForObject(self) & ": " & self.specification.getSpecifications() & ", Total Logs in Row: " & self.allLogs.size.String;
 end;
 
 }
@@ -1497,6 +1635,16 @@ begin
 			self.allCargo.remove(cargo);
 		commitTransaction;
 	endif;
+end;
+
+}
+
+getInfo
+{
+getInfo(): String;
+
+begin
+	return Object.getObjectStringForObject(self) & ": Total Cargo in Area: " & allCargo.size.String;
 end;
 
 }
@@ -1615,19 +1763,6 @@ begin
 		commitTransaction;
 	endif;
 end;
-
-}
-
-getInfo
-{
-getInfo(): String;
-
-vars
-	returnString: String;
-begin
-	returnString:= self.allLogs.size.String;
-	return returnString;
-end;	
 
 }
 

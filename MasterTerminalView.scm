@@ -1,4 +1,4 @@
-/* JADE COMMAND FILE NAME C:\Users\barry\INFO213\MasterTerminalView.jcf */
+/* JADE COMMAND FILE NAME P:\University\INFO213\Assignments\Milestone-2\MasterTerminalView.jcf */
 jadeVersionNumber "18.0.01";
 schemaDefinition
 MasterTerminalView subschemaOf MasterTerminal completeDefinition, patchVersioningEnabled = false;
@@ -13,17 +13,21 @@ typeHeaders
 	MasterTerminalView subclassOf MasterTerminal transient, sharedTransientAllowed, transientAllowed, subclassSharedTransientAllowed, subclassTransientAllowed, number = 2063;
 	GMasterTerminalView subclassOf GMasterTerminal transient, sharedTransientAllowed, transientAllowed, subclassSharedTransientAllowed, subclassTransientAllowed, number = 2064;
 	SMasterTerminalView subclassOf SMasterTerminal transient, sharedTransientAllowed, transientAllowed, subclassSharedTransientAllowed, subclassTransientAllowed, number = 2065;
+	AreaEditForm subclassOf Form transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 20, number = 2069;
 	AreaListForm subclassOf Form transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 5, number = 2066;
-	EntityDetials subclassOf Form transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 29, number = 2109;
-	AddEntity subclassOf EntityDetials transient, transientAllowed, subclassTransientAllowed, number = 2111;
+	EntityDetailsForm subclassOf Form transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 29, number = 2109;
+	EntityAddForm subclassOf EntityDetailsForm transient, transientAllowed, subclassTransientAllowed, number = 2111;
+	EntityEditForm subclassOf EntityDetailsForm transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 1, number = 2089;
 	EntityListForm subclassOf Form transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 5, number = 2108;
-	LogDetails subclassOf Form transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 16, number = 2096;
-	AddLog subclassOf LogDetails transient, transientAllowed, subclassTransientAllowed, number = 2101;
+	LogDetailsForm subclassOf Form transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 16, number = 2096;
+	LogAddForm subclassOf LogDetailsForm transient, transientAllowed, subclassTransientAllowed, number = 2101;
+	LogEditForm subclassOf Form transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 15, number = 2080;
 	LogListForm subclassOf Form transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 5, number = 2102;
 	LotListForm subclassOf Form transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 5, number = 2103;
-	MainMenu subclassOf Form transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 10, number = 2104;
-	RowDetials subclassOf Form transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 17, number = 2105;
-	AddRow subclassOf RowDetials transient, transientAllowed, subclassTransientAllowed, number = 2106;
+	MainMenuForm subclassOf Form transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 10, number = 2104;
+	RowDetailsForm subclassOf Form transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 17, number = 2105;
+	RowAddForm subclassOf RowDetailsForm transient, transientAllowed, subclassTransientAllowed, number = 2106;
+	RowEditForm subclassOf Form transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 13, number = 2052;
 	RowListForm subclassOf Form transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 5, number = 2107;
  
 interfaceDefs
@@ -89,13 +93,109 @@ typeDefinitions
 	Form completeDefinition
 	(
 	)
+	AreaEditForm completeDefinition
+	(
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:44:34.912;
+	referenceDefinitions
+		area:                          LogArea  readonly, number = 12, ordinal = 20;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:35:49.619;
+		areaStatus:                    StatusLine  number = 3, ordinal = 3;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:18:41:35.300;
+		btnLogAdd:                     Button  number = 11, ordinal = 11;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:18:41:35.300;
+		btnLogEdit:                    Button  number = 8, ordinal = 18;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:18:49:56.719;
+		btnLogRemove:                  Button  number = 9, ordinal = 19;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:18:49:56.719;
+		btnRowAdd:                     Button  number = 6, ordinal = 16;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:18:49:56.719;
+		btnRowEdit:                    Button  number = 4, ordinal = 14;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:18:49:56.719;
+		btnRowRemove:                  Button  number = 7, ordinal = 17;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:18:49:56.719;
+		cboLog:                        ComboBox  number = 10, ordinal = 10;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:18:41:35.300;
+		cboRow:                        ComboBox  number = 5, ordinal = 15;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:18:49:56.719;
+		logListBox:                    ListBox  number = 1, ordinal = 1;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:18:41:35.300;
+		rowListBox:                    ListBox  number = 2, ordinal = 13;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:18:49:56.719;
+ 
+	jadeMethodDefinitions
+		btnLogAdd_click(btn: Button input) updating, number = 1007;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:57:52.612;
+		btnLogEdit_click(btn: Button input) updating, number = 1013;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:50:00.294;
+		btnLogRemove_click(btn: Button input) updating, number = 1017;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:52:29.044;
+		btnRowAdd_click(btn: Button input) updating, number = 1010;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:20:03:21.752;
+		btnRowEdit_click(btn: Button input) updating, number = 1015;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:50:21.236;
+		btnRowRemove_click(btn: Button input) updating, number = 1018;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:20:14:13.136;
+		cboLog_displayEntry(
+			combobox: ComboBox input; 
+			obj: Any; 
+			lstIndex: Integer): String updating, number = 1006;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:18:41:35.316;
+		cboRow_displayEntry(
+			combobox: ComboBox input; 
+			obj: Any; 
+			lstIndex: Integer): String updating, number = 1019;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:20:02:56.572;
+		editLog() updating, number = 1011;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:47:08.717;
+		editRow() updating, number = 1012;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:47:38.747;
+		init(area: LogArea) updating, clientExecution, number = 1001;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:36:03.050;
+		load() updating, number = 1005;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:34:05.353;
+		logListBox_dblClick(listbox: ListBox input) updating, number = 1014;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:50:09.240;
+		logListBox_displayEntry(
+			listbox: ListBox input; 
+			obj: Any; 
+			lstIndex: Integer): String updating, number = 1003;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:18:41:35.316;
+		populateCBOLog() updating, number = 1004;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:20:47:02.439;
+		populateCBORow() updating, number = 1008;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:20:47:07.377;
+		rowListBox_dblClick(listbox: ListBox input) updating, number = 1016;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:50:27.799;
+		rowListBox_displayEntry(
+			listbox: ListBox input; 
+			obj: Any; 
+			lstIndex: Integer): String updating, number = 1009;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:45:06.404;
+		update() updating, number = 1002;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:40:30.447;
+ 
+	eventMethodMappings
+		btnLogAdd_click = click of Button;
+		btnLogEdit_click = click of Button;
+		btnLogRemove_click = click of Button;
+		btnRowAdd_click = click of Button;
+		btnRowEdit_click = click of Button;
+		btnRowRemove_click = click of Button;
+		cboLog_displayEntry = displayEntry of ComboBox;
+		cboRow_displayEntry = displayEntry of ComboBox;
+		load = load of Form;
+		logListBox_dblClick = dblClick of ListBox;
+		logListBox_displayEntry = displayEntry of ListBox;
+		rowListBox_dblClick = dblClick of ListBox;
+		rowListBox_displayEntry = displayEntry of ListBox;
+	)
 	AreaListForm completeDefinition
 	(
-		setModifiedTimeStamp "barry" "18.0.01" 2019:06:05:15:41:24.858;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:42:47.623;
 	referenceDefinitions
 		addAreaBtn:                    Button  number = 4, ordinal = 4;
 		setModifiedTimeStamp "barry" "18.0.01" 2019:06:03:15:49:13.208;
-		areaListbox:                   ListBox  number = 5, ordinal = 5;
+		areaListBox:                   ListBox  number = 5, ordinal = 5;
 		setModifiedTimeStamp "barry" "18.0.01" 2019:06:03:15:49:13.208;
 		areaStatus:                    StatusLine  number = 1, ordinal = 1;
 		setModifiedTimeStamp "barry" "18.0.01" 2019:06:03:15:49:13.202;
@@ -106,23 +206,36 @@ typeDefinitions
  
 	jadeMethodDefinitions
 		addAreaBtn_click(btn: Button input) updating, number = 1003;
-		setModifiedTimeStamp "barry" "18.0.01" 2019:06:03:15:51:27.414;
-		areaListbox_displayEntry(
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:20:01:29.668;
+		areaListBox_dblClick(listbox: ListBox input) updating, number = 1008;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:43:56.576;
+		areaListBox_displayEntry(
 			listbox: ListBox input; 
 			obj: Any; 
 			lstIndex: Integer): String updating, number = 1001;
-		setModifiedTimeStamp "barry" "18.0.01" 2019:06:05:15:38:34.094;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:42:47.623;
+		deleteAreaBtn_click(btn: Button input) updating, number = 1006;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:20:11:34.364;
+		editArea() updating, number = 1004;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:43:04.408;
+		editAreaBtn_click(btn: Button input) updating, number = 1007;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:43:36.646;
 		load() updating, number = 1002;
-		setModifiedTimeStamp "barry" "18.0.01" 2019:06:05:15:33:14.653;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:30:35.181;
+		update() updating, number = 1005;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:42:46.467;
  
 	eventMethodMappings
 		addAreaBtn_click = click of Button;
-		areaListbox_displayEntry = displayEntry of ListBox;
+		areaListBox_dblClick = dblClick of ListBox;
+		areaListBox_displayEntry = displayEntry of ListBox;
+		deleteAreaBtn_click = click of Button;
+		editAreaBtn_click = click of Button;
 		load = load of Form;
 	)
-	EntityDetials completeDefinition
+	EntityDetailsForm completeDefinition
 	(
-		setModifiedTimeStamp "barry" "18.0.01" 2019:06:05:16:44:13.530;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:16:43.781;
 	referenceDefinitions
 		btnCancel:                     Button  number = 7, ordinal = 7;
 		setModifiedTimeStamp "barry" "18.0.01" 2019:06:05:15:53:53.725;
@@ -177,7 +290,7 @@ typeDefinitions
 		load() updating, number = 1003;
 		setModifiedTimeStamp "barry" "18.0.01" 2019:06:05:16:46:05.299;
 		optCustomer_click(optionbutton: OptionButton input) updating, number = 1008;
-		setModifiedTimeStamp "barry" "18.0.01" 2019:06:05:16:15:53.624;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:20:18:45.155;
 		optPerson_click(optionbutton: OptionButton input) updating, number = 1002;
 		setModifiedTimeStamp "barry" "18.0.01" 2019:06:05:16:16:08.507;
 		optSupplier_click(optionbutton: OptionButton input) updating, number = 1007;
@@ -191,18 +304,46 @@ typeDefinitions
 		optPerson_click = click of OptionButton;
 		optSupplier_click = click of OptionButton;
 	)
-	AddEntity completeDefinition
+	EntityAddForm completeDefinition
 	(
-		setModifiedTimeStamp "barry" "18.0.01" 2019:06:05:15:54:44.185;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:17:04.734;
  
 	jadeMethodDefinitions
 		btnOk_click(btn: Button input) updating, number = 1002;
 		setModifiedTimeStamp "barry" "18.0.01" 2019:06:05:16:36:57.557;
 		createEntity() updating, number = 1001;
-		setModifiedTimeStamp "barry" "18.0.01" 2019:06:05:16:48:15.852;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:20:21:08.581;
  
 	eventMethodMappings
 		btnOk_click = click of Button;
+	)
+	EntityEditForm completeDefinition
+	(
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:20:19:05.173;
+	referenceDefinitions
+		entity:                        Entity  readonly, number = 1, ordinal = 1;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:20:17:29.686;
+ 
+	jadeMethodDefinitions
+		btnOk_click(btn: Button input) updating, number = 1003;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:20:29:05.529;
+		init(entity: Entity) updating, number = 1001;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:20:17:40.068;
+		load() updating, number = 1002;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:20:37:07.336;
+		optCustomer_click(optionbutton: OptionButton input) updating, number = 1004;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:20:35:05.176;
+		optPerson_click(optionbutton: OptionButton input) updating, number = 1005;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:20:37:16.434;
+		optSupplier_click(optionbutton: OptionButton input) updating, number = 1006;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:20:37:21.267;
+ 
+	eventMethodMappings
+		btnOk_click = click of Button;
+		load = load of Form;
+		optCustomer_click = click of OptionButton;
+		optPerson_click = click of OptionButton;
+		optSupplier_click = click of OptionButton;
 	)
 	EntityListForm completeDefinition
 	(
@@ -221,29 +362,36 @@ typeDefinitions
  
 	jadeMethodDefinitions
 		addEntitybtn_click(btn: Button input) updating, number = 1003;
-		setModifiedTimeStamp "barry" "18.0.01" 2019:06:05:16:39:16.108;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:20:14:51.779;
 		deleteEntityBtn_click(btn: Button input) updating, number = 1004;
-		setModifiedTimeStamp "barry" "18.0.01" 2019:06:05:16:39:16.092;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:20:15:03.321;
+		editEntity() updating, number = 1007;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:20:30:34.699;
 		editEntityBtn_click(btn: Button input) updating, number = 1005;
-		setModifiedTimeStamp "barry" "18.0.01" 2019:06:05:16:39:16.108;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:20:30:44.508;
+		entityListBox_dblClick(listbox: ListBox input) updating, number = 1008;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:20:30:55.345;
 		entityListBox_displayEntry(
 			listbox: ListBox input; 
 			obj: Any; 
 			lstIndex: Integer): String updating, number = 1001;
-		setModifiedTimeStamp "barry" "18.0.01" 2019:06:05:16:55:22.701;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:17:52:06.940;
 		load() updating, number = 1002;
-		setModifiedTimeStamp "barry" "18.0.01" 2019:06:05:17:00:15.674;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:20:14:29.038;
+		update() number = 1006;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:20:45:35.852;
  
 	eventMethodMappings
 		addEntitybtn_click = click of Button;
 		deleteEntityBtn_click = click of Button;
 		editEntityBtn_click = click of Button;
+		entityListBox_dblClick = dblClick of ListBox;
 		entityListBox_displayEntry = displayEntry of ListBox;
 		load = load of Form;
 	)
-	LogDetails completeDefinition
+	LogDetailsForm completeDefinition
 	(
-		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:14:16:58.437;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:17:19.944;
 	referenceDefinitions
 		btnCancel:                     Button  number = 10, ordinal = 10;
 		setModifiedTimeStamp "barry" "18.0.01" 2019:06:02:18:15:17.410;
@@ -301,18 +449,64 @@ typeDefinitions
 		cboLogTreatment_displayEntry = displayEntry of ComboBox;
 		load = load of Form;
 	)
-	AddLog completeDefinition
+	LogAddForm completeDefinition
 	(
-		setModifiedTimeStamp "barry" "18.0.01" 2019:06:02:18:33:05.368;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:17:33.490;
  
 	jadeMethodDefinitions
 		btnOk_click(btn: Button input) updating, number = 1002;
 		setModifiedTimeStamp "barry" "18.0.01" 2019:06:05:15:51:15.171;
 		createLog() updating, number = 1001;
-		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:14:25:05.074;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:11:01.799;
  
 	eventMethodMappings
 		btnOk_click = click of Button;
+	)
+	LogEditForm completeDefinition
+	(
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:16:25.660;
+	referenceDefinitions
+		btnCancel:                     Button  number = 7, ordinal = 7;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:18:58:44.056;
+		btnOk:                         Button  number = 8, ordinal = 8;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:18:58:44.056;
+		lblGrade:                      Label  number = 2, ordinal = 2;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:18:58:44.056;
+		lblLength:                     Label  number = 10, ordinal = 10;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:18:58:44.056;
+		lblSpecies:                    Label  number = 11, ordinal = 11;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:18:58:44.056;
+		lblSpecies_1:                  Label  number = 1, ordinal = 1;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:18:58:44.056;
+		log:                           Log  readonly, number = 12, ordinal = 15;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:06:44.032;
+		logStatus:                     StatusLine  number = 6, ordinal = 6;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:18:58:44.056;
+		txtGrade:                      TextBox  number = 3, ordinal = 12;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:02:40.295;
+		txtLength:                     TextBox  number = 9, ordinal = 9;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:18:58:44.056;
+		txtSpecies:                    TextBox  number = 5, ordinal = 14;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:02:40.295;
+		txtTreatment:                  TextBox  number = 4, ordinal = 13;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:02:40.295;
+ 
+	jadeMethodDefinitions
+		btnCancel_click(btn: Button input) updating, number = 1001;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:05:19.822;
+		btnOk_click(btn: Button input) updating, number = 1006;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:10:14.928;
+		init(log: Log) updating, number = 1002;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:07:04.203;
+		isDataValid(): Boolean protected, number = 1004;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:04:34.690;
+		load() updating, number = 1003;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:14:50.316;
+ 
+	eventMethodMappings
+		btnCancel_click = click of Button;
+		btnOk_click = click of Button;
+		load = load of Form;
 	)
 	LogListForm completeDefinition
 	(
@@ -331,24 +525,31 @@ typeDefinitions
  
 	jadeMethodDefinitions
 		addLogBtn_click(btn: Button input) updating, number = 1003;
-		setModifiedTimeStamp "barry" "18.0.01" 2019:06:03:15:19:30.222;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:31:34.991;
 		deleteLogBtn_click(btn: Button input) updating, number = 1004;
-		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:04:14:58:07.457;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:31:34.991;
+		editLog() updating, number = 1007;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:48:13.072;
 		editLogBtn_click(btn: Button input) updating, number = 1005;
-		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:14:10:13.557;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:24:01.679;
 		load() updating, number = 1002;
-		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:14:27:01.561;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:31:34.991;
+		logListBox_dblClick(listbox: ListBox input) updating, number = 1008;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:24:21.791;
 		logListBox_displayEntry(
 			listbox: ListBox input; 
 			obj: Any; 
 			lstIndex: Integer): String updating, number = 1001;
-		setModifiedTimeStamp "barry" "18.0.01" 2019:06:05:15:01:20.128;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:17:51:38.888;
+		update() number = 1006;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:31:34.991;
  
 	eventMethodMappings
 		addLogBtn_click = click of Button;
 		deleteLogBtn_click = click of Button;
 		editLogBtn_click = click of Button;
 		load = load of Form;
+		logListBox_dblClick = dblClick of ListBox;
 		logListBox_displayEntry = displayEntry of ListBox;
 	)
 	LotListForm completeDefinition
@@ -368,23 +569,28 @@ typeDefinitions
  
 	jadeMethodDefinitions
 		addLotBtn_click(btn: Button input) updating, number = 1003;
-		setModifiedTimeStamp "barry" "18.0.01" 2019:06:03:15:49:00.267;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:31:46.763;
+		deleteLotBtn_click(btn: Button input) updating, number = 1005;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:31:46.763;
 		load() updating, number = 1002;
-		setModifiedTimeStamp "barry" "18.0.01" 2019:06:05:14:58:34.577;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:31:46.763;
 		lotListBox_displayEntry(
 			listbox: ListBox input; 
 			obj: Any; 
 			lstIndex: Integer): String updating, number = 1001;
-		setModifiedTimeStamp "barry" "18.0.01" 2019:06:05:14:59:28.467;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:17:51:55.660;
+		update() number = 1004;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:31:46.778;
  
 	eventMethodMappings
 		addLotBtn_click = click of Button;
+		deleteLotBtn_click = click of Button;
 		load = load of Form;
 		lotListBox_displayEntry = displayEntry of ListBox;
 	)
-	MainMenu completeDefinition
+	MainMenuForm completeDefinition
 	(
-		setModifiedTimeStamp "barry" "18.0.01" 2019:06:05:15:52:48.638;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:17:50.023;
 	referenceDefinitions
 		menuArea:                      MenuItem  number = 7, ordinal = 7;
 		setModifiedTimeStamp "barry" "18.0.01" 2019:06:03:15:42:01.495;
@@ -409,7 +615,7 @@ typeDefinitions
  
 	jadeMethodDefinitions
 		load() updating, number = 1002;
-		setModifiedTimeStamp "barry" "18.0.01" 2019:06:02:17:54:18.139;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:17:50.023;
 		menuAreaList_click(menuItem: MenuItem input) updating, number = 1005;
 		setModifiedTimeStamp "barry" "18.0.01" 2019:06:03:15:52:54.944;
 		menuEntitiesList_click(menuItem: MenuItem input) updating, number = 1006;
@@ -429,9 +635,9 @@ typeDefinitions
 		menuLotList_click = click of MenuItem;
 		menuRowList_click = click of MenuItem;
 	)
-	RowDetials completeDefinition
+	RowDetailsForm completeDefinition
 	(
-		setModifiedTimeStamp "barry" "18.0.01" 2019:06:05:14:57:31.909;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:18:01.265;
 	referenceDefinitions
 		btnCancel:                     Button  number = 10, ordinal = 10;
 		setModifiedTimeStamp "barry" "18.0.01" 2019:06:04:15:35:18.968;
@@ -482,9 +688,9 @@ typeDefinitions
 		cboLogTreatment_displayEntry = displayEntry of ComboBox;
 		load = load of Form;
 	)
-	AddRow completeDefinition
+	RowAddForm completeDefinition
 	(
-		setModifiedTimeStamp "barry" "18.0.01" 2019:06:04:15:43:19.290;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:18:15.169;
  
 	jadeMethodDefinitions
 		btnOk_click(btn: Button input) updating, number = 1002;
@@ -494,6 +700,76 @@ typeDefinitions
  
 	eventMethodMappings
 		btnOk_click = click of Button;
+	)
+	RowEditForm completeDefinition
+	(
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:19:10.834;
+	referenceDefinitions
+		btnLogAdd:                     Button  number = 11, ordinal = 11;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:18:14:59.627;
+		btnLogEdit:                    Button  number = 13, ordinal = 13;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:19:10.834;
+		btnLogRemove:                  Button  number = 2, ordinal = 2;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:18:14:59.612;
+		cboLog:                        ComboBox  number = 10, ordinal = 10;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:18:14:59.612;
+		lblGrade:                      Label  number = 5, ordinal = 5;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:18:14:59.612;
+		lblSpecies:                    Label  number = 4, ordinal = 4;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:18:14:59.612;
+		lblTreatment:                  Label  number = 6, ordinal = 6;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:18:14:59.612;
+		logListBox:                    ListBox  number = 1, ordinal = 1;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:18:14:59.612;
+		row:                           LogRow  readonly, number = 12, ordinal = 12;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:18:20:09.941;
+		rowStatus:                     StatusLine  number = 3, ordinal = 3;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:18:14:59.612;
+		txtGrade:                      TextBox  number = 7, ordinal = 7;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:18:14:59.612;
+		txtSpecies:                    TextBox  number = 8, ordinal = 8;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:18:14:59.612;
+		txtTreatment:                  TextBox  number = 9, ordinal = 9;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:18:14:59.612;
+ 
+	jadeMethodDefinitions
+		btnLogAdd_click(btn: Button input) updating, number = 1007;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:33:04.896;
+		btnLogEdit_click(btn: Button input) updating, number = 1009;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:49:17.909;
+		btnLogRemove_click(btn: Button input) updating, number = 1008;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:33:15.450;
+		cboLog_displayEntry(
+			combobox: ComboBox input; 
+			obj: Any; 
+			lstIndex: Integer): String updating, number = 1006;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:18:39:01.808;
+		editLog() updating, number = 1010;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:49:04.207;
+		init(row: LogRow) updating, clientExecution, number = 1001;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:18:30:34.869;
+		load() updating, number = 1005;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:33:25.209;
+		logListBox_dblClick(listbox: ListBox input) updating, number = 1011;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:49:31.009;
+		logListBox_displayEntry(
+			listbox: ListBox input; 
+			obj: Any; 
+			lstIndex: Integer): String updating, number = 1003;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:18:23:17.165;
+		populateCBOLog() updating, number = 1004;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:20:46:39.889;
+		update() updating, number = 1002;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:32:29.517;
+ 
+	eventMethodMappings
+		btnLogAdd_click = click of Button;
+		btnLogEdit_click = click of Button;
+		btnLogRemove_click = click of Button;
+		cboLog_displayEntry = displayEntry of ComboBox;
+		load = load of Form;
+		logListBox_dblClick = dblClick of ListBox;
+		logListBox_displayEntry = displayEntry of ListBox;
 	)
 	RowListForm completeDefinition
 	(
@@ -512,19 +788,29 @@ typeDefinitions
  
 	jadeMethodDefinitions
 		addRowBtn_click(btn: Button input) updating, number = 1003;
-		setModifiedTimeStamp "barry" "18.0.01" 2019:06:04:15:53:36.317;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:32:01.631;
+		deleteRowBtn_click(btn: Button input) updating, number = 1006;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:55:59.424;
+		editRow() updating, number = 1008;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:48:21.638;
+		editRowBtn_click(btn: Button input) updating, number = 1007;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:25:26.611;
 		load() updating, number = 1002;
-		setModifiedTimeStamp "barry" "18.0.01" 2019:06:05:14:43:37.374;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:32:01.631;
 		rowListBox_dblClick(listbox: ListBox input) updating, number = 1004;
-		setModifiedTimeStamp "barry" "18.0.01" 2019:06:05:15:22:12.732;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:26:41.501;
 		rowListBox_displayEntry(
 			listbox: ListBox input; 
 			obj: Any; 
 			lstIndex: Integer): String updating, number = 1001;
-		setModifiedTimeStamp "barry" "18.0.01" 2019:06:05:15:27:09.843;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:17:51:26.389;
+		update() number = 1005;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:32:01.631;
  
 	eventMethodMappings
 		addRowBtn_click = click of Button;
+		deleteRowBtn_click = click of Button;
+		editRowBtn_click = click of Button;
 		load = load of Form;
 		rowListBox_dblClick = dblClick of ListBox;
 		rowListBox_displayEntry = displayEntry of ListBox;
@@ -536,7 +822,7 @@ MasterTerminalViewDb
 	(
 		setModifiedTimeStamp "barry" "18.0.01" 2019:05:31:11:57:43.405;
 	databaseFileDefinitions
-		"masterterminalview" number=58;
+		"masterterminalview" number=52;
 		setModifiedTimeStamp "barry" "18.0.01" 2019:05:31:11:57:43.405;
 	defaultFileDefinition "masterterminalview";
 	classMapDefinitions
@@ -554,11 +840,316 @@ runMainMethod
 runMainMethod();
 
 vars
-	form: MainMenu;
+	form: MainMenuForm;
 begin
 	app.initialize();
 	create form transient;
 	form.show();
+end;
+
+}
+
+	)
+	AreaEditForm (
+	jadeMethodSources
+btnLogAdd_click
+{
+btnLogAdd_click(btn: Button input) updating;
+
+vars
+	log: Log;
+
+begin
+	if cboLog.listObject <> null then
+		log := cboLog.listObject.Log;
+		
+		area.allocateCargo(log, true);
+		
+		areaStatus.caption := "Log added";
+		
+		update();
+	else
+		areaStatus.caption := "No log selected";
+	endif;
+end;
+}
+
+btnLogEdit_click
+{
+btnLogEdit_click(btn: Button input) updating;
+
+begin
+	editLog();
+end;
+
+}
+
+btnLogRemove_click
+{
+btnLogRemove_click(btn: Button input) updating;
+
+vars
+	log: Log;
+
+begin
+	if logListBox.listObject <> null then
+		log := logListBox.listObject.Log;
+		
+		area.deallocateCargo(log);
+		
+		if log.logRow <> null then
+			log.logRow.deallocateLog(log);
+		endif;
+		
+		update();
+		
+		areaStatus.caption := "Log removed";
+	else
+		areaStatus.caption := "No log selected";
+	endif;
+end;
+}
+
+btnRowAdd_click
+{
+btnRowAdd_click(btn: Button input) updating;
+
+vars
+	row: LogRow;
+
+begin
+	if cboRow.listObject <> null then
+		row := cboRow.listObject.LogRow;
+		
+		area.allocateRow(row);
+		
+		update();
+		
+		areaStatus.caption := "Row added";
+	else
+		areaStatus.caption := "No row selected";
+	endif;
+end;
+}
+
+btnRowEdit_click
+{
+btnRowEdit_click(btn: Button input) updating;
+
+begin
+	editRow();
+end;
+
+}
+
+btnRowRemove_click
+{
+btnRowRemove_click(btn: Button input) updating;
+
+vars
+	log: Log;
+	logRow: LogRow;
+
+begin
+	if rowListBox.listObject <> null then
+		logRow := rowListBox.listObject.LogRow;
+		
+		area.deallocateRow(logRow);
+		
+		foreach log in logRow.allLogs do
+			area.deallocateCargo(log);
+		endforeach;
+		
+		update();
+		
+		areaStatus.caption := "Row removed";
+	else
+		areaStatus.caption := "No row selected";
+	endif;
+end;
+}
+
+cboLog_displayEntry
+{
+cboLog_displayEntry(combobox: ComboBox input; obj: Any; lstIndex: Integer):String updating;
+
+begin
+	return obj.Log.getInfo();
+end;
+
+}
+
+cboRow_displayEntry
+{
+cboRow_displayEntry(combobox: ComboBox input; obj: Any; lstIndex: Integer):String updating;
+
+begin
+	return obj.LogRow.getInfo();
+end;
+
+}
+
+editLog
+{
+editLog() updating;
+
+vars
+	form: LogEditForm;
+
+begin
+	if logListBox.listObject <> null then
+		create form transient;
+		
+		form.init(logListBox.listObject.Log);
+		
+		form.showModal();
+		update();
+		
+		areaStatus.caption := "Log edited";
+	else
+		areaStatus.caption := "No log selected";
+	endif;
+	
+epilog
+	delete form;
+end;
+}
+
+editRow
+{
+editRow() updating;
+
+vars
+	form: RowEditForm;
+
+begin
+	if rowListBox.listObject <> null then
+		create form transient;
+		
+		form.init(rowListBox.listObject.LogRow);
+		form.showModal();
+		
+		areaStatus.caption := "Row edited";
+	else
+		areaStatus.caption := "No row selected";
+	endif;
+	
+epilog
+	delete form;
+end;
+
+}
+
+init
+{
+init(area: LogArea) updating, clientExecution;
+
+begin
+	self.area := area;
+end;
+
+}
+
+load
+{
+load() updating;
+
+begin
+	update();
+end;
+
+}
+
+logListBox_dblClick
+{
+logListBox_dblClick(listbox: ListBox input) updating;
+
+begin
+	editLog();
+end;
+
+}
+
+logListBox_displayEntry
+{
+logListBox_displayEntry(listbox: ListBox input; obj: Any; lstIndex: Integer):String updating;
+
+begin
+	return obj.Log.getInfo();
+end;
+
+}
+
+populateCBOLog
+{
+populateCBOLog() updating;
+
+vars
+	log: Log;
+	logs: ObjectArray;
+
+begin
+	create logs transient;
+
+	foreach log in Log.instances where not area.allLogs.includes(log) do
+		logs.add(log);
+	endforeach;
+	
+	self.cboLog.listCollection(logs, false, 0);
+end;
+
+}
+
+populateCBORow
+{
+populateCBORow() updating;
+
+vars
+	row: LogRow;
+	rows: ObjectArray;
+
+begin
+	create rows transient;
+
+	foreach row in LogRow.instances where not area.logRows.includes(row) do
+		rows.add(row);
+	endforeach;
+	
+	self.cboRow.listCollection(rows, false, 0);
+end;
+
+}
+
+rowListBox_dblClick
+{
+rowListBox_dblClick(listbox: ListBox input) updating;
+
+begin
+	editRow();
+end;
+
+}
+
+rowListBox_displayEntry
+{
+rowListBox_displayEntry(listbox: ListBox input; obj: Any; lstIndex: Integer):String updating;
+
+begin
+	return obj.LogRow.getInfo();
+end;
+
+}
+
+update
+{
+update() updating;
+
+begin
+	logListBox.listCollection(area.allLogs, true, 0);
+	rowListBox.listCollection(area.logRows, true, 0);
+	
+	populateCBOLog();
+	populateCBORow();
 end;
 
 }
@@ -571,22 +1162,102 @@ addAreaBtn_click
 addAreaBtn_click(btn: Button input) updating;
 
 vars
-	form: AddLog;
+	logArea: LogArea;
+
 begin
-	create form transient;
-	form.show();
+	beginTransaction;
+		create logArea persistent;
+	commitTransaction;
+	
+	update();
 end;
 
 }
 
-areaListbox_displayEntry
+areaListBox_dblClick
 {
-areaListbox_displayEntry(listbox: ListBox input; obj: Any; lstIndex: Integer):String updating;
+areaListBox_dblClick(listbox: ListBox input) updating;
+
+begin
+	editArea();
+end;
+
+}
+
+areaListBox_displayEntry
+{
+areaListBox_displayEntry(listbox: ListBox input; obj: Any; lstIndex: Integer):String updating;
 
 vars
 
 begin
-	return obj.LogArea.getInfo;
+	return obj.StorageArea.getInfo();
+end;
+
+}
+
+deleteAreaBtn_click
+{
+deleteAreaBtn_click(btn: Button input) updating;
+
+vars
+	cargo: Cargo;
+	area: StorageArea;
+
+begin
+	if areaListBox.listObject <> null then
+		area := areaListBox.listObject.StorageArea;
+		
+		foreach cargo in area.allCargo do
+			area.deallocateCargo(cargo);
+		endforeach;
+		
+		beginTransaction;
+			delete area;
+		commitTransaction;
+		
+		update();
+		
+		areaStatus.caption := "Area deleted";
+	else
+		areaStatus.caption := "No area selected";
+	endif;
+end;
+
+}
+
+editArea
+{
+editArea() updating;
+
+vars
+	form: AreaEditForm;
+
+begin
+	if areaListBox.listObject <> null then
+		create form transient;
+		
+		form.init(areaListBox.listObject.LogArea);
+		form.showModal();
+		
+		update();
+		
+		areaStatus.caption := "Area edited";
+	else
+		areaStatus.caption := "No area selected";
+	endif;
+	
+epilog
+	delete form;
+end;
+}
+
+editAreaBtn_click
+{
+editAreaBtn_click(btn: Button input) updating;
+
+begin
+	editArea();
 end;
 
 }
@@ -595,16 +1266,24 @@ load
 {
 load() updating;
 
-vars
+begin
+	update();
+end;
+
+}
+
+update
+{
+update() updating;
 
 begin
-	self.areaListbox.listCollection(LogArea.instances, true, 0);
+	self.areaListBox.listCollection(LogArea.instances, true, 0);
 end;
 
 }
 
 	)
-	EntityDetials (
+	EntityDetailsForm (
 	jadeMethodSources
 btnCancel_click
 {
@@ -746,7 +1425,7 @@ end;
 }
 
 	)
-	AddEntity (
+	EntityAddForm (
 	jadeMethodSources
 btnOk_click
 {
@@ -771,24 +1450,161 @@ vars
 	person: Person;
 	supplier: Supplier;
 begin
-	if optCustomer.value then
-		beginTransaction; 
-			customer:= create Customer(txtAddress.text, txtCity.text, txtState.text,
-										txtCountry.text, txtName.text);
-		commitTransaction;
-	elseif optSupplier.value then
-		beginTransaction;
-			supplier:= create Supplier(txtAddress.text, txtCity.text, txtState.text,
-										txtCountry.text, txtName.text);
-		commitTransaction;
-	elseif optPerson.value then
-		beginTransaction;
-			person:= create Person(txtAddress.text, txtCity.text, txtState.text,
-										txtCountry.text, txtFName.text, txtLName.text);
-		commitTransaction;
+	if isDataValid() then
+		if optCustomer.value then
+			beginTransaction; 
+				customer:= create Customer(txtAddress.text, txtCity.text, txtState.text,
+											txtCountry.text, txtName.text);
+			commitTransaction;
+		elseif optSupplier.value then
+			beginTransaction;
+				supplier:= create Supplier(txtAddress.text, txtCity.text, txtState.text,
+											txtCountry.text, txtName.text);
+			commitTransaction;
+		elseif optPerson.value then
+			beginTransaction;
+				person:= create Person(txtAddress.text, txtCity.text, txtState.text,
+											txtCountry.text, txtFName.text, txtLName.text);
+			commitTransaction;
+		endif;
+		
+		self.unloadForm();
+	endif;
+end;
+
+}
+
+	)
+	EntityEditForm (
+	jadeMethodSources
+btnOk_click
+{
+btnOk_click(btn: Button input) updating;
+
+vars
+	customer: Customer;
+	supplier: Supplier;
+	person: Person;
+
+begin
+	if isDataValid() then
+		if entity.isCustomer() then
+			customer := entity.Customer;
+		
+			beginTransaction; 				
+				customer.setPropertyValue("streetAddress", txtAddress.text);
+				customer.setPropertyValue("city", txtCity.text);
+				customer.setPropertyValue("state", txtState.text);
+				customer.setPropertyValue("country", txtCountry.text);
+				customer.setPropertyValue("name", txtName.text);
+			commitTransaction;
+		elseif entity.isSupplier() then
+			supplier := entity.Supplier;
+		
+			beginTransaction; 				
+				supplier.setPropertyValue("streetAddress", txtAddress.text);
+				supplier.setPropertyValue("city", txtCity.text);
+				supplier.setPropertyValue("state", txtState.text);
+				supplier.setPropertyValue("country", txtCountry.text);
+				supplier.setPropertyValue("name", txtName.text);
+			commitTransaction;
+		elseif entity.isPerson() then
+			person := entity.Person;
+		
+			beginTransaction; 				
+				person.setPropertyValue("streetAddress", txtAddress.text);
+				person.setPropertyValue("city", txtCity.text);
+				person.setPropertyValue("state", txtState.text);
+				person.setPropertyValue("country", txtCountry.text);
+				person.setPropertyValue("firstName", txtFName.text);
+				person.setPropertyValue("lastName", txtLName.text);
+				person.setPropertyValue("name", txtLName.text & ", " & txtFName.text);
+			commitTransaction;
+		endif;
+
+		self.unloadForm();
+	endif;
+end;
+
+}
+
+init
+{
+init(entity: Entity) updating;
+
+begin
+	self.entity := entity;
+end;
+
+}
+
+load
+{
+load() updating;
+
+begin
+	txtAddress.text := entity.streetAddress;
+	txtCity.text := entity.city;
+	txtState.text := entity.state;
+	txtCountry.text := entity.country;
+	txtName.text := entity.name;
+	
+	if entity.isCustomer() then
+		optCustomer.value := true;
+	
+		self.lblName.visible := true;
+		self.txtName.visible := true;
+	elseif entity.isSupplier() then
+		optSupplier.value := true;
+	
+		self.lblName.visible := true;
+		self.txtName.visible := true;
+	else
+		optPerson.value := true;
+	
+		txtFName.text := entity.Person.firstName;
+		txtLName.text := entity.Person.lastName;
+		
+		self.lblFName.visible := true;
+		self.txtFName.visible := true;
+		
+		self.lblLName.visible := true;
+		self.txtLName.visible := true;
 	endif;
 	
-	self.unloadForm();
+	optCustomer.enabled := false;
+	optSupplier.enabled := false;
+	optPerson.enabled := false;
+end;
+
+}
+
+optCustomer_click
+{
+optCustomer_click(optionbutton: OptionButton input) updating;
+
+begin
+
+end;
+
+}
+
+optPerson_click
+{
+optPerson_click(optionbutton: OptionButton input) updating;
+
+begin
+
+end;
+
+}
+
+optSupplier_click
+{
+optSupplier_click(optionbutton: OptionButton input) updating;
+
+begin
+
 end;
 
 }
@@ -801,10 +1617,17 @@ addEntitybtn_click
 addEntitybtn_click(btn: Button input) updating;
 
 vars
-	form: AddEntity;
+	form: EntityAddForm;
+	
 begin
 	create form transient;
-	form.show();
+	
+	form.showModal();
+	
+	update();
+	
+epilog
+	delete form;
 end;
 
 }
@@ -814,19 +1637,50 @@ deleteEntityBtn_click
 deleteEntityBtn_click(btn: Button input) updating;
 
 vars
-	log: Log;
-begin
+	entity: Entity;
 
-	log := logListBox.itemObject[logListBox.listIndex].Log;
-	
-	logListBox.listCollection(null, false, 0);
-	
-	beginTransaction;
-		app.myTerminal.allLogs.remove(log);
-		delete log;
-	commitTransaction;
+begin
+	if entityListBox.listObject <> null then
+		entity := entityListBox.listObject.Entity;
+		
+		beginTransaction;
+			delete entity;
+		commitTransaction;
+		
+		update();
+		
+		entityStatus.caption := "Entity deleted";
+	else
+		entityStatus.caption := "No entity selected";
+	endif;
 end;
 
+}
+
+editEntity
+{
+editEntity() updating;
+
+vars
+	form: EntityEditForm;
+
+begin
+	if entityListBox.listObject <> null then
+		create form transient;
+		
+		form.init(entityListBox.listObject.Entity);
+		form.showModal();
+	
+		update();
+		
+		entityStatus.caption := "entity edited";
+	else
+		entityStatus.caption := "No entity selected";
+	endif;
+	
+epilog
+	delete form;
+end;
 }
 
 editEntityBtn_click
@@ -834,7 +1688,17 @@ editEntityBtn_click
 editEntityBtn_click(btn: Button input) updating;
 
 begin
-	
+	editEntity();
+end;
+
+}
+
+entityListBox_dblClick
+{
+entityListBox_dblClick(listbox: ListBox input) updating;
+
+begin
+	editEntity();
 end;
 
 }
@@ -844,7 +1708,7 @@ entityListBox_displayEntry
 entityListBox_displayEntry(listbox: ListBox input; obj: Any; lstIndex: Integer): String updating;
 
 begin
-	return obj.Entity.getInfo;
+	return obj.Entity.getInfo();
 end;
 
 }
@@ -852,6 +1716,16 @@ end;
 load
 {
 load() updating;
+
+begin
+	update();
+end;
+
+}
+
+update
+{
+update();
 
 vars
 	entities: ObjectArray;
@@ -862,15 +1736,11 @@ begin
 	Entity.allInstances(entities, 0, true);
 
 	self.entityListBox.listCollection(entities, false, 0);
-	
-epilog
-	delete entities;
 end;
-
 }
 
 	)
-	LogDetails (
+	LogDetailsForm (
 	jadeMethodSources
 btnCancel_click
 {
@@ -976,7 +1846,7 @@ end;
 }
 
 	)
-	AddLog (
+	LogAddForm (
 	jadeMethodSources
 btnOk_click
 {
@@ -999,7 +1869,7 @@ createLog
 createLog() updating;
 
 vars
-	grade: Integer;
+	grade, length: Integer;
 	species, treatment: String;
 	
 	log: Log;
@@ -1009,16 +1879,90 @@ begin
 	grade := cboLogGrade.text.Integer;
 	species := cboLogSpecies.text.String;
 	treatment := cboLogTreatment.text.String;
+	length := txtLength.text.Integer;
 	
 	if isDataValid() then
 		logSpecification := app.findLogSpecification(grade, species, treatment, true);
 		
 		beginTransaction;
-			log := create Log(null, logSpecification);
+			log := create Log(null, logSpecification, length);
 		commitTransaction;
 	endif;
 	
 	self.unloadForm();
+end;
+
+}
+
+	)
+	LogEditForm (
+	jadeMethodSources
+btnCancel_click
+{
+btnCancel_click(btn: Button input) updating;
+
+begin
+	self.unloadForm();
+end;
+
+}
+
+btnOk_click
+{
+btnOk_click(btn: Button input) updating;
+
+begin
+	if isDataValid() then
+		if txtLength.text.Integer <> log.length then
+			beginTransaction;
+				log.setPropertyValue("length", txtLength.text.Integer);
+			commitTransaction;
+		endif;
+		
+		self.unloadForm();
+	endif;
+end;
+
+}
+
+init
+{
+init(log: Log) updating;
+
+begin
+	self.log := log;
+end;
+
+}
+
+isDataValid
+{
+isDataValid(): Boolean protected;
+
+vars
+
+begin
+	if not txtLength.text.isInteger() then
+		txtLength.setFocus();
+		logStatus.caption := "Log length must be an Integer";
+		
+		return false;
+	endif;
+	
+	return true;
+end;
+
+}
+
+load
+{
+load() updating;
+
+begin
+	self.txtGrade.text := log.specification.grade.String;
+	self.txtSpecies.text := log.specification.species;
+	self.txtTreatment.text := log.specification.treatment;
+	self.txtLength.text := log.length.String;
 end;
 
 }
@@ -1031,10 +1975,15 @@ addLogBtn_click
 addLogBtn_click(btn: Button input) updating;
 
 vars
-	form: AddLog;
+	form: LogAddForm;
 begin
 	create form transient;
-	form.show();
+	
+	form.showModal();
+	
+	update();
+epilog
+	delete form;
 end;
 
 }
@@ -1045,18 +1994,49 @@ deleteLogBtn_click(btn: Button input) updating;
 
 vars
 	log: Log;
-begin
 
-	log := logListBox.itemObject[logListBox.listIndex].Log;
-	
-	logListBox.listCollection(null, false, 0);
-	
-	beginTransaction;
-		app.myTerminal.allLogs.remove(log);
-		delete log;
-	commitTransaction;
+begin
+	if logListBox.listObject <> null then
+		log := logListBox.listObject.Log;
+		
+		beginTransaction;
+			delete log;
+		commitTransaction;
+		
+		logStatus.caption := "Log deleted";
+		
+		update();
+	else
+		logStatus.caption := "No log selected";
+	endif;
 end;
 
+}
+
+editLog
+{
+editLog() updating;
+
+vars
+	form: LogEditForm;
+
+begin
+	if logListBox.listObject <> null then
+		create form transient;
+		
+		form.init(logListBox.listObject.Log);
+		form.showModal();
+	
+		update();
+		
+		logStatus.caption := "Log edited";
+	else
+		logStatus.caption := "No log selected";
+	endif;
+	
+epilog
+	delete form;
+end;
 }
 
 editLogBtn_click
@@ -1064,7 +2044,7 @@ editLogBtn_click
 editLogBtn_click(btn: Button input) updating;
 
 begin
-	
+	editLog();
 end;
 
 }
@@ -1074,7 +2054,17 @@ load
 load() updating;
 
 begin
-	self.logListBox.listCollection(Log.instances, true, 0);
+	update();
+end;
+
+}
+
+logListBox_dblClick
+{
+logListBox_dblClick(listbox: ListBox input) updating;
+
+begin
+	editLog();
 end;
 
 }
@@ -1084,7 +2074,17 @@ logListBox_displayEntry
 logListBox_displayEntry(listbox: ListBox input; obj: Any; lstIndex: Integer): String updating;
 
 begin
-	return obj.Log.getInfo;
+	return obj.Log.getInfo();
+end;
+
+}
+
+update
+{
+update();
+
+begin
+	self.logListBox.listCollection(Log.instances, true, 0);
 end;
 
 }
@@ -1097,10 +2097,42 @@ addLotBtn_click
 addLotBtn_click(btn: Button input) updating;
 
 vars
-	form: AddLog;
+	form: LogAddForm;
+	
 begin
 	create form transient;
-	form.show();
+	
+	form.showModal();
+	
+	update();
+	
+epilog
+	delete form;
+end;
+
+}
+
+deleteLotBtn_click
+{
+deleteLotBtn_click(btn: Button input) updating;
+
+vars
+	lot: Lot;
+
+begin
+	if lotListBox.listObject <> null then
+		lot := lotListBox.listObject.Lot;
+		
+		beginTransaction;
+			delete lot;
+		commitTransaction;
+		
+		lotStatus.caption := "Lot deleted";
+		
+		update();
+	else
+		lotStatus.caption := "No lot selected";
+	endif;
 end;
 
 }
@@ -1109,7 +2141,27 @@ load
 {
 load() updating;
 
+begin
+	update();
+end;
+
+}
+
+lotListBox_displayEntry
+{
+lotListBox_displayEntry(listbox: ListBox input; obj: Any; lstIndex: Integer): String updating;
+
 vars
+
+begin
+	return obj.Log.id.uuidAsString;
+end;
+
+}
+
+update
+{
+update();
 
 begin
 	self.lotListBox.listCollection(Lot.instances, true, 0);
@@ -1117,20 +2169,8 @@ end;
 
 }
 
-lotListBox_displayEntry
-{
-lotListBox_displayEntry(listbox: ListBox input; obj: Any; lstIndex: Integer):String updating;
-
-vars
-
-begin
-	obj.Log.id.uuidAsString;
-end;
-
-}
-
 	)
-	MainMenu (
+	MainMenuForm (
 	jadeMethodSources
 load
 {
@@ -1139,7 +2179,7 @@ load() updating;
 vars
 
 begin
-	app.mdiFrame := MainMenu;
+	app.mdiFrame := MainMenuForm;
 end;
 
 }
@@ -1208,7 +2248,7 @@ end;
 }
 
 	)
-	RowDetials (
+	RowDetailsForm (
 	jadeMethodSources
 btnCancel_click
 {
@@ -1299,7 +2339,7 @@ end;
 }
 
 	)
-	AddRow (
+	RowAddForm (
 	jadeMethodSources
 btnOk_click
 {
@@ -1344,17 +2384,109 @@ end;
 }
 
 	)
-	RowListForm (
+	RowEditForm (
 	jadeMethodSources
-addRowBtn_click
+btnLogAdd_click
 {
-addRowBtn_click(btn: Button input) updating;
+btnLogAdd_click(btn: Button input) updating;
 
 vars
-	form: AddRow;
+	log: Log;
+
 begin
-	create form transient;
-	form.show();
+	if cboLog.listObject <> null then
+		log := cboLog.listObject.Log;
+		
+		row.allocateLog(log, true);
+		
+		rowStatus.caption := "Log added";
+		
+		update();
+	else
+		rowStatus.caption := "No log selected";
+	endif;
+end;
+}
+
+btnLogEdit_click
+{
+btnLogEdit_click(btn: Button input) updating;
+
+begin
+	editLog();
+end;
+
+}
+
+btnLogRemove_click
+{
+btnLogRemove_click(btn: Button input) updating;
+
+vars
+	log: Log;
+
+begin
+	if logListBox.listObject <> null then
+		log := logListBox.listObject.Log;
+		
+		row.deallocateLog(log);
+		
+		if log.logArea <> null then
+			log.logArea.deallocateCargo(log);
+		endif;
+		
+		rowStatus.caption := "Log removed";
+		
+		update();
+	else
+		rowStatus.caption := "No log selected";
+	endif;
+end;
+}
+
+cboLog_displayEntry
+{
+cboLog_displayEntry(combobox: ComboBox input; obj: Any; lstIndex: Integer):String updating;
+
+begin
+	return obj.Log.getInfo();
+end;
+
+}
+
+editLog
+{
+editLog() updating;
+
+vars
+	form: LogEditForm;
+
+begin
+	if logListBox.listObject <> null then
+		create form transient;
+		
+		form.init(logListBox.listObject.Log);
+		form.showModal();
+		
+		update();
+		
+		rowStatus.caption := "Log edited";
+	else
+		rowStatus.caption := "No log selected";
+	endif;
+	
+epilog
+	delete form;
+end;
+
+}
+
+init
+{
+init(row: LogRow) updating, clientExecution;
+
+begin
+	self.row := row;
 end;
 
 }
@@ -1363,10 +2495,168 @@ load
 {
 load() updating;
 
-vars
+begin
+	txtGrade.text := row.specification.grade.String;
+	txtSpecies.text := row.specification.species.String;
+	txtTreatment.text := row.specification.treatment.String;
+
+	update();
+end;
+
+}
+
+logListBox_dblClick
+{
+logListBox_dblClick(listbox: ListBox input) updating;
 
 begin
-	self.rowListBox.listCollection(LogRow.instances, true, 0);
+	editLog();
+end;
+
+}
+
+logListBox_displayEntry
+{
+logListBox_displayEntry(listbox: ListBox input; obj: Any; lstIndex: Integer):String updating;
+
+begin
+	return obj.Log.getInfo();
+end;
+
+}
+
+populateCBOLog
+{
+populateCBOLog() updating;
+
+vars
+	log: Log;
+	logs: ObjectArray;
+
+begin
+	create logs transient;
+
+	foreach log in Log.instances where log.specification.matchesSpecification(row.specification) and not row.allLogs.includes(log) do
+		logs.add(log);
+	endforeach;
+	
+	cboLog.listCollection(logs, false, 0);
+end;
+
+}
+
+update
+{
+update() updating;
+
+begin
+	logListBox.listCollection(row.allLogs, true, 0);
+	
+	populateCBOLog();
+end;
+
+}
+
+	)
+	RowListForm (
+	jadeMethodSources
+addRowBtn_click
+{
+addRowBtn_click(btn: Button input) updating;
+
+vars
+	form: RowAddForm;
+	
+begin
+	create form transient;
+	
+	form.showModal();
+	
+	update();
+	
+epilog
+	delete form;
+end;
+
+}
+
+deleteRowBtn_click
+{
+deleteRowBtn_click(btn: Button input) updating;
+
+vars
+	log: Log;
+	row: LogRow;
+
+begin
+	if rowListBox.listObject <> null then
+		row := rowListBox.listObject.LogRow;
+		
+		foreach log in row.allLogs do
+			if log.storageArea <> null then
+				log.storageArea.deallocateCargo(log);
+			endif;
+		
+			row.deallocateLog(log);
+		endforeach;
+		
+		beginTransaction;
+			delete row;
+		commitTransaction;
+		
+		rowStatus.caption := "Row deleted";
+		
+		update();
+	else
+		rowStatus.caption := "No row selected";
+	endif;
+end;
+
+}
+
+editRow
+{
+editRow() updating;
+
+vars
+	form: RowEditForm;
+
+begin
+	if rowListBox.listObject <> null then
+		create form transient;
+		
+		form.init(rowListBox.listObject.LogRow);
+		form.showModal();
+		
+		update();
+		
+		rowStatus.caption := "Row edited";
+	else
+		rowStatus.caption := "No row selected";
+	endif;
+	
+epilog
+	delete form;
+end;
+
+}
+
+editRowBtn_click
+{
+editRowBtn_click(btn: Button input) updating;
+
+begin
+	editRow();
+end;
+
+}
+
+load
+{
+load() updating;
+
+begin
+	update();
 end;
 
 }
@@ -1375,15 +2665,8 @@ rowListBox_dblClick
 {
 rowListBox_dblClick(listbox: ListBox input) updating;
 
-vars
-	row: LogRow;
-	log: Log;
 begin
-	row:= rowListBox.itemObject[rowListBox.listIndex].LogRow;
-	
-	foreach log in row.allLogs do
-		write log.specification;
-	endforeach;
+	editRow();
 end;
 
 }
@@ -1395,7 +2678,17 @@ rowListBox_displayEntry(listbox: ListBox input; obj: Any; lstIndex: Integer):Str
 vars
 
 begin
-	return obj.LogRow.getInfo;
+	return obj.LogRow.getInfo();
+end;
+
+}
+
+update
+{
+update();
+
+begin
+	self.rowListBox.listCollection(LogRow.instances, true, 0);
 end;
 
 }

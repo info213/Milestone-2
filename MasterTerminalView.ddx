@@ -9,7 +9,7 @@
 		<_modifiedBy>barry</_modifiedBy>
 		<_modifiedTimestamp>2019:05:31:11:57:43.545</_modifiedTimestamp>
 		<_patchVersion>0</_patchVersion>
-		<_startupFormName>MainMenu</_startupFormName>
+		<_startupFormName>MainMenuForm</_startupFormName>
 		<_systemVersion>18.0.01</_systemVersion>
 		<aboutForm/>
 		<appVersion/>
@@ -29,7 +29,7 @@
 		<mousePointer>0</mousePointer>
 		<name>MasterTerminalView</name>
 		<showBubbleHelp>false</showBubbleHelp>
-		<startupForm name="MainMenu" />
+		<startupForm name="MainMenuForm" />
 		<useBorderStyleOnly>false</useBorderStyleOnly>
 		<userSecurityLevel>0</userSecurityLevel>
 		<webMinimumResponseTime>0</webMinimumResponseTime>
@@ -43,8 +43,688 @@
 	<Global name="GMasterTerminalView">
 	</Global>
 
+	<Form locale="5129" name="AreaEditForm">
+		<_painterModifiedTimeStamp>2019:06:05:19:44:34.912</_painterModifiedTimeStamp>
+		<allowDocking>0</allowDocking>
+		<backBrush/>
+		<backBrushStyle>0</backBrushStyle>
+		<backColor>-2147483633</backColor>
+		<borderStyle>2</borderStyle>
+		<bubbleHelp/>
+		<caption>Edit Area</caption>
+		<clientHeight>488</clientHeight>
+		<clientWidth>830</clientWidth>
+		<clipControls>true</clipControls>
+		<controlBox>true</controlBox>
+		<description/>
+		<disableEvents>false</disableEvents>
+		<disableReason/>
+		<dragCursor/>
+		<enabled>true</enabled>
+		<height>527</height>
+		<helpContextId>0</helpContextId>
+		<helpKeyword/>
+		<icon/>
+		<ignoreSkin>false</ignoreSkin>
+		<left>387</left>
+		<maxButton>true</maxButton>
+		<mdiChild>0</mdiChild>
+		<mdiFrame>false</mdiFrame>
+		<minButton>true</minButton>
+		<minimumHeight>0</minimumHeight>
+		<minimumWidth>0</minimumWidth>
+		<mouseCursor/>
+		<mousePointer>0</mousePointer>
+		<name>AreaEditForm</name>
+		<paintedDialogBaseUnits>1048584</paintedDialogBaseUnits>
+		<printerForm>false</printerForm>
+		<scaleForm>true</scaleForm>
+		<scrollBars>0</scrollBars>
+		<secureForm>false</secureForm>
+		<securityLevelEnabled>0</securityLevelEnabled>
+		<securityLevelVisible>0</securityLevelVisible>
+		<skinCategoryName/>
+		<top>60</top>
+		<visible>true</visible>
+		<webBrowserAutoRefreshInterval>0</webBrowserAutoRefreshInterval>
+		<webBrowserAutoRefreshURL/>
+		<webBrowserDisableBackButton>false</webBrowserDisableBackButton>
+		<webEncodingType/>
+		<webFileName/>
+		<width>846</width>
+		<windowState>0</windowState>
+		<controlList>
+			<Button name="btnLogRemove">
+				<autoSize>1</autoSize>
+				<backColor>-2147483633</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>0</borderStyle>
+				<bubbleHelp/>
+				<buttonPicture>0</buttonPicture>
+				<cancel>false</cancel>
+				<caption>Remove Log</caption>
+				<default>false</default>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483630</foreColor>
+				<form name="AreaEditForm" />
+				<height>23</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<ignoreSkin>false</ignoreSkin>
+				<left>207</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>btnLogRemove</name>
+				<parent name="AreaEditForm" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>379</parentBottomOffset>
+				<parentRightOffset>506</parentRightOffset>
+				<picture/>
+				<pictureDisabled/>
+				<pictureDown/>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<skinCategoryName/>
+				<style>0</style>
+				<tabIndex>35</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<top>86</top>
+				<value>false</value>
+				<visible>true</visible>
+				<width>117</width>
+			</Button>
+			<Button name="btnLogEdit">
+				<autoSize>1</autoSize>
+				<backColor>-2147483633</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>0</borderStyle>
+				<bubbleHelp/>
+				<buttonPicture>0</buttonPicture>
+				<cancel>true</cancel>
+				<caption>Edit Log</caption>
+				<default>false</default>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483630</foreColor>
+				<form name="AreaEditForm" />
+				<height>23</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<ignoreSkin>false</ignoreSkin>
+				<left>84</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>btnLogEdit</name>
+				<parent name="AreaEditForm" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>379</parentBottomOffset>
+				<parentRightOffset>629</parentRightOffset>
+				<picture/>
+				<pictureDisabled/>
+				<pictureDown/>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<skinCategoryName/>
+				<style>0</style>
+				<tabIndex>34</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<top>86</top>
+				<value>false</value>
+				<visible>true</visible>
+				<width>117</width>
+			</Button>
+			<Button name="btnRowRemove">
+				<autoSize>1</autoSize>
+				<backColor>-2147483633</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>0</borderStyle>
+				<bubbleHelp/>
+				<buttonPicture>0</buttonPicture>
+				<cancel>false</cancel>
+				<caption>Remove Row</caption>
+				<default>false</default>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483630</foreColor>
+				<form name="AreaEditForm" />
+				<height>23</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<ignoreSkin>false</ignoreSkin>
+				<left>629</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>btnRowRemove</name>
+				<parent name="AreaEditForm" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>379</parentBottomOffset>
+				<parentRightOffset>84</parentRightOffset>
+				<picture/>
+				<pictureDisabled/>
+				<pictureDown/>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<skinCategoryName/>
+				<style>0</style>
+				<tabIndex>33</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<top>86</top>
+				<value>false</value>
+				<visible>true</visible>
+				<width>117</width>
+			</Button>
+			<Button name="btnRowAdd">
+				<autoSize>1</autoSize>
+				<backColor>-2147483633</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>0</borderStyle>
+				<bubbleHelp/>
+				<buttonPicture>0</buttonPicture>
+				<cancel>false</cancel>
+				<caption>Add Row</caption>
+				<default>false</default>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483630</foreColor>
+				<form name="AreaEditForm" />
+				<height>22</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<ignoreSkin>false</ignoreSkin>
+				<left>710</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>btnRowAdd</name>
+				<parent name="AreaEditForm" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>441</parentBottomOffset>
+				<parentRightOffset>32</parentRightOffset>
+				<picture/>
+				<pictureDisabled/>
+				<pictureDown/>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<skinCategoryName/>
+				<style>0</style>
+				<tabIndex>32</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<top>25</top>
+				<value>false</value>
+				<visible>true</visible>
+				<width>88</width>
+			</Button>
+			<ComboBox name="cboRow">
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483643</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>2</borderStyle>
+				<bubbleHelp/>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="AreaEditForm" />
+				<hasPictures>false</hasPictures>
+				<hasPlusMinus>false</hasPlusMinus>
+				<hasTreeLines>false</hasTreeLines>
+				<height>20</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<ignoreSkin>false</ignoreSkin>
+				<left>430</left>
+				<listWidth>0</listWidth>
+				<maxLength>0</maxLength>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>cboRow</name>
+				<parent name="AreaEditForm" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>443</parentBottomOffset>
+				<parentRightOffset>127</parentRightOffset>
+				<pictureClosed/>
+				<pictureLeaf/>
+				<pictureMinus/>
+				<pictureOpen/>
+				<picturePlus/>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<sortCased>false</sortCased>
+				<sorted>true</sorted>
+				<style>2</style>
+				<tabIndex>31</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<top>25</top>
+				<visible>true</visible>
+				<width>273</width>
+			</ComboBox>
+			<Button name="btnRowEdit">
+				<autoSize>1</autoSize>
+				<backColor>-2147483633</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>0</borderStyle>
+				<bubbleHelp/>
+				<buttonPicture>0</buttonPicture>
+				<cancel>false</cancel>
+				<caption>Edit Row</caption>
+				<default>false</default>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483630</foreColor>
+				<form name="AreaEditForm" />
+				<height>23</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<ignoreSkin>false</ignoreSkin>
+				<left>506</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>btnRowEdit</name>
+				<parent name="AreaEditForm" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>379</parentBottomOffset>
+				<parentRightOffset>207</parentRightOffset>
+				<picture/>
+				<pictureDisabled/>
+				<pictureDown/>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<skinCategoryName/>
+				<style>0</style>
+				<tabIndex>29</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<top>86</top>
+				<value>false</value>
+				<visible>true</visible>
+				<width>117</width>
+			</Button>
+			<ListBox name="rowListBox">
+				<alternatingRowBackColor>16777200</alternatingRowBackColor>
+				<alternatingRowBackColorCount>0</alternatingRowBackColorCount>
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483643</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>2</borderStyle>
+				<bubbleHelp/>
+				<defaultLineHeight>0</defaultLineHeight>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="AreaEditForm" />
+				<hasPictures>false</hasPictures>
+				<hasPlusMinus>false</hasPlusMinus>
+				<hasTreeLines>false</hasTreeLines>
+				<height>329</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<ignoreSkin>false</ignoreSkin>
+				<integralHeight>true</integralHeight>
+				<left>426</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<multiSelect>0</multiSelect>
+				<name>rowListBox</name>
+				<nameSeparator>\</nameSeparator>
+				<parent name="AreaEditForm" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>35</parentBottomOffset>
+				<parentRightOffset>15</parentRightOffset>
+				<pictureClosed/>
+				<pictureLeaf/>
+				<pictureMinus/>
+				<pictureOpen/>
+				<picturePlus/>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<scrollBars>2</scrollBars>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<sortAsc>true</sortAsc>
+				<sortCased>false</sortCased>
+				<sorted>false</sorted>
+				<tabIndex>28</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<top>124</top>
+				<visible>true</visible>
+				<width>389</width>
+			</ListBox>
+			<Button name="btnLogAdd">
+				<autoSize>1</autoSize>
+				<backColor>-2147483633</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>0</borderStyle>
+				<bubbleHelp/>
+				<buttonPicture>0</buttonPicture>
+				<cancel>false</cancel>
+				<caption>Add Log</caption>
+				<default>false</default>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483630</foreColor>
+				<form name="AreaEditForm" />
+				<height>22</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<ignoreSkin>false</ignoreSkin>
+				<left>310</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>btnLogAdd</name>
+				<parent name="AreaEditForm" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>441</parentBottomOffset>
+				<parentRightOffset>432</parentRightOffset>
+				<picture/>
+				<pictureDisabled/>
+				<pictureDown/>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<skinCategoryName/>
+				<style>0</style>
+				<tabIndex>27</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<top>25</top>
+				<value>false</value>
+				<visible>true</visible>
+				<width>88</width>
+			</Button>
+			<ComboBox name="cboLog">
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483643</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>2</borderStyle>
+				<bubbleHelp/>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="AreaEditForm" />
+				<hasPictures>false</hasPictures>
+				<hasPlusMinus>false</hasPlusMinus>
+				<hasTreeLines>false</hasTreeLines>
+				<height>20</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<ignoreSkin>false</ignoreSkin>
+				<left>30</left>
+				<listWidth>0</listWidth>
+				<maxLength>0</maxLength>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>cboLog</name>
+				<parent name="AreaEditForm" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>443</parentBottomOffset>
+				<parentRightOffset>527</parentRightOffset>
+				<pictureClosed/>
+				<pictureLeaf/>
+				<pictureMinus/>
+				<pictureOpen/>
+				<picturePlus/>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<sortCased>false</sortCased>
+				<sorted>true</sorted>
+				<style>2</style>
+				<tabIndex>26</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<top>25</top>
+				<visible>true</visible>
+				<width>273</width>
+			</ComboBox>
+			<StatusLine name="areaStatus">
+				<alignment>0</alignment>
+				<autoSize>true</autoSize>
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483633</backColor>
+				<bevelColor>-2147483628</bevelColor>
+				<bevelInner>1</bevelInner>
+				<bevelInnerWidth>1</bevelInnerWidth>
+				<bevelOuter>2</bevelOuter>
+				<bevelOuterWidth>1</bevelOuterWidth>
+				<bevelShadowColor>-2147483632</bevelShadowColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>1</borderStyle>
+				<boundaryBrush>0</boundaryBrush>
+				<boundaryColor>-2147483633</boundaryColor>
+				<boundaryWidth>1</boundaryWidth>
+				<bubbleHelp/>
+				<caption/>
+				<clipControls>true</clipControls>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483630</foreColor>
+				<form name="AreaEditForm" />
+				<height>21</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<ignoreSkin>false</ignoreSkin>
+				<left>0</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>areaStatus</name>
+				<parent name="AreaEditForm" />
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<skinCategoryName/>
+				<tabIndex>22</tabIndex>
+				<tag/>
+				<top>467</top>
+				<visible>true</visible>
+				<width>830</width>
+				<wordWrap>false</wordWrap>
+			</StatusLine>
+			<ListBox name="logListBox">
+				<alternatingRowBackColor>16777200</alternatingRowBackColor>
+				<alternatingRowBackColorCount>0</alternatingRowBackColorCount>
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483643</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>2</borderStyle>
+				<bubbleHelp/>
+				<defaultLineHeight>0</defaultLineHeight>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="AreaEditForm" />
+				<hasPictures>false</hasPictures>
+				<hasPlusMinus>false</hasPlusMinus>
+				<hasTreeLines>false</hasTreeLines>
+				<height>329</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<ignoreSkin>false</ignoreSkin>
+				<integralHeight>true</integralHeight>
+				<left>15</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<multiSelect>0</multiSelect>
+				<name>logListBox</name>
+				<nameSeparator>\</nameSeparator>
+				<parent name="AreaEditForm" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>35</parentBottomOffset>
+				<parentRightOffset>426</parentRightOffset>
+				<pictureClosed/>
+				<pictureLeaf/>
+				<pictureMinus/>
+				<pictureOpen/>
+				<picturePlus/>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<scrollBars>2</scrollBars>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<sortAsc>true</sortAsc>
+				<sortCased>false</sortCased>
+				<sorted>false</sorted>
+				<tabIndex>18</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<top>124</top>
+				<visible>true</visible>
+				<width>389</width>
+			</ListBox>
+		</controlList>
+		<menuList>
+		</menuList>
+	</Form>
+
 	<Form locale="5129" name="AreaListForm">
-		<_painterModifiedTimeStamp>2019:06:05:15:41:24.858</_painterModifiedTimeStamp>
+		<_painterModifiedTimeStamp>2019:06:05:19:42:47.623</_painterModifiedTimeStamp>
 		<allowDocking>0</allowDocking>
 		<backBrush/>
 		<backBrushStyle>0</backBrushStyle>
@@ -308,7 +988,7 @@
 				<visible>true</visible>
 				<width>88</width>
 			</Button>
-			<ListBox name="areaListbox">
+			<ListBox name="areaListBox">
 				<alternatingRowBackColor>16777200</alternatingRowBackColor>
 				<alternatingRowBackColorCount>0</alternatingRowBackColorCount>
 				<backBrush/>
@@ -343,7 +1023,7 @@
 				<mouseCursor/>
 				<mousePointer>0</mousePointer>
 				<multiSelect>0</multiSelect>
-				<name>areaListbox</name>
+				<name>areaListBox</name>
 				<nameSeparator>\</nameSeparator>
 				<parent name="AreaListForm" />
 				<parentAspect>0</parentAspect>
@@ -378,8 +1058,8 @@
 		</menuList>
 	</Form>
 
-	<Form locale="5129" name="EntityDetials">
-		<_painterModifiedTimeStamp>2019:06:05:16:44:13.530</_painterModifiedTimeStamp>
+	<Form locale="5129" name="EntityDetailsForm">
+		<_painterModifiedTimeStamp>2019:06:05:19:16:43.781</_painterModifiedTimeStamp>
 		<allowDocking>0</allowDocking>
 		<backBrush/>
 		<backBrushStyle>0</backBrushStyle>
@@ -410,7 +1090,7 @@
 		<minimumWidth>0</minimumWidth>
 		<mouseCursor/>
 		<mousePointer>0</mousePointer>
-		<name>EntityDetials</name>
+		<name>EntityDetailsForm</name>
 		<paintedDialogBaseUnits>1048584</paintedDialogBaseUnits>
 		<printerForm>false</printerForm>
 		<scaleForm>true</scaleForm>
@@ -449,7 +1129,7 @@
 				<fontStrikethru>false</fontStrikethru>
 				<fontUnderline>false</fontUnderline>
 				<foreColor>-2147483640</foreColor>
-				<form name="EntityDetials" />
+				<form name="EntityDetailsForm" />
 				<formatOut/>
 				<height>20</height>
 				<helpContextId>0</helpContextId>
@@ -461,7 +1141,7 @@
 				<mousePointer>0</mousePointer>
 				<name>lblName</name>
 				<noPrefix>false</noPrefix>
-				<parent name="EntityDetials" />
+				<parent name="EntityDetailsForm" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>125</parentBottomOffset>
 				<parentRightOffset>160</parentRightOffset>
@@ -503,7 +1183,7 @@
 				<fontStrikethru>false</fontStrikethru>
 				<fontUnderline>false</fontUnderline>
 				<foreColor>-2147483640</foreColor>
-				<form name="EntityDetials" />
+				<form name="EntityDetailsForm" />
 				<formatOut/>
 				<height>24</height>
 				<helpContextId>0</helpContextId>
@@ -518,7 +1198,7 @@
 				<mouseCursor/>
 				<mousePointer>0</mousePointer>
 				<name>txtName</name>
-				<parent name="EntityDetials" />
+				<parent name="EntityDetailsForm" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>124</parentBottomOffset>
 				<parentRightOffset>28</parentRightOffset>
@@ -566,7 +1246,7 @@
 				<fontStrikethru>false</fontStrikethru>
 				<fontUnderline>false</fontUnderline>
 				<foreColor>-2147483640</foreColor>
-				<form name="EntityDetials" />
+				<form name="EntityDetailsForm" />
 				<formatOut/>
 				<height>20</height>
 				<helpContextId>0</helpContextId>
@@ -578,7 +1258,7 @@
 				<mousePointer>0</mousePointer>
 				<name>lblLName</name>
 				<noPrefix>false</noPrefix>
-				<parent name="EntityDetials" />
+				<parent name="EntityDetailsForm" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>97</parentBottomOffset>
 				<parentRightOffset>163</parentRightOffset>
@@ -618,7 +1298,7 @@
 				<fontStrikethru>false</fontStrikethru>
 				<fontUnderline>false</fontUnderline>
 				<foreColor>-2147483640</foreColor>
-				<form name="EntityDetials" />
+				<form name="EntityDetailsForm" />
 				<formatOut/>
 				<height>20</height>
 				<helpContextId>0</helpContextId>
@@ -630,7 +1310,7 @@
 				<mousePointer>0</mousePointer>
 				<name>lblFName</name>
 				<noPrefix>false</noPrefix>
-				<parent name="EntityDetials" />
+				<parent name="EntityDetailsForm" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>125</parentBottomOffset>
 				<parentRightOffset>167</parentRightOffset>
@@ -672,7 +1352,7 @@
 				<fontStrikethru>false</fontStrikethru>
 				<fontUnderline>false</fontUnderline>
 				<foreColor>-2147483640</foreColor>
-				<form name="EntityDetials" />
+				<form name="EntityDetailsForm" />
 				<formatOut/>
 				<height>24</height>
 				<helpContextId>0</helpContextId>
@@ -687,7 +1367,7 @@
 				<mouseCursor/>
 				<mousePointer>0</mousePointer>
 				<name>txtLName</name>
-				<parent name="EntityDetials" />
+				<parent name="EntityDetailsForm" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>91</parentBottomOffset>
 				<parentRightOffset>27</parentRightOffset>
@@ -737,7 +1417,7 @@
 				<fontStrikethru>false</fontStrikethru>
 				<fontUnderline>false</fontUnderline>
 				<foreColor>-2147483640</foreColor>
-				<form name="EntityDetials" />
+				<form name="EntityDetailsForm" />
 				<formatOut/>
 				<height>24</height>
 				<helpContextId>0</helpContextId>
@@ -752,7 +1432,7 @@
 				<mouseCursor/>
 				<mousePointer>0</mousePointer>
 				<name>txtFName</name>
-				<parent name="EntityDetials" />
+				<parent name="EntityDetailsForm" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>124</parentBottomOffset>
 				<parentRightOffset>28</parentRightOffset>
@@ -802,7 +1482,7 @@
 				<fontStrikethru>false</fontStrikethru>
 				<fontUnderline>false</fontUnderline>
 				<foreColor>-2147483640</foreColor>
-				<form name="EntityDetials" />
+				<form name="EntityDetailsForm" />
 				<formatOut/>
 				<height>24</height>
 				<helpContextId>0</helpContextId>
@@ -817,7 +1497,7 @@
 				<mouseCursor/>
 				<mousePointer>0</mousePointer>
 				<name>txtCountry</name>
-				<parent name="EntityDetials" />
+				<parent name="EntityDetailsForm" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>164</parentBottomOffset>
 				<parentRightOffset>29</parentRightOffset>
@@ -865,7 +1545,7 @@
 				<fontStrikethru>false</fontStrikethru>
 				<fontUnderline>false</fontUnderline>
 				<foreColor>-2147483640</foreColor>
-				<form name="EntityDetials" />
+				<form name="EntityDetailsForm" />
 				<formatOut/>
 				<height>20</height>
 				<helpContextId>0</helpContextId>
@@ -877,7 +1557,7 @@
 				<mousePointer>0</mousePointer>
 				<name>lblCountry</name>
 				<noPrefix>false</noPrefix>
-				<parent name="EntityDetials" />
+				<parent name="EntityDetailsForm" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>165</parentBottomOffset>
 				<parentRightOffset>198</parentRightOffset>
@@ -919,7 +1599,7 @@
 				<fontStrikethru>false</fontStrikethru>
 				<fontUnderline>false</fontUnderline>
 				<foreColor>-2147483640</foreColor>
-				<form name="EntityDetials" />
+				<form name="EntityDetailsForm" />
 				<formatOut/>
 				<height>24</height>
 				<helpContextId>0</helpContextId>
@@ -934,7 +1614,7 @@
 				<mouseCursor/>
 				<mousePointer>0</mousePointer>
 				<name>txtState</name>
-				<parent name="EntityDetials" />
+				<parent name="EntityDetailsForm" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>198</parentBottomOffset>
 				<parentRightOffset>28</parentRightOffset>
@@ -982,7 +1662,7 @@
 				<fontStrikethru>false</fontStrikethru>
 				<fontUnderline>false</fontUnderline>
 				<foreColor>-2147483640</foreColor>
-				<form name="EntityDetials" />
+				<form name="EntityDetailsForm" />
 				<formatOut/>
 				<height>20</height>
 				<helpContextId>0</helpContextId>
@@ -994,7 +1674,7 @@
 				<mousePointer>0</mousePointer>
 				<name>lblState</name>
 				<noPrefix>false</noPrefix>
-				<parent name="EntityDetials" />
+				<parent name="EntityDetailsForm" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>201</parentBottomOffset>
 				<parentRightOffset>197</parentRightOffset>
@@ -1036,7 +1716,7 @@
 				<fontStrikethru>false</fontStrikethru>
 				<fontUnderline>false</fontUnderline>
 				<foreColor>-2147483640</foreColor>
-				<form name="EntityDetials" />
+				<form name="EntityDetailsForm" />
 				<formatOut/>
 				<height>24</height>
 				<helpContextId>0</helpContextId>
@@ -1051,7 +1731,7 @@
 				<mouseCursor/>
 				<mousePointer>0</mousePointer>
 				<name>txtCity</name>
-				<parent name="EntityDetials" />
+				<parent name="EntityDetailsForm" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>233</parentBottomOffset>
 				<parentRightOffset>29</parentRightOffset>
@@ -1099,7 +1779,7 @@
 				<fontStrikethru>false</fontStrikethru>
 				<fontUnderline>false</fontUnderline>
 				<foreColor>-2147483640</foreColor>
-				<form name="EntityDetials" />
+				<form name="EntityDetailsForm" />
 				<formatOut/>
 				<height>20</height>
 				<helpContextId>0</helpContextId>
@@ -1111,7 +1791,7 @@
 				<mousePointer>0</mousePointer>
 				<name>lblCity</name>
 				<noPrefix>false</noPrefix>
-				<parent name="EntityDetials" />
+				<parent name="EntityDetailsForm" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>237</parentBottomOffset>
 				<parentRightOffset>196</parentRightOffset>
@@ -1151,7 +1831,7 @@
 				<fontStrikethru>false</fontStrikethru>
 				<fontUnderline>false</fontUnderline>
 				<foreColor>-2147483640</foreColor>
-				<form name="EntityDetials" />
+				<form name="EntityDetailsForm" />
 				<formatOut/>
 				<height>20</height>
 				<helpContextId>0</helpContextId>
@@ -1163,7 +1843,7 @@
 				<mousePointer>0</mousePointer>
 				<name>lblAddess</name>
 				<noPrefix>false</noPrefix>
-				<parent name="EntityDetials" />
+				<parent name="EntityDetailsForm" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>269</parentBottomOffset>
 				<parentRightOffset>195</parentRightOffset>
@@ -1205,7 +1885,7 @@
 				<fontStrikethru>false</fontStrikethru>
 				<fontUnderline>false</fontUnderline>
 				<foreColor>-2147483640</foreColor>
-				<form name="EntityDetials" />
+				<form name="EntityDetailsForm" />
 				<formatOut/>
 				<height>24</height>
 				<helpContextId>0</helpContextId>
@@ -1220,7 +1900,7 @@
 				<mouseCursor/>
 				<mousePointer>0</mousePointer>
 				<name>txtAddress</name>
-				<parent name="EntityDetials" />
+				<parent name="EntityDetailsForm" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>266</parentBottomOffset>
 				<parentRightOffset>28</parentRightOffset>
@@ -1268,7 +1948,7 @@
 				<fontStrikethru>false</fontStrikethru>
 				<fontUnderline>false</fontUnderline>
 				<foreColor>-2147483640</foreColor>
-				<form name="EntityDetials" />
+				<form name="EntityDetailsForm" />
 				<formatOut/>
 				<height>18</height>
 				<helpContextId>0</helpContextId>
@@ -1280,7 +1960,7 @@
 				<mousePointer>0</mousePointer>
 				<name>lblType</name>
 				<noPrefix>false</noPrefix>
-				<parent name="EntityDetials" />
+				<parent name="EntityDetailsForm" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>380</parentBottomOffset>
 				<parentRightOffset>181</parentRightOffset>
@@ -1322,7 +2002,7 @@
 				<fontStrikethru>false</fontStrikethru>
 				<fontUnderline>false</fontUnderline>
 				<foreColor>-2147483640</foreColor>
-				<form name="EntityDetials" />
+				<form name="EntityDetailsForm" />
 				<height>25</height>
 				<helpContextId>0</helpContextId>
 				<helpKeyword/>
@@ -1331,7 +2011,7 @@
 				<mouseCursor/>
 				<mousePointer>0</mousePointer>
 				<name>optPerson</name>
-				<parent name="EntityDetials" />
+				<parent name="EntityDetailsForm" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>306</parentBottomOffset>
 				<parentRightOffset>151</parentRightOffset>
@@ -1373,7 +2053,7 @@
 				<fontStrikethru>false</fontStrikethru>
 				<fontUnderline>false</fontUnderline>
 				<foreColor>-2147483640</foreColor>
-				<form name="EntityDetials" />
+				<form name="EntityDetailsForm" />
 				<height>25</height>
 				<helpContextId>0</helpContextId>
 				<helpKeyword/>
@@ -1382,7 +2062,7 @@
 				<mouseCursor/>
 				<mousePointer>0</mousePointer>
 				<name>optSupplier</name>
-				<parent name="EntityDetials" />
+				<parent name="EntityDetailsForm" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>332</parentBottomOffset>
 				<parentRightOffset>151</parentRightOffset>
@@ -1424,7 +2104,7 @@
 				<fontStrikethru>false</fontStrikethru>
 				<fontUnderline>false</fontUnderline>
 				<foreColor>-2147483640</foreColor>
-				<form name="EntityDetials" />
+				<form name="EntityDetailsForm" />
 				<height>25</height>
 				<helpContextId>0</helpContextId>
 				<helpKeyword/>
@@ -1433,7 +2113,7 @@
 				<mouseCursor/>
 				<mousePointer>0</mousePointer>
 				<name>optCustomer</name>
-				<parent name="EntityDetials" />
+				<parent name="EntityDetailsForm" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>358</parentBottomOffset>
 				<parentRightOffset>152</parentRightOffset>
@@ -1485,7 +2165,7 @@
 				<fontStrikethru>false</fontStrikethru>
 				<fontUnderline>false</fontUnderline>
 				<foreColor>-2147483630</foreColor>
-				<form name="EntityDetials" />
+				<form name="EntityDetailsForm" />
 				<height>21</height>
 				<helpContextId>0</helpContextId>
 				<helpKeyword/>
@@ -1494,7 +2174,7 @@
 				<mouseCursor/>
 				<mousePointer>0</mousePointer>
 				<name>entityStatusBar</name>
-				<parent name="EntityDetials" />
+				<parent name="EntityDetailsForm" />
 				<securityLevelEnabled>0</securityLevelEnabled>
 				<securityLevelVisible>0</securityLevelVisible>
 				<skinCategoryName/>
@@ -1527,7 +2207,7 @@
 				<fontStrikethru>false</fontStrikethru>
 				<fontUnderline>false</fontUnderline>
 				<foreColor>-2147483630</foreColor>
-				<form name="EntityDetials" />
+				<form name="EntityDetailsForm" />
 				<height>23</height>
 				<helpContextId>0</helpContextId>
 				<helpKeyword/>
@@ -1536,7 +2216,7 @@
 				<mouseCursor/>
 				<mousePointer>0</mousePointer>
 				<name>btnCancel</name>
-				<parent name="EntityDetials" />
+				<parent name="EntityDetailsForm" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>53</parentBottomOffset>
 				<parentRightOffset>60</parentRightOffset>
@@ -1581,7 +2261,7 @@
 				<fontStrikethru>false</fontStrikethru>
 				<fontUnderline>false</fontUnderline>
 				<foreColor>-2147483630</foreColor>
-				<form name="EntityDetials" />
+				<form name="EntityDetailsForm" />
 				<height>23</height>
 				<helpContextId>0</helpContextId>
 				<helpKeyword/>
@@ -1590,7 +2270,7 @@
 				<mouseCursor/>
 				<mousePointer>0</mousePointer>
 				<name>btnOk</name>
-				<parent name="EntityDetials" />
+				<parent name="EntityDetailsForm" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>53</parentBottomOffset>
 				<parentRightOffset>175</parentRightOffset>
@@ -1618,8 +2298,8 @@
 		</menuList>
 	</Form>
 
-	<Form locale="5129" name="AddEntity">
-		<_painterModifiedTimeStamp>2019:06:05:16:44:13.530</_painterModifiedTimeStamp>
+	<Form locale="5129" name="EntityAddForm">
+		<_painterModifiedTimeStamp>2019:06:05:19:17:04.734</_painterModifiedTimeStamp>
 		<allowDocking>0</allowDocking>
 		<backBrush/>
 		<backBrushStyle>0</backBrushStyle>
@@ -1627,7 +2307,7 @@
 		<borderStyle>2</borderStyle>
 		<bubbleHelp/>
 		<caption>AddEntity</caption>
-		<clientHeight>272</clientHeight>
+		<clientHeight>403</clientHeight>
 		<clientWidth>330</clientWidth>
 		<clipControls>true</clipControls>
 		<controlBox>true</controlBox>
@@ -1636,7 +2316,7 @@
 		<disableReason/>
 		<dragCursor/>
 		<enabled>true</enabled>
-		<height>311</height>
+		<height>442</height>
 		<helpContextId>0</helpContextId>
 		<helpKeyword/>
 		<icon/>
@@ -1650,7 +2330,7 @@
 		<minimumWidth>0</minimumWidth>
 		<mouseCursor/>
 		<mousePointer>0</mousePointer>
-		<name>AddEntity</name>
+		<name>EntityAddForm</name>
 		<paintedDialogBaseUnits>1048584</paintedDialogBaseUnits>
 		<printerForm>false</printerForm>
 		<scaleForm>true</scaleForm>
@@ -1674,8 +2354,64 @@
 		</menuList>
 	</Form>
 
+	<Form locale="5129" name="EntityEditForm">
+		<_painterModifiedTimeStamp>2019:06:05:20:19:05.173</_painterModifiedTimeStamp>
+		<allowDocking>0</allowDocking>
+		<backBrush/>
+		<backBrushStyle>0</backBrushStyle>
+		<backColor>-2147483633</backColor>
+		<borderStyle>2</borderStyle>
+		<bubbleHelp/>
+		<caption>Edit Entity</caption>
+		<clientHeight>411</clientHeight>
+		<clientWidth>306</clientWidth>
+		<clipControls>true</clipControls>
+		<controlBox>true</controlBox>
+		<description/>
+		<disableEvents>false</disableEvents>
+		<disableReason/>
+		<dragCursor/>
+		<enabled>true</enabled>
+		<height>450</height>
+		<helpContextId>0</helpContextId>
+		<helpKeyword/>
+		<icon/>
+		<ignoreSkin>false</ignoreSkin>
+		<left>355</left>
+		<maxButton>true</maxButton>
+		<mdiChild>0</mdiChild>
+		<mdiFrame>false</mdiFrame>
+		<minButton>true</minButton>
+		<minimumHeight>450</minimumHeight>
+		<minimumWidth>0</minimumWidth>
+		<mouseCursor/>
+		<mousePointer>0</mousePointer>
+		<name>EntityEditForm</name>
+		<paintedDialogBaseUnits>1048584</paintedDialogBaseUnits>
+		<printerForm>false</printerForm>
+		<scaleForm>true</scaleForm>
+		<scrollBars>0</scrollBars>
+		<secureForm>false</secureForm>
+		<securityLevelEnabled>0</securityLevelEnabled>
+		<securityLevelVisible>0</securityLevelVisible>
+		<skinCategoryName/>
+		<top>41</top>
+		<visible>true</visible>
+		<webBrowserAutoRefreshInterval>0</webBrowserAutoRefreshInterval>
+		<webBrowserAutoRefreshURL/>
+		<webBrowserDisableBackButton>false</webBrowserDisableBackButton>
+		<webEncodingType/>
+		<webFileName/>
+		<width>322</width>
+		<windowState>0</windowState>
+		<controlList>
+		</controlList>
+		<menuList>
+		</menuList>
+	</Form>
+
 	<Form locale="5129" name="EntityListForm">
-		<_painterModifiedTimeStamp>2019:06:05:16:44:10.639</_painterModifiedTimeStamp>
+		<_painterModifiedTimeStamp>2019:06:05:17:05:49.381</_painterModifiedTimeStamp>
 		<allowDocking>0</allowDocking>
 		<backBrush/>
 		<backBrushStyle>0</backBrushStyle>
@@ -2009,8 +2745,8 @@
 		</menuList>
 	</Form>
 
-	<Form locale="5129" name="LogDetails">
-		<_painterModifiedTimeStamp>2019:06:05:14:38:08.642</_painterModifiedTimeStamp>
+	<Form locale="5129" name="LogDetailsForm">
+		<_painterModifiedTimeStamp>2019:06:05:19:17:19.944</_painterModifiedTimeStamp>
 		<allowDocking>0</allowDocking>
 		<backBrush/>
 		<backBrushStyle>0</backBrushStyle>
@@ -2041,7 +2777,7 @@
 		<minimumWidth>0</minimumWidth>
 		<mouseCursor/>
 		<mousePointer>0</mousePointer>
-		<name>LogDetails</name>
+		<name>LogDetailsForm</name>
 		<paintedDialogBaseUnits>1048584</paintedDialogBaseUnits>
 		<printerForm>false</printerForm>
 		<scaleForm>true</scaleForm>
@@ -2080,7 +2816,7 @@
 				<fontStrikethru>false</fontStrikethru>
 				<fontUnderline>false</fontUnderline>
 				<foreColor>-2147483640</foreColor>
-				<form name="LogDetails" />
+				<form name="LogDetailsForm" />
 				<formatOut/>
 				<height>21</height>
 				<helpContextId>0</helpContextId>
@@ -2092,7 +2828,7 @@
 				<mousePointer>0</mousePointer>
 				<name>lblSpecies_1</name>
 				<noPrefix>false</noPrefix>
-				<parent name="LogDetails" />
+				<parent name="LogDetailsForm" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>143</parentBottomOffset>
 				<parentRightOffset>190</parentRightOffset>
@@ -2132,7 +2868,7 @@
 				<fontStrikethru>false</fontStrikethru>
 				<fontUnderline>false</fontUnderline>
 				<foreColor>-2147483640</foreColor>
-				<form name="LogDetails" />
+				<form name="LogDetailsForm" />
 				<formatOut/>
 				<height>17</height>
 				<helpContextId>0</helpContextId>
@@ -2144,7 +2880,7 @@
 				<mousePointer>0</mousePointer>
 				<name>lblGrade</name>
 				<noPrefix>false</noPrefix>
-				<parent name="LogDetails" />
+				<parent name="LogDetailsForm" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>221</parentBottomOffset>
 				<parentRightOffset>190</parentRightOffset>
@@ -2183,7 +2919,7 @@
 				<fontStrikethru>false</fontStrikethru>
 				<fontUnderline>false</fontUnderline>
 				<foreColor>-2147483640</foreColor>
-				<form name="LogDetails" />
+				<form name="LogDetailsForm" />
 				<hasPictures>false</hasPictures>
 				<hasPlusMinus>false</hasPlusMinus>
 				<hasTreeLines>false</hasTreeLines>
@@ -2197,7 +2933,7 @@
 				<mouseCursor/>
 				<mousePointer>0</mousePointer>
 				<name>cboLogTreatment</name>
-				<parent name="LogDetails" />
+				<parent name="LogDetailsForm" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>143</parentBottomOffset>
 				<parentRightOffset>36</parentRightOffset>
@@ -2242,7 +2978,7 @@
 				<fontStrikethru>false</fontStrikethru>
 				<fontUnderline>false</fontUnderline>
 				<foreColor>-2147483640</foreColor>
-				<form name="LogDetails" />
+				<form name="LogDetailsForm" />
 				<hasPictures>false</hasPictures>
 				<hasPlusMinus>false</hasPlusMinus>
 				<hasTreeLines>false</hasTreeLines>
@@ -2256,7 +2992,7 @@
 				<mouseCursor/>
 				<mousePointer>0</mousePointer>
 				<name>cboLogGrade</name>
-				<parent name="LogDetails" />
+				<parent name="LogDetailsForm" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>218</parentBottomOffset>
 				<parentRightOffset>36</parentRightOffset>
@@ -2301,7 +3037,7 @@
 				<fontStrikethru>false</fontStrikethru>
 				<fontUnderline>false</fontUnderline>
 				<foreColor>-2147483640</foreColor>
-				<form name="LogDetails" />
+				<form name="LogDetailsForm" />
 				<hasPictures>false</hasPictures>
 				<hasPlusMinus>false</hasPlusMinus>
 				<hasTreeLines>false</hasTreeLines>
@@ -2315,7 +3051,7 @@
 				<mouseCursor/>
 				<mousePointer>0</mousePointer>
 				<name>cboLogSpecies</name>
-				<parent name="LogDetails" />
+				<parent name="LogDetailsForm" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>183</parentBottomOffset>
 				<parentRightOffset>36</parentRightOffset>
@@ -2373,7 +3109,7 @@
 				<fontStrikethru>false</fontStrikethru>
 				<fontUnderline>false</fontUnderline>
 				<foreColor>-2147483630</foreColor>
-				<form name="LogDetails" />
+				<form name="LogDetailsForm" />
 				<height>21</height>
 				<helpContextId>0</helpContextId>
 				<helpKeyword/>
@@ -2382,7 +3118,7 @@
 				<mouseCursor/>
 				<mousePointer>0</mousePointer>
 				<name>logStatus</name>
-				<parent name="LogDetails" />
+				<parent name="LogDetailsForm" />
 				<securityLevelEnabled>0</securityLevelEnabled>
 				<securityLevelVisible>0</securityLevelVisible>
 				<skinCategoryName/>
@@ -2415,7 +3151,7 @@
 				<fontStrikethru>false</fontStrikethru>
 				<fontUnderline>false</fontUnderline>
 				<foreColor>-2147483630</foreColor>
-				<form name="LogDetails" />
+				<form name="LogDetailsForm" />
 				<height>23</height>
 				<helpContextId>0</helpContextId>
 				<helpKeyword/>
@@ -2424,7 +3160,7 @@
 				<mouseCursor/>
 				<mousePointer>0</mousePointer>
 				<name>btnCancel</name>
-				<parent name="LogDetails" />
+				<parent name="LogDetailsForm" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>44</parentBottomOffset>
 				<parentRightOffset>57</parentRightOffset>
@@ -2469,7 +3205,7 @@
 				<fontStrikethru>false</fontStrikethru>
 				<fontUnderline>false</fontUnderline>
 				<foreColor>-2147483630</foreColor>
-				<form name="LogDetails" />
+				<form name="LogDetailsForm" />
 				<height>23</height>
 				<helpContextId>0</helpContextId>
 				<helpKeyword/>
@@ -2478,7 +3214,7 @@
 				<mouseCursor/>
 				<mousePointer>0</mousePointer>
 				<name>btnOk</name>
-				<parent name="LogDetails" />
+				<parent name="LogDetailsForm" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>45</parentBottomOffset>
 				<parentRightOffset>185</parentRightOffset>
@@ -2523,7 +3259,7 @@
 				<fontStrikethru>false</fontStrikethru>
 				<fontUnderline>false</fontUnderline>
 				<foreColor>-2147483640</foreColor>
-				<form name="LogDetails" />
+				<form name="LogDetailsForm" />
 				<formatOut/>
 				<height>24</height>
 				<helpContextId>0</helpContextId>
@@ -2538,7 +3274,7 @@
 				<mouseCursor/>
 				<mousePointer>0</mousePointer>
 				<name>txtLength</name>
-				<parent name="LogDetails" />
+				<parent name="LogDetailsForm" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>103</parentBottomOffset>
 				<parentRightOffset>39</parentRightOffset>
@@ -2586,7 +3322,7 @@
 				<fontStrikethru>false</fontStrikethru>
 				<fontUnderline>false</fontUnderline>
 				<foreColor>-2147483640</foreColor>
-				<form name="LogDetails" />
+				<form name="LogDetailsForm" />
 				<formatOut/>
 				<height>21</height>
 				<helpContextId>0</helpContextId>
@@ -2598,7 +3334,7 @@
 				<mousePointer>0</mousePointer>
 				<name>lblLength</name>
 				<noPrefix>false</noPrefix>
-				<parent name="LogDetails" />
+				<parent name="LogDetailsForm" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>102</parentBottomOffset>
 				<parentRightOffset>188</parentRightOffset>
@@ -2638,7 +3374,7 @@
 				<fontStrikethru>false</fontStrikethru>
 				<fontUnderline>false</fontUnderline>
 				<foreColor>-2147483640</foreColor>
-				<form name="LogDetails" />
+				<form name="LogDetailsForm" />
 				<formatOut/>
 				<height>21</height>
 				<helpContextId>0</helpContextId>
@@ -2650,7 +3386,7 @@
 				<mousePointer>0</mousePointer>
 				<name>lblSpecies</name>
 				<noPrefix>false</noPrefix>
-				<parent name="LogDetails" />
+				<parent name="LogDetailsForm" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>183</parentBottomOffset>
 				<parentRightOffset>192</parentRightOffset>
@@ -2675,8 +3411,8 @@
 		</menuList>
 	</Form>
 
-	<Form locale="5129" name="AddLog">
-		<_painterModifiedTimeStamp>2019:06:05:14:38:08.642</_painterModifiedTimeStamp>
+	<Form locale="5129" name="LogAddForm">
+		<_painterModifiedTimeStamp>2019:06:05:19:17:33.490</_painterModifiedTimeStamp>
 		<allowDocking>0</allowDocking>
 		<backBrush/>
 		<backBrushStyle>0</backBrushStyle>
@@ -2707,7 +3443,7 @@
 		<minimumWidth>0</minimumWidth>
 		<mouseCursor/>
 		<mousePointer>0</mousePointer>
-		<name>AddLog</name>
+		<name>LogAddForm</name>
 		<paintedDialogBaseUnits>1048584</paintedDialogBaseUnits>
 		<printerForm>false</printerForm>
 		<scaleForm>true</scaleForm>
@@ -2731,8 +3467,692 @@
 		</menuList>
 	</Form>
 
+	<Form locale="5129" name="LogEditForm">
+		<_painterModifiedTimeStamp>2019:06:05:19:16:25.660</_painterModifiedTimeStamp>
+		<allowDocking>0</allowDocking>
+		<backBrush/>
+		<backBrushStyle>0</backBrushStyle>
+		<backColor>-2147483633</backColor>
+		<borderStyle>2</borderStyle>
+		<bubbleHelp/>
+		<caption>Edit Log</caption>
+		<clientHeight>244</clientHeight>
+		<clientWidth>320</clientWidth>
+		<clipControls>true</clipControls>
+		<controlBox>true</controlBox>
+		<description/>
+		<disableEvents>false</disableEvents>
+		<disableReason/>
+		<dragCursor/>
+		<enabled>true</enabled>
+		<height>283</height>
+		<helpContextId>0</helpContextId>
+		<helpKeyword/>
+		<icon/>
+		<ignoreSkin>false</ignoreSkin>
+		<left>27</left>
+		<maxButton>true</maxButton>
+		<mdiChild>0</mdiChild>
+		<mdiFrame>false</mdiFrame>
+		<minButton>true</minButton>
+		<minimumHeight>0</minimumHeight>
+		<minimumWidth>0</minimumWidth>
+		<mouseCursor/>
+		<mousePointer>0</mousePointer>
+		<name>LogEditForm</name>
+		<paintedDialogBaseUnits>1048584</paintedDialogBaseUnits>
+		<printerForm>false</printerForm>
+		<scaleForm>true</scaleForm>
+		<scrollBars>0</scrollBars>
+		<secureForm>false</secureForm>
+		<securityLevelEnabled>0</securityLevelEnabled>
+		<securityLevelVisible>0</securityLevelVisible>
+		<skinCategoryName/>
+		<top>65</top>
+		<visible>true</visible>
+		<webBrowserAutoRefreshInterval>0</webBrowserAutoRefreshInterval>
+		<webBrowserAutoRefreshURL/>
+		<webBrowserDisableBackButton>false</webBrowserDisableBackButton>
+		<webEncodingType/>
+		<webFileName/>
+		<width>336</width>
+		<windowState>0</windowState>
+		<controlList>
+			<TextBox name="txtSpecies">
+				<alignment>0</alignment>
+				<autoTab>false</autoTab>
+				<backColor>-2147483643</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>2</borderStyle>
+				<bubbleHelp/>
+				<case>0</case>
+				<dataType>0</dataType>
+				<decimals>0</decimals>
+				<description/>
+				<dragCursor/>
+				<enabled>false</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="LogEditForm" />
+				<formatOut/>
+				<height>21</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<hintBackColor>-2147483648</hintBackColor>
+				<hintForeColor>-2147483648</hintForeColor>
+				<hintText/>
+				<ignoreSkin>false</ignoreSkin>
+				<integralHeight>false</integralHeight>
+				<left>137</left>
+				<maxLength>0</maxLength>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>txtSpecies</name>
+				<parent name="LogEditForm" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>165</parentBottomOffset>
+				<parentRightOffset>45</parentRightOffset>
+				<passwordField>false</passwordField>
+				<readOnly>false</readOnly>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<scrollBars>0</scrollBars>
+				<scrollHorizontal>false</scrollHorizontal>
+				<scrollVertical>false</scrollVertical>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<selectionStyle>0</selectionStyle>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<tabIndex>20</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<text/>
+				<textOffset>0</textOffset>
+				<top>58</top>
+				<visible>true</visible>
+				<wantReturn>false</wantReturn>
+				<width>138</width>
+			</TextBox>
+			<TextBox name="txtTreatment">
+				<alignment>0</alignment>
+				<autoTab>false</autoTab>
+				<backColor>-2147483643</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>2</borderStyle>
+				<bubbleHelp/>
+				<case>0</case>
+				<dataType>0</dataType>
+				<decimals>0</decimals>
+				<description/>
+				<dragCursor/>
+				<enabled>false</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="LogEditForm" />
+				<formatOut/>
+				<height>22</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<hintBackColor>-2147483648</hintBackColor>
+				<hintForeColor>-2147483648</hintForeColor>
+				<hintText/>
+				<ignoreSkin>false</ignoreSkin>
+				<integralHeight>false</integralHeight>
+				<left>137</left>
+				<maxLength>0</maxLength>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>txtTreatment</name>
+				<parent name="LogEditForm" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>137</parentBottomOffset>
+				<parentRightOffset>45</parentRightOffset>
+				<passwordField>false</passwordField>
+				<readOnly>false</readOnly>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<scrollBars>0</scrollBars>
+				<scrollHorizontal>false</scrollHorizontal>
+				<scrollVertical>false</scrollVertical>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<selectionStyle>0</selectionStyle>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<tabIndex>19</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<text/>
+				<textOffset>0</textOffset>
+				<top>85</top>
+				<visible>true</visible>
+				<wantReturn>false</wantReturn>
+				<width>138</width>
+			</TextBox>
+			<TextBox name="txtGrade">
+				<alignment>0</alignment>
+				<autoTab>false</autoTab>
+				<backColor>-2147483643</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>2</borderStyle>
+				<bubbleHelp/>
+				<case>0</case>
+				<dataType>0</dataType>
+				<decimals>0</decimals>
+				<description/>
+				<dragCursor/>
+				<enabled>false</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="LogEditForm" />
+				<formatOut/>
+				<height>22</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<hintBackColor>-2147483648</hintBackColor>
+				<hintForeColor>-2147483648</hintForeColor>
+				<hintText/>
+				<ignoreSkin>false</ignoreSkin>
+				<integralHeight>false</integralHeight>
+				<left>137</left>
+				<maxLength>0</maxLength>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>txtGrade</name>
+				<parent name="LogEditForm" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>192</parentBottomOffset>
+				<parentRightOffset>45</parentRightOffset>
+				<passwordField>false</passwordField>
+				<readOnly>false</readOnly>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<scrollBars>0</scrollBars>
+				<scrollHorizontal>false</scrollHorizontal>
+				<scrollVertical>false</scrollVertical>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<selectionStyle>0</selectionStyle>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<tabIndex>17</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<text/>
+				<textOffset>0</textOffset>
+				<top>30</top>
+				<visible>true</visible>
+				<wantReturn>false</wantReturn>
+				<width>138</width>
+			</TextBox>
+			<Label name="lblSpecies_1">
+				<alignment>1</alignment>
+				<autoSize>false</autoSize>
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483633</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>0</borderStyle>
+				<bubbleHelp/>
+				<caption>Treatment:</caption>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName>Tahoma</fontName>
+				<fontSize>9.75</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="LogEditForm" />
+				<formatOut/>
+				<height>21</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<hyperlink/>
+				<ignoreSkin>false</ignoreSkin>
+				<left>65</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>lblSpecies_1</name>
+				<noPrefix>false</noPrefix>
+				<parent name="LogEditForm" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>137</parentBottomOffset>
+				<parentRightOffset>189</parentRightOffset>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<tabIndex>16</tabIndex>
+				<tag/>
+				<top>86</top>
+				<transparent>false</transparent>
+				<visible>true</visible>
+				<width>66</width>
+				<wordWrap>false</wordWrap>
+			</Label>
+			<Label name="lblGrade">
+				<alignment>1</alignment>
+				<autoSize>false</autoSize>
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483633</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>0</borderStyle>
+				<bubbleHelp/>
+				<caption>Grade:</caption>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName>Tahoma</fontName>
+				<fontSize>9.75</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="LogEditForm" />
+				<formatOut/>
+				<height>17</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<hyperlink/>
+				<ignoreSkin>false</ignoreSkin>
+				<left>90</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>lblGrade</name>
+				<noPrefix>false</noPrefix>
+				<parent name="LogEditForm" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>192</parentBottomOffset>
+				<parentRightOffset>189</parentRightOffset>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<tabIndex>15</tabIndex>
+				<tag/>
+				<top>35</top>
+				<transparent>false</transparent>
+				<visible>true</visible>
+				<width>41</width>
+				<wordWrap>false</wordWrap>
+			</Label>
+			<StatusLine name="logStatus">
+				<alignment>0</alignment>
+				<autoSize>true</autoSize>
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483633</backColor>
+				<bevelColor>-2147483628</bevelColor>
+				<bevelInner>1</bevelInner>
+				<bevelInnerWidth>1</bevelInnerWidth>
+				<bevelOuter>2</bevelOuter>
+				<bevelOuterWidth>1</bevelOuterWidth>
+				<bevelShadowColor>-2147483632</bevelShadowColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>1</borderStyle>
+				<boundaryBrush>0</boundaryBrush>
+				<boundaryColor>-2147483633</boundaryColor>
+				<boundaryWidth>1</boundaryWidth>
+				<bubbleHelp/>
+				<caption>LogStatus</caption>
+				<clipControls>true</clipControls>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483630</foreColor>
+				<form name="LogEditForm" />
+				<height>21</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<ignoreSkin>false</ignoreSkin>
+				<left>0</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>logStatus</name>
+				<parent name="LogEditForm" />
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<skinCategoryName/>
+				<tabIndex>11</tabIndex>
+				<tag/>
+				<top>223</top>
+				<visible>true</visible>
+				<width>320</width>
+				<wordWrap>false</wordWrap>
+			</StatusLine>
+			<Button name="btnCancel">
+				<autoSize>1</autoSize>
+				<backColor>-2147483633</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>0</borderStyle>
+				<bubbleHelp/>
+				<buttonPicture>0</buttonPicture>
+				<cancel>false</cancel>
+				<caption>Cancel</caption>
+				<default>false</default>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483630</foreColor>
+				<form name="LogEditForm" />
+				<height>23</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<ignoreSkin>false</ignoreSkin>
+				<left>183</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>btnCancel</name>
+				<parent name="LogEditForm" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>42</parentBottomOffset>
+				<parentRightOffset>57</parentRightOffset>
+				<picture/>
+				<pictureDisabled/>
+				<pictureDown/>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<skinCategoryName/>
+				<style>0</style>
+				<tabIndex>10</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<top>179</top>
+				<value>false</value>
+				<visible>true</visible>
+				<width>80</width>
+			</Button>
+			<Button name="btnOk">
+				<autoSize>1</autoSize>
+				<backColor>-2147483633</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>0</borderStyle>
+				<bubbleHelp/>
+				<buttonPicture>0</buttonPicture>
+				<cancel>false</cancel>
+				<caption>Ok</caption>
+				<default>false</default>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483630</foreColor>
+				<form name="LogEditForm" />
+				<height>23</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<ignoreSkin>false</ignoreSkin>
+				<left>55</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>btnOk</name>
+				<parent name="LogEditForm" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>43</parentBottomOffset>
+				<parentRightOffset>185</parentRightOffset>
+				<picture/>
+				<pictureDisabled/>
+				<pictureDown/>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<skinCategoryName/>
+				<style>0</style>
+				<tabIndex>9</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<top>178</top>
+				<value>false</value>
+				<visible>true</visible>
+				<width>80</width>
+			</Button>
+			<TextBox name="txtLength">
+				<alignment>0</alignment>
+				<autoTab>false</autoTab>
+				<backColor>-2147483643</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>2</borderStyle>
+				<bubbleHelp/>
+				<case>0</case>
+				<dataType>0</dataType>
+				<decimals>0</decimals>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="LogEditForm" />
+				<formatOut/>
+				<height>24</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<hintBackColor>-2147483648</hintBackColor>
+				<hintForeColor>-2147483648</hintForeColor>
+				<hintText/>
+				<ignoreSkin>false</ignoreSkin>
+				<integralHeight>false</integralHeight>
+				<left>137</left>
+				<maxLength>0</maxLength>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>txtLength</name>
+				<parent name="LogEditForm" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>107</parentBottomOffset>
+				<parentRightOffset>45</parentRightOffset>
+				<passwordField>false</passwordField>
+				<readOnly>false</readOnly>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<scrollBars>0</scrollBars>
+				<scrollHorizontal>false</scrollHorizontal>
+				<scrollVertical>false</scrollVertical>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<selectionStyle>0</selectionStyle>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<tabIndex>6</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<text/>
+				<textOffset>0</textOffset>
+				<top>113</top>
+				<visible>true</visible>
+				<wantReturn>false</wantReturn>
+				<width>138</width>
+			</TextBox>
+			<Label name="lblLength">
+				<alignment>1</alignment>
+				<autoSize>false</autoSize>
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483633</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>0</borderStyle>
+				<bubbleHelp/>
+				<caption>Log Length (m):</caption>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName>Tahoma</fontName>
+				<fontSize>9.75</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="LogEditForm" />
+				<formatOut/>
+				<height>21</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<hyperlink/>
+				<ignoreSkin>false</ignoreSkin>
+				<left>40</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>lblLength</name>
+				<noPrefix>false</noPrefix>
+				<parent name="LogEditForm" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>107</parentBottomOffset>
+				<parentRightOffset>189</parentRightOffset>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<tabIndex>5</tabIndex>
+				<tag/>
+				<top>116</top>
+				<transparent>false</transparent>
+				<visible>true</visible>
+				<width>91</width>
+				<wordWrap>false</wordWrap>
+			</Label>
+			<Label name="lblSpecies">
+				<alignment>1</alignment>
+				<autoSize>false</autoSize>
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483633</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>0</borderStyle>
+				<bubbleHelp/>
+				<caption>Log Species:</caption>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName>Tahoma</fontName>
+				<fontSize>9.75</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="LogEditForm" />
+				<formatOut/>
+				<height>21</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<hyperlink/>
+				<ignoreSkin>false</ignoreSkin>
+				<left>57</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>lblSpecies</name>
+				<noPrefix>false</noPrefix>
+				<parent name="LogEditForm" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>165</parentBottomOffset>
+				<parentRightOffset>189</parentRightOffset>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<tabIndex>2</tabIndex>
+				<tag/>
+				<top>58</top>
+				<transparent>false</transparent>
+				<visible>true</visible>
+				<width>74</width>
+				<wordWrap>false</wordWrap>
+			</Label>
+		</controlList>
+		<menuList>
+		</menuList>
+	</Form>
+
 	<Form locale="5129" name="LogListForm">
-		<_painterModifiedTimeStamp>2019:06:05:14:38:08.642</_painterModifiedTimeStamp>
+		<_painterModifiedTimeStamp>2019:06:05:17:05:49.381</_painterModifiedTimeStamp>
 		<allowDocking>0</allowDocking>
 		<backBrush/>
 		<backBrushStyle>0</backBrushStyle>
@@ -3067,7 +4487,7 @@
 	</Form>
 
 	<Form locale="5129" name="LotListForm">
-		<_painterModifiedTimeStamp>2019:06:05:15:42:07.549</_painterModifiedTimeStamp>
+		<_painterModifiedTimeStamp>2019:06:05:17:05:49.381</_painterModifiedTimeStamp>
 		<allowDocking>0</allowDocking>
 		<backBrush/>
 		<backBrushStyle>0</backBrushStyle>
@@ -3401,8 +4821,8 @@
 		</menuList>
 	</Form>
 
-	<Form locale="5129" name="MainMenu">
-		<_painterModifiedTimeStamp>2019:06:05:15:52:48.638</_painterModifiedTimeStamp>
+	<Form locale="5129" name="MainMenuForm">
+		<_painterModifiedTimeStamp>2019:06:05:19:17:50.023</_painterModifiedTimeStamp>
 		<allowDocking>0</allowDocking>
 		<backBrush/>
 		<backBrushStyle>0</backBrushStyle>
@@ -3433,7 +4853,7 @@
 		<minimumWidth>0</minimumWidth>
 		<mouseCursor/>
 		<mousePointer>0</mousePointer>
-		<name>MainMenu</name>
+		<name>MainMenuForm</name>
 		<paintedDialogBaseUnits>1048584</paintedDialogBaseUnits>
 		<printerForm>false</printerForm>
 		<scaleForm>true</scaleForm>
@@ -3463,7 +4883,7 @@
 				<disableReason/>
 				<enabled>true</enabled>
 				<foreColor>0</foreColor>
-				<form name="MainMenu" />
+				<form name="MainMenuForm" />
 				<hasSubMenu>true</hasSubMenu>
 				<helpContextId>0</helpContextId>
 				<helpKeyword/>
@@ -3488,7 +4908,7 @@
 				<disableReason/>
 				<enabled>true</enabled>
 				<foreColor>0</foreColor>
-				<form name="MainMenu" />
+				<form name="MainMenuForm" />
 				<hasSubMenu>false</hasSubMenu>
 				<helpContextId>0</helpContextId>
 				<helpKeyword/>
@@ -3513,7 +4933,7 @@
 				<disableReason/>
 				<enabled>true</enabled>
 				<foreColor>0</foreColor>
-				<form name="MainMenu" />
+				<form name="MainMenuForm" />
 				<hasSubMenu>true</hasSubMenu>
 				<helpContextId>0</helpContextId>
 				<helpKeyword/>
@@ -3538,7 +4958,7 @@
 				<disableReason/>
 				<enabled>true</enabled>
 				<foreColor>0</foreColor>
-				<form name="MainMenu" />
+				<form name="MainMenuForm" />
 				<hasSubMenu>false</hasSubMenu>
 				<helpContextId>0</helpContextId>
 				<helpKeyword/>
@@ -3563,7 +4983,7 @@
 				<disableReason/>
 				<enabled>true</enabled>
 				<foreColor>0</foreColor>
-				<form name="MainMenu" />
+				<form name="MainMenuForm" />
 				<hasSubMenu>true</hasSubMenu>
 				<helpContextId>0</helpContextId>
 				<helpKeyword/>
@@ -3588,7 +5008,7 @@
 				<disableReason/>
 				<enabled>true</enabled>
 				<foreColor>0</foreColor>
-				<form name="MainMenu" />
+				<form name="MainMenuForm" />
 				<hasSubMenu>false</hasSubMenu>
 				<helpContextId>0</helpContextId>
 				<helpKeyword/>
@@ -3613,7 +5033,7 @@
 				<disableReason/>
 				<enabled>true</enabled>
 				<foreColor>0</foreColor>
-				<form name="MainMenu" />
+				<form name="MainMenuForm" />
 				<hasSubMenu>true</hasSubMenu>
 				<helpContextId>0</helpContextId>
 				<helpKeyword/>
@@ -3638,7 +5058,7 @@
 				<disableReason/>
 				<enabled>true</enabled>
 				<foreColor>0</foreColor>
-				<form name="MainMenu" />
+				<form name="MainMenuForm" />
 				<hasSubMenu>false</hasSubMenu>
 				<helpContextId>0</helpContextId>
 				<helpKeyword/>
@@ -3663,7 +5083,7 @@
 				<disableReason/>
 				<enabled>true</enabled>
 				<foreColor>0</foreColor>
-				<form name="MainMenu" />
+				<form name="MainMenuForm" />
 				<hasSubMenu>true</hasSubMenu>
 				<helpContextId>0</helpContextId>
 				<helpKeyword/>
@@ -3688,7 +5108,7 @@
 				<disableReason/>
 				<enabled>true</enabled>
 				<foreColor>0</foreColor>
-				<form name="MainMenu" />
+				<form name="MainMenuForm" />
 				<hasSubMenu>false</hasSubMenu>
 				<helpContextId>0</helpContextId>
 				<helpKeyword/>
@@ -3707,8 +5127,8 @@
 		</menuList>
 	</Form>
 
-	<Form locale="5129" name="RowDetials">
-		<_painterModifiedTimeStamp>2019:06:05:14:57:31.909</_painterModifiedTimeStamp>
+	<Form locale="5129" name="RowDetailsForm">
+		<_painterModifiedTimeStamp>2019:06:05:19:18:01.265</_painterModifiedTimeStamp>
 		<allowDocking>0</allowDocking>
 		<backBrush/>
 		<backBrushStyle>0</backBrushStyle>
@@ -3739,7 +5159,7 @@
 		<minimumWidth>0</minimumWidth>
 		<mouseCursor/>
 		<mousePointer>0</mousePointer>
-		<name>RowDetials</name>
+		<name>RowDetailsForm</name>
 		<paintedDialogBaseUnits>1048584</paintedDialogBaseUnits>
 		<printerForm>false</printerForm>
 		<scaleForm>true</scaleForm>
@@ -3778,7 +5198,7 @@
 				<fontStrikethru>false</fontStrikethru>
 				<fontUnderline>false</fontUnderline>
 				<foreColor>-2147483640</foreColor>
-				<form name="RowDetials" />
+				<form name="RowDetailsForm" />
 				<formatOut/>
 				<height>21</height>
 				<helpContextId>0</helpContextId>
@@ -3790,7 +5210,7 @@
 				<mousePointer>0</mousePointer>
 				<name>lblSpecies</name>
 				<noPrefix>false</noPrefix>
-				<parent name="RowDetials" />
+				<parent name="RowDetailsForm" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>155</parentBottomOffset>
 				<parentRightOffset>197</parentRightOffset>
@@ -3829,7 +5249,7 @@
 				<fontStrikethru>false</fontStrikethru>
 				<fontUnderline>false</fontUnderline>
 				<foreColor>-2147483640</foreColor>
-				<form name="RowDetials" />
+				<form name="RowDetailsForm" />
 				<hasPictures>false</hasPictures>
 				<hasPlusMinus>false</hasPlusMinus>
 				<hasTreeLines>false</hasTreeLines>
@@ -3843,7 +5263,7 @@
 				<mouseCursor/>
 				<mousePointer>0</mousePointer>
 				<name>cboLogSpecies</name>
-				<parent name="RowDetials" />
+				<parent name="RowDetailsForm" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>155</parentBottomOffset>
 				<parentRightOffset>41</parentRightOffset>
@@ -3888,7 +5308,7 @@
 				<fontStrikethru>false</fontStrikethru>
 				<fontUnderline>false</fontUnderline>
 				<foreColor>-2147483640</foreColor>
-				<form name="RowDetials" />
+				<form name="RowDetailsForm" />
 				<hasPictures>false</hasPictures>
 				<hasPlusMinus>false</hasPlusMinus>
 				<hasTreeLines>false</hasTreeLines>
@@ -3902,7 +5322,7 @@
 				<mouseCursor/>
 				<mousePointer>0</mousePointer>
 				<name>cboLogGrade</name>
-				<parent name="RowDetials" />
+				<parent name="RowDetailsForm" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>190</parentBottomOffset>
 				<parentRightOffset>41</parentRightOffset>
@@ -3947,7 +5367,7 @@
 				<fontStrikethru>false</fontStrikethru>
 				<fontUnderline>false</fontUnderline>
 				<foreColor>-2147483640</foreColor>
-				<form name="RowDetials" />
+				<form name="RowDetailsForm" />
 				<hasPictures>false</hasPictures>
 				<hasPlusMinus>false</hasPlusMinus>
 				<hasTreeLines>false</hasTreeLines>
@@ -3961,7 +5381,7 @@
 				<mouseCursor/>
 				<mousePointer>0</mousePointer>
 				<name>cboLogTreatment</name>
-				<parent name="RowDetials" />
+				<parent name="RowDetailsForm" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>115</parentBottomOffset>
 				<parentRightOffset>41</parentRightOffset>
@@ -4007,7 +5427,7 @@
 				<fontStrikethru>false</fontStrikethru>
 				<fontUnderline>false</fontUnderline>
 				<foreColor>-2147483640</foreColor>
-				<form name="RowDetials" />
+				<form name="RowDetailsForm" />
 				<formatOut/>
 				<height>17</height>
 				<helpContextId>0</helpContextId>
@@ -4019,7 +5439,7 @@
 				<mousePointer>0</mousePointer>
 				<name>lblGrade</name>
 				<noPrefix>false</noPrefix>
-				<parent name="RowDetials" />
+				<parent name="RowDetailsForm" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>193</parentBottomOffset>
 				<parentRightOffset>195</parentRightOffset>
@@ -4059,7 +5479,7 @@
 				<fontStrikethru>false</fontStrikethru>
 				<fontUnderline>false</fontUnderline>
 				<foreColor>-2147483640</foreColor>
-				<form name="RowDetials" />
+				<form name="RowDetailsForm" />
 				<formatOut/>
 				<height>21</height>
 				<helpContextId>0</helpContextId>
@@ -4071,7 +5491,7 @@
 				<mousePointer>0</mousePointer>
 				<name>lblTreatment</name>
 				<noPrefix>false</noPrefix>
-				<parent name="RowDetials" />
+				<parent name="RowDetailsForm" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>115</parentBottomOffset>
 				<parentRightOffset>195</parentRightOffset>
@@ -4123,7 +5543,7 @@
 				<fontStrikethru>false</fontStrikethru>
 				<fontUnderline>false</fontUnderline>
 				<foreColor>-2147483630</foreColor>
-				<form name="RowDetials" />
+				<form name="RowDetailsForm" />
 				<height>21</height>
 				<helpContextId>0</helpContextId>
 				<helpKeyword/>
@@ -4132,7 +5552,7 @@
 				<mouseCursor/>
 				<mousePointer>0</mousePointer>
 				<name>rowStatusLine</name>
-				<parent name="RowDetials" />
+				<parent name="RowDetailsForm" />
 				<securityLevelEnabled>0</securityLevelEnabled>
 				<securityLevelVisible>0</securityLevelVisible>
 				<skinCategoryName/>
@@ -4165,7 +5585,7 @@
 				<fontStrikethru>false</fontStrikethru>
 				<fontUnderline>false</fontUnderline>
 				<foreColor>-2147483630</foreColor>
-				<form name="RowDetials" />
+				<form name="RowDetailsForm" />
 				<height>23</height>
 				<helpContextId>0</helpContextId>
 				<helpKeyword/>
@@ -4174,7 +5594,7 @@
 				<mouseCursor/>
 				<mousePointer>0</mousePointer>
 				<name>btnCancel</name>
-				<parent name="RowDetials" />
+				<parent name="RowDetailsForm" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>57</parentBottomOffset>
 				<parentRightOffset>56</parentRightOffset>
@@ -4219,7 +5639,7 @@
 				<fontStrikethru>false</fontStrikethru>
 				<fontUnderline>false</fontUnderline>
 				<foreColor>-2147483630</foreColor>
-				<form name="RowDetials" />
+				<form name="RowDetailsForm" />
 				<height>23</height>
 				<helpContextId>0</helpContextId>
 				<helpKeyword/>
@@ -4228,7 +5648,7 @@
 				<mouseCursor/>
 				<mousePointer>0</mousePointer>
 				<name>btnOk</name>
-				<parent name="RowDetials" />
+				<parent name="RowDetailsForm" />
 				<parentAspect>0</parentAspect>
 				<parentBottomOffset>58</parentBottomOffset>
 				<parentRightOffset>168</parentRightOffset>
@@ -4256,8 +5676,8 @@
 		</menuList>
 	</Form>
 
-	<Form locale="5129" name="AddRow">
-		<_painterModifiedTimeStamp>2019:06:05:14:57:31.910</_painterModifiedTimeStamp>
+	<Form locale="5129" name="RowAddForm">
+		<_painterModifiedTimeStamp>2019:06:05:19:18:15.169</_painterModifiedTimeStamp>
 		<allowDocking>0</allowDocking>
 		<backBrush/>
 		<backBrushStyle>0</backBrushStyle>
@@ -4279,7 +5699,7 @@
 		<helpKeyword/>
 		<icon/>
 		<ignoreSkin>false</ignoreSkin>
-		<left>243</left>
+		<left>29</left>
 		<maxButton>true</maxButton>
 		<mdiChild>0</mdiChild>
 		<mdiFrame>false</mdiFrame>
@@ -4288,7 +5708,7 @@
 		<minimumWidth>0</minimumWidth>
 		<mouseCursor/>
 		<mousePointer>0</mousePointer>
-		<name>AddRow</name>
+		<name>RowAddForm</name>
 		<paintedDialogBaseUnits>1048584</paintedDialogBaseUnits>
 		<printerForm>false</printerForm>
 		<scaleForm>true</scaleForm>
@@ -4297,7 +5717,7 @@
 		<securityLevelEnabled>0</securityLevelEnabled>
 		<securityLevelVisible>0</securityLevelVisible>
 		<skinCategoryName/>
-		<top>18</top>
+		<top>21</top>
 		<visible>true</visible>
 		<webBrowserAutoRefreshInterval>0</webBrowserAutoRefreshInterval>
 		<webBrowserAutoRefreshURL/>
@@ -4312,8 +5732,753 @@
 		</menuList>
 	</Form>
 
+	<Form locale="5129" name="RowEditForm">
+		<_painterModifiedTimeStamp>2019:06:05:19:19:10.834</_painterModifiedTimeStamp>
+		<allowDocking>0</allowDocking>
+		<backBrush/>
+		<backBrushStyle>0</backBrushStyle>
+		<backColor>-2147483633</backColor>
+		<borderStyle>2</borderStyle>
+		<bubbleHelp/>
+		<caption>Edit Row</caption>
+		<clientHeight>595</clientHeight>
+		<clientWidth>407</clientWidth>
+		<clipControls>true</clipControls>
+		<controlBox>true</controlBox>
+		<description/>
+		<disableEvents>false</disableEvents>
+		<disableReason/>
+		<dragCursor/>
+		<enabled>true</enabled>
+		<height>634</height>
+		<helpContextId>0</helpContextId>
+		<helpKeyword/>
+		<icon/>
+		<ignoreSkin>false</ignoreSkin>
+		<left>23</left>
+		<maxButton>true</maxButton>
+		<mdiChild>0</mdiChild>
+		<mdiFrame>false</mdiFrame>
+		<minButton>true</minButton>
+		<minimumHeight>0</minimumHeight>
+		<minimumWidth>0</minimumWidth>
+		<mouseCursor/>
+		<mousePointer>0</mousePointer>
+		<name>RowEditForm</name>
+		<paintedDialogBaseUnits>1048584</paintedDialogBaseUnits>
+		<printerForm>false</printerForm>
+		<scaleForm>true</scaleForm>
+		<scrollBars>0</scrollBars>
+		<secureForm>false</secureForm>
+		<securityLevelEnabled>0</securityLevelEnabled>
+		<securityLevelVisible>0</securityLevelVisible>
+		<skinCategoryName/>
+		<top>20</top>
+		<visible>true</visible>
+		<webBrowserAutoRefreshInterval>0</webBrowserAutoRefreshInterval>
+		<webBrowserAutoRefreshURL/>
+		<webBrowserDisableBackButton>false</webBrowserDisableBackButton>
+		<webEncodingType/>
+		<webFileName/>
+		<width>423</width>
+		<windowState>0</windowState>
+		<controlList>
+			<Button name="btnLogEdit">
+				<autoSize>1</autoSize>
+				<backColor>-2147483633</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>0</borderStyle>
+				<bubbleHelp/>
+				<buttonPicture>0</buttonPicture>
+				<cancel>false</cancel>
+				<caption>Edit Log</caption>
+				<default>false</default>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483630</foreColor>
+				<form name="RowEditForm" />
+				<height>23</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<ignoreSkin>false</ignoreSkin>
+				<left>83</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>btnLogEdit</name>
+				<parent name="RowEditForm" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>373</parentBottomOffset>
+				<parentRightOffset>207</parentRightOffset>
+				<picture/>
+				<pictureDisabled/>
+				<pictureDown/>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<skinCategoryName/>
+				<style>0</style>
+				<tabIndex>28</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<top>199</top>
+				<value>false</value>
+				<visible>true</visible>
+				<width>117</width>
+			</Button>
+			<Button name="btnLogAdd">
+				<autoSize>1</autoSize>
+				<backColor>-2147483633</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>0</borderStyle>
+				<bubbleHelp/>
+				<buttonPicture>0</buttonPicture>
+				<cancel>false</cancel>
+				<caption>Add Log</caption>
+				<default>false</default>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483630</foreColor>
+				<form name="RowEditForm" />
+				<height>22</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<ignoreSkin>false</ignoreSkin>
+				<left>299</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>btnLogAdd</name>
+				<parent name="RowEditForm" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>437</parentBottomOffset>
+				<parentRightOffset>20</parentRightOffset>
+				<picture/>
+				<pictureDisabled/>
+				<pictureDown/>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<skinCategoryName/>
+				<style>0</style>
+				<tabIndex>27</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<top>136</top>
+				<value>false</value>
+				<visible>true</visible>
+				<width>88</width>
+			</Button>
+			<ComboBox name="cboLog">
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483643</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>2</borderStyle>
+				<bubbleHelp/>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="RowEditForm" />
+				<hasPictures>false</hasPictures>
+				<hasPlusMinus>false</hasPlusMinus>
+				<hasTreeLines>false</hasTreeLines>
+				<height>20</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<ignoreSkin>false</ignoreSkin>
+				<left>19</left>
+				<listWidth>0</listWidth>
+				<maxLength>0</maxLength>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>cboLog</name>
+				<parent name="RowEditForm" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>439</parentBottomOffset>
+				<parentRightOffset>115</parentRightOffset>
+				<pictureClosed/>
+				<pictureLeaf/>
+				<pictureMinus/>
+				<pictureOpen/>
+				<picturePlus/>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<sortCased>false</sortCased>
+				<sorted>true</sorted>
+				<style>2</style>
+				<tabIndex>26</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<top>136</top>
+				<visible>true</visible>
+				<width>273</width>
+			</ComboBox>
+			<TextBox name="txtTreatment">
+				<alignment>0</alignment>
+				<autoTab>false</autoTab>
+				<backColor>-2147483643</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>2</borderStyle>
+				<bubbleHelp/>
+				<case>0</case>
+				<dataType>0</dataType>
+				<decimals>0</decimals>
+				<description/>
+				<dragCursor/>
+				<enabled>false</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="RowEditForm" />
+				<formatOut/>
+				<height>22</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<hintBackColor>-2147483648</hintBackColor>
+				<hintForeColor>-2147483648</hintForeColor>
+				<hintText/>
+				<ignoreSkin>false</ignoreSkin>
+				<integralHeight>false</integralHeight>
+				<left>193</left>
+				<maxLength>0</maxLength>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>txtTreatment</name>
+				<parent name="RowEditForm" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>493</parentBottomOffset>
+				<parentRightOffset>104</parentRightOffset>
+				<passwordField>false</passwordField>
+				<readOnly>false</readOnly>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<scrollBars>0</scrollBars>
+				<scrollHorizontal>false</scrollHorizontal>
+				<scrollVertical>false</scrollVertical>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<selectionStyle>0</selectionStyle>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<tabIndex>25</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<text/>
+				<textOffset>0</textOffset>
+				<top>80</top>
+				<visible>true</visible>
+				<wantReturn>false</wantReturn>
+				<width>110</width>
+			</TextBox>
+			<TextBox name="txtSpecies">
+				<alignment>0</alignment>
+				<autoTab>false</autoTab>
+				<backColor>-2147483643</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>2</borderStyle>
+				<bubbleHelp/>
+				<case>0</case>
+				<dataType>0</dataType>
+				<decimals>0</decimals>
+				<description/>
+				<dragCursor/>
+				<enabled>false</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="RowEditForm" />
+				<formatOut/>
+				<height>22</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<hintBackColor>-2147483648</hintBackColor>
+				<hintForeColor>-2147483648</hintForeColor>
+				<hintText/>
+				<ignoreSkin>false</ignoreSkin>
+				<integralHeight>false</integralHeight>
+				<left>193</left>
+				<maxLength>0</maxLength>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>txtSpecies</name>
+				<parent name="RowEditForm" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>521</parentBottomOffset>
+				<parentRightOffset>104</parentRightOffset>
+				<passwordField>false</passwordField>
+				<readOnly>false</readOnly>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<scrollBars>0</scrollBars>
+				<scrollHorizontal>false</scrollHorizontal>
+				<scrollVertical>false</scrollVertical>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<selectionStyle>0</selectionStyle>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<tabIndex>24</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<text/>
+				<textOffset>0</textOffset>
+				<top>52</top>
+				<visible>true</visible>
+				<wantReturn>false</wantReturn>
+				<width>110</width>
+			</TextBox>
+			<TextBox name="txtGrade">
+				<alignment>0</alignment>
+				<autoTab>false</autoTab>
+				<backColor>-2147483643</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>2</borderStyle>
+				<bubbleHelp/>
+				<case>0</case>
+				<dataType>0</dataType>
+				<decimals>0</decimals>
+				<description/>
+				<dragCursor/>
+				<enabled>false</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="RowEditForm" />
+				<formatOut/>
+				<height>22</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<hintBackColor>-2147483648</hintBackColor>
+				<hintForeColor>-2147483648</hintForeColor>
+				<hintText/>
+				<ignoreSkin>false</ignoreSkin>
+				<integralHeight>false</integralHeight>
+				<left>193</left>
+				<maxLength>0</maxLength>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>txtGrade</name>
+				<parent name="RowEditForm" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>549</parentBottomOffset>
+				<parentRightOffset>104</parentRightOffset>
+				<passwordField>false</passwordField>
+				<readOnly>false</readOnly>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<scrollBars>0</scrollBars>
+				<scrollHorizontal>false</scrollHorizontal>
+				<scrollVertical>false</scrollVertical>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<selectionStyle>0</selectionStyle>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<tabIndex>23</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<text/>
+				<textOffset>0</textOffset>
+				<top>24</top>
+				<visible>true</visible>
+				<wantReturn>false</wantReturn>
+				<width>110</width>
+			</TextBox>
+			<Label name="lblTreatment">
+				<alignment>1</alignment>
+				<autoSize>false</autoSize>
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483633</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>0</borderStyle>
+				<bubbleHelp/>
+				<caption>Treatment:</caption>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName>Tahoma</fontName>
+				<fontSize>9.75</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="RowEditForm" />
+				<formatOut/>
+				<height>22</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<hyperlink/>
+				<ignoreSkin>false</ignoreSkin>
+				<left>111</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>lblTreatment</name>
+				<noPrefix>false</noPrefix>
+				<parent name="RowEditForm" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>493</parentBottomOffset>
+				<parentRightOffset>230</parentRightOffset>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<tabIndex>16</tabIndex>
+				<tag/>
+				<top>80</top>
+				<transparent>false</transparent>
+				<visible>true</visible>
+				<width>66</width>
+				<wordWrap>false</wordWrap>
+			</Label>
+			<Label name="lblGrade">
+				<alignment>1</alignment>
+				<autoSize>false</autoSize>
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483633</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>0</borderStyle>
+				<bubbleHelp/>
+				<caption>Grade:</caption>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName>Tahoma</fontName>
+				<fontSize>9.75</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="RowEditForm" />
+				<formatOut/>
+				<height>22</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<hyperlink/>
+				<ignoreSkin>false</ignoreSkin>
+				<left>136</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>lblGrade</name>
+				<noPrefix>false</noPrefix>
+				<parent name="RowEditForm" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>549</parentBottomOffset>
+				<parentRightOffset>230</parentRightOffset>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<tabIndex>15</tabIndex>
+				<tag/>
+				<top>24</top>
+				<transparent>false</transparent>
+				<visible>true</visible>
+				<width>41</width>
+				<wordWrap>false</wordWrap>
+			</Label>
+			<Label name="lblSpecies">
+				<alignment>1</alignment>
+				<autoSize>false</autoSize>
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483633</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>0</borderStyle>
+				<bubbleHelp/>
+				<caption>Log Species:</caption>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName>Tahoma</fontName>
+				<fontSize>9.75</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="RowEditForm" />
+				<formatOut/>
+				<height>22</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<hyperlink/>
+				<ignoreSkin>false</ignoreSkin>
+				<left>103</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>lblSpecies</name>
+				<noPrefix>false</noPrefix>
+				<parent name="RowEditForm" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>521</parentBottomOffset>
+				<parentRightOffset>230</parentRightOffset>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<tabIndex>2</tabIndex>
+				<tag/>
+				<top>52</top>
+				<transparent>false</transparent>
+				<visible>true</visible>
+				<width>74</width>
+				<wordWrap>false</wordWrap>
+			</Label>
+			<StatusLine name="rowStatus">
+				<alignment>0</alignment>
+				<autoSize>true</autoSize>
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483633</backColor>
+				<bevelColor>-2147483628</bevelColor>
+				<bevelInner>1</bevelInner>
+				<bevelInnerWidth>1</bevelInnerWidth>
+				<bevelOuter>2</bevelOuter>
+				<bevelOuterWidth>1</bevelOuterWidth>
+				<bevelShadowColor>-2147483632</bevelShadowColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>1</borderStyle>
+				<boundaryBrush>0</boundaryBrush>
+				<boundaryColor>-2147483633</boundaryColor>
+				<boundaryWidth>1</boundaryWidth>
+				<bubbleHelp/>
+				<caption/>
+				<clipControls>true</clipControls>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483630</foreColor>
+				<form name="RowEditForm" />
+				<height>21</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<ignoreSkin>false</ignoreSkin>
+				<left>0</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>rowStatus</name>
+				<parent name="RowEditForm" />
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<skinCategoryName/>
+				<tabIndex>22</tabIndex>
+				<tag/>
+				<top>574</top>
+				<visible>true</visible>
+				<width>407</width>
+				<wordWrap>false</wordWrap>
+			</StatusLine>
+			<Button name="btnLogRemove">
+				<autoSize>1</autoSize>
+				<backColor>-2147483633</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>0</borderStyle>
+				<bubbleHelp/>
+				<buttonPicture>0</buttonPicture>
+				<cancel>false</cancel>
+				<caption>Remove Log</caption>
+				<default>false</default>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483630</foreColor>
+				<form name="RowEditForm" />
+				<height>23</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<ignoreSkin>false</ignoreSkin>
+				<left>206</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>btnLogRemove</name>
+				<parent name="RowEditForm" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>373</parentBottomOffset>
+				<parentRightOffset>84</parentRightOffset>
+				<picture/>
+				<pictureDisabled/>
+				<pictureDown/>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<skinCategoryName/>
+				<style>0</style>
+				<tabIndex>20</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<top>199</top>
+				<value>false</value>
+				<visible>true</visible>
+				<width>117</width>
+			</Button>
+			<ListBox name="logListBox">
+				<alternatingRowBackColor>16777200</alternatingRowBackColor>
+				<alternatingRowBackColorCount>0</alternatingRowBackColorCount>
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483643</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>2</borderStyle>
+				<bubbleHelp/>
+				<defaultLineHeight>0</defaultLineHeight>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="RowEditForm" />
+				<hasPictures>false</hasPictures>
+				<hasPlusMinus>false</hasPlusMinus>
+				<hasTreeLines>false</hasTreeLines>
+				<height>329</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<ignoreSkin>false</ignoreSkin>
+				<integralHeight>true</integralHeight>
+				<left>15</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<multiSelect>0</multiSelect>
+				<name>logListBox</name>
+				<nameSeparator>\</nameSeparator>
+				<parent name="RowEditForm" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>31</parentBottomOffset>
+				<parentRightOffset>15</parentRightOffset>
+				<pictureClosed/>
+				<pictureLeaf/>
+				<pictureMinus/>
+				<pictureOpen/>
+				<picturePlus/>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<scrollBars>2</scrollBars>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<sortAsc>true</sortAsc>
+				<sortCased>false</sortCased>
+				<sorted>false</sorted>
+				<tabIndex>18</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<top>235</top>
+				<visible>true</visible>
+				<width>377</width>
+			</ListBox>
+		</controlList>
+		<menuList>
+		</menuList>
+	</Form>
+
 	<Form locale="5129" name="RowListForm">
-		<_painterModifiedTimeStamp>2019:06:05:15:41:50.668</_painterModifiedTimeStamp>
+		<_painterModifiedTimeStamp>2019:06:05:17:05:49.381</_painterModifiedTimeStamp>
 		<allowDocking>0</allowDocking>
 		<backBrush/>
 		<backBrushStyle>0</backBrushStyle>

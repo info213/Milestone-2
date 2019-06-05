@@ -1,4 +1,4 @@
-/* JADE COMMAND FILE NAME C:\Users\barry\INFO213\MasterTerminalTesting.jcf */
+/* JADE COMMAND FILE NAME P:\University\INFO213\Assignments\Milestone-2\MasterTerminalTesting.jcf */
 jadeVersionNumber "18.0.01";
 schemaDefinition
 MasterTerminalTesting subschemaOf MasterTerminal completeDefinition, patchVersioningEnabled = false;
@@ -69,17 +69,19 @@ typeDefinitions
 		testEntityTypes() unitTest, number = 1001;
 		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:00:34:36.674;
 		testLogAreaAllocation() unitTest, number = 1004;
-		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:03:12:57.218;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:09:01.226;
 		testLogAreaForceAllocation() updating, unitTest, number = 1006;
-		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:03:35:13.755;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:09:04.982;
 		testLogAreaReallocation() unitTest, number = 1007;
-		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:04:40:22.764;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:09:07.740;
+		testLogAreaRowAllocation() unitTest, number = 1011;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:20:05:58.707;
 		testLogReallocation() updating, unitTest, number = 1010;
-		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:12:56:26.401;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:09:12.220;
 		testLogRowAllocation() unitTest, number = 1003;
-		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:03:13:30.722;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:09:14.410;
 		testLogRowReallocation() unitTest, number = 1005;
-		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:03:13:55.845;
+		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:05:19:09:17.571;
 		testSpecificationMatches() unitTest, number = 1002;
 		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:00:42:47.823;
 		testVoyageIsReceiving() unitTest, number = 1009;
@@ -109,7 +111,7 @@ MasterTerminalTestingDb
 	(
 		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:00:22:22.262;
 	databaseFileDefinitions
-		"masterterminaltesting" number=57;
+		"masterterminaltesting" number=51;
 		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:00:22:22.262;
 	defaultFileDefinition "masterterminaltesting";
 	classMapDefinitions
@@ -196,9 +198,9 @@ vars
 begin
 	logSpecification := create LogSpecification(0, "", "") transient;
 	
-	log1 := create Log(null, logSpecification) transient;
-	log2 := create Log(null, logSpecification) transient;
-	log3 := create Log(null, logSpecification) transient;
+	log1 := create Log(null, logSpecification, 7) transient;
+	log2 := create Log(null, logSpecification, 7) transient;
+	log3 := create Log(null, logSpecification, 7) transient;
 	
 	logRow := create LogRow(logSpecification) transient;
 	logArea := create LogArea() transient;
@@ -273,9 +275,9 @@ begin
 	beginTransaction;
 		logSpecification := create LogSpecification(0, "a", "d");
 		
-		log1 := create Log(null, logSpecification);
-		log2 := create Log(null, logSpecification);
-		log3 := create Log(null, logSpecification);
+		log1 := create Log(null, logSpecification, 7);
+		log2 := create Log(null, logSpecification, 7);
+		log3 := create Log(null, logSpecification, 7);
 		
 		logArea := create LogArea();
 	commitTransaction;
@@ -327,7 +329,7 @@ vars
 begin
 	logSpecification := create LogSpecification(0, "", "") transient;
 	
-	log := create Log(null, logSpecification) transient;
+	log := create Log(null, logSpecification, 7) transient;
 	
 	logRow := create LogRow(logSpecification) transient;
 	logArea1 := create LogArea() transient;
@@ -366,6 +368,81 @@ end;
 
 }
 
+testLogAreaRowAllocation
+{
+testLogAreaRowAllocation() unitTest;
+
+vars
+	log1, log2, log3: Log;
+	logRow: LogRow;
+	logArea: LogArea;
+	logSpecification: LogSpecification;
+
+begin
+	logSpecification := create LogSpecification(0, "", "") transient;
+	
+	log1 := create Log(null, logSpecification, 7) transient;
+	log2 := create Log(null, logSpecification, 7) transient;
+	log3 := create Log(null, logSpecification, 7) transient;
+	
+	logRow := create LogRow(logSpecification) transient;
+	logArea := create LogArea() transient;
+	
+	logRow.allocateLog(log1, true);
+	logRow.allocateLog(log2, true);
+	
+	// Should add to logArea::logRows and set logRow::logArea
+	logArea.allocateRow(logRow);
+	
+	assertTrue(logArea.logRows.includes(logRow));
+	assertEquals(logRow.logArea, logArea);
+	
+	// Won't add to logArea::allLogs, or logArea::allCargo, or set logArea, or storageArea, in logs, because recursive is false
+	logRow.allocateLog(log3, false);
+	
+	assertTrue(logArea.allLogs.includes(log1));
+	assertTrue(logArea.allLogs.includes(log2));
+	assertFalse(logArea.allLogs.includes(log3));
+	assertTrue(logArea.allCargo.includes(log1));
+	assertTrue(logArea.allCargo.includes(log2));
+	assertFalse(logArea.allCargo.includes(log3));
+	assertEquals(log1.logArea, logArea);
+	assertEquals(log2.logArea, logArea);
+	assertNull(log3.logArea);
+	assertEquals(log1.storageArea, logArea);
+	assertEquals(log2.storageArea, logArea);
+	assertNull(log3.storageArea);
+	
+	// Should remove from logArea::logRows, logArea and storageArea in logs, unset logRow::logArea, and remove logs from logArea::allLogs and logArea::allCargo
+	logArea.deallocateRow(logRow);
+	
+	assertFalse(logArea.logRows.includes(logRow));
+	assertNull(logRow.logArea);
+	
+	assertFalse(logArea.allLogs.includes(log1));
+	assertFalse(logArea.allLogs.includes(log2));
+	assertFalse(logArea.allLogs.includes(log3));
+	assertFalse(logArea.allCargo.includes(log1));
+	assertFalse(logArea.allCargo.includes(log2));
+	assertFalse(logArea.allCargo.includes(log3));
+	assertNull(log1.logArea);
+	assertNull(log2.logArea);
+	assertNull(log3.logArea);
+	assertNull(log1.storageArea);
+	assertNull(log2.storageArea);
+	assertNull(log3.storageArea);
+	
+epilog
+	delete log1;
+	delete log2;
+	delete log3;
+	delete logRow;
+	delete logArea;
+	delete logSpecification;
+end;
+
+}
+
 testLogReallocation
 {
 testLogReallocation() unitTest, updating;
@@ -382,7 +459,7 @@ begin
 		
 		logRow := create LogRow(logSpecification);
 		
-		log := create Log(null, logSpecification);
+		log := create Log(null, logSpecification, 7);
 		
 		logArea1 := create LogArea();
 		logArea2 := create LogArea();
@@ -438,7 +515,7 @@ vars
 begin
 	logSpecification := create LogSpecification(0, "", "") transient;
 	
-	log := create Log(null, logSpecification) transient;
+	log := create Log(null, logSpecification, 7) transient;
 	logRow := create LogRow(logSpecification) transient;
 	
 	// Should add to logRow::allLogs and set log::logRow
@@ -473,7 +550,7 @@ vars
 begin
 	logSpecification := create LogSpecification(0, "", "") transient;
 	
-	log := create Log(null, logSpecification) transient;
+	log := create Log(null, logSpecification, 7) transient;
 	logRow1 := create LogRow(logSpecification) transient;
 	logRow2 := create LogRow(logSpecification) transient;
 	
