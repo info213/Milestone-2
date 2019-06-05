@@ -1,4 +1,4 @@
-/* JADE COMMAND FILE NAME P:\University\INFO213\Assignments\Milestone-2\MasterTerminal.jcf */
+/* JADE COMMAND FILE NAME C:\Users\barry\INFO213\MasterTerminal.jcf */
 jadeVersionNumber "18.0.01";
 schemaDefinition
 MasterTerminal subschemaOf RootSchema completeDefinition, patchVersioningEnabled = false;
@@ -120,6 +120,8 @@ typeDefinitions
 			id: String; 
 			specification: LogSpecification) updating, number = 1001;
 		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:02:14:51.902;
+		getInfo(): String number = 1002;
+		setModifiedTimeStamp "barry" "18.0.01" 2019:06:05:15:12:26.175;
 	)
 	Distribution completeDefinition
 	(
@@ -250,6 +252,8 @@ typeDefinitions
 			country: String; 
 			name: String) updating, number = 1001;
 		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:22:29:51.483;
+		getInfo(): String number = 1005;
+		setModifiedTimeStamp "barry" "18.0.01" 2019:06:05:16:55:52.420;
 		isCustomer(): Boolean number = 1002;
 		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:22:20:48.733;
 		isPerson(): Boolean number = 1004;
@@ -362,6 +366,8 @@ typeDefinitions
 		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:23:33:24.785;
 		deallocateLog(log: Log) updating, number = 1003;
 		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:01:03:46.921;
+		getInfo(): String number = 1004;
+		setModifiedTimeStamp "barry" "18.0.01" 2019:06:05:15:34:05.635;
 	)
 	LogSpecification completeDefinition
 	(
@@ -380,6 +386,8 @@ typeDefinitions
 			species: String; 
 			treatment: String) updating, number = 1001;
 		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:21:59:27.733;
+		getSpecifications(): String number = 1004;
+		setModifiedTimeStamp "barry" "18.0.01" 2019:06:05:15:12:00.622;
 		matches(
 			grade: Integer; 
 			species: String; 
@@ -452,6 +460,8 @@ typeDefinitions
 		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:01:01:57.996;
 		deallocateRow(row: LogRow) updating, number = 1004;
 		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:04:38:41.026;
+		getInfo(): String number = 1006;
+		setModifiedTimeStamp "barry" "18.0.01" 2019:06:05:15:37:56.956;
 	)
 	Vehicle completeDefinition
 	(
@@ -702,6 +712,19 @@ create(id: String; specification: LogSpecification) ::super(id) updating;
 
 begin
 	self.specification := specification;
+end;
+
+}
+
+getInfo
+{
+getInfo(): String;
+
+vars
+	returnString: String;
+begin
+	returnString := self.specification.getSpecifications;
+	return returnString;
 end;
 
 }
@@ -1087,6 +1110,26 @@ end;
 
 }
 
+getInfo
+{
+getInfo(): String;
+
+vars
+	returnString: String;
+begin
+	if self.isCustomer() then
+		returnString:= "Customer, ";
+	elseif self.isPerson() then
+		returnString:= "Person, ";
+	elseif self.isSupplier() then
+		returnString:= "Supplier, ";
+	endif;
+	
+	return returnString & name;
+
+end;
+}
+
 isCustomer
 {
 isCustomer(): Boolean;
@@ -1342,6 +1385,20 @@ end;
 
 }
 
+getInfo
+{
+getInfo(): String;
+
+vars
+	returnString: String;
+begin
+	returnString:= self.specification.getSpecifications &
+					"      Total Logs in Row: " & self.allLogs.size.String;
+	return returnString;
+end;
+
+}
+
 	)
 	LogSpecification (
 	jadeMethodSources
@@ -1353,6 +1410,19 @@ begin
 	self.grade := grade;
 	self.species := species;
 	self.treatment := treatment;
+end;
+
+}
+
+getSpecifications
+{
+getSpecifications(): String;
+
+vars
+	returnString: String;
+begin
+	returnString:= "Grade: " & grade.String & ", Species: " & species & ", Treatment: " & treatment;
+	return returnString; 
 end;
 
 }
@@ -1545,6 +1615,19 @@ begin
 		commitTransaction;
 	endif;
 end;
+
+}
+
+getInfo
+{
+getInfo(): String;
+
+vars
+	returnString: String;
+begin
+	returnString:= self.allLogs.size.String;
+	return returnString;
+end;	
 
 }
 

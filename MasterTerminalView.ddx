@@ -44,14 +44,14 @@
 	</Global>
 
 	<Form locale="5129" name="AreaListForm">
-		<_painterModifiedTimeStamp>2019:06:05:13:54:41.756</_painterModifiedTimeStamp>
+		<_painterModifiedTimeStamp>2019:06:05:15:41:24.858</_painterModifiedTimeStamp>
 		<allowDocking>0</allowDocking>
 		<backBrush/>
 		<backBrushStyle>0</backBrushStyle>
 		<backColor>-2147483633</backColor>
 		<borderStyle>2</borderStyle>
 		<bubbleHelp/>
-		<caption>LotListForm</caption>
+		<caption>Area List</caption>
 		<clientHeight>350</clientHeight>
 		<clientWidth>407</clientWidth>
 		<clipControls>true</clipControls>
@@ -378,8 +378,1639 @@
 		</menuList>
 	</Form>
 
+	<Form locale="5129" name="EntityDetials">
+		<_painterModifiedTimeStamp>2019:06:05:16:44:13.530</_painterModifiedTimeStamp>
+		<allowDocking>0</allowDocking>
+		<backBrush/>
+		<backBrushStyle>0</backBrushStyle>
+		<backColor>-2147483633</backColor>
+		<borderStyle>2</borderStyle>
+		<bubbleHelp/>
+		<caption>Entity Details</caption>
+		<clientHeight>411</clientHeight>
+		<clientWidth>306</clientWidth>
+		<clipControls>true</clipControls>
+		<controlBox>true</controlBox>
+		<description/>
+		<disableEvents>false</disableEvents>
+		<disableReason/>
+		<dragCursor/>
+		<enabled>true</enabled>
+		<height>450</height>
+		<helpContextId>0</helpContextId>
+		<helpKeyword/>
+		<icon/>
+		<ignoreSkin>false</ignoreSkin>
+		<left>355</left>
+		<maxButton>true</maxButton>
+		<mdiChild>0</mdiChild>
+		<mdiFrame>false</mdiFrame>
+		<minButton>true</minButton>
+		<minimumHeight>450</minimumHeight>
+		<minimumWidth>0</minimumWidth>
+		<mouseCursor/>
+		<mousePointer>0</mousePointer>
+		<name>EntityDetials</name>
+		<paintedDialogBaseUnits>1048584</paintedDialogBaseUnits>
+		<printerForm>false</printerForm>
+		<scaleForm>true</scaleForm>
+		<scrollBars>0</scrollBars>
+		<secureForm>false</secureForm>
+		<securityLevelEnabled>0</securityLevelEnabled>
+		<securityLevelVisible>0</securityLevelVisible>
+		<skinCategoryName/>
+		<top>41</top>
+		<visible>true</visible>
+		<webBrowserAutoRefreshInterval>0</webBrowserAutoRefreshInterval>
+		<webBrowserAutoRefreshURL/>
+		<webBrowserDisableBackButton>false</webBrowserDisableBackButton>
+		<webEncodingType/>
+		<webFileName/>
+		<width>322</width>
+		<windowState>0</windowState>
+		<controlList>
+			<Label name="lblName">
+				<alignment>1</alignment>
+				<autoSize>false</autoSize>
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483633</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>0</borderStyle>
+				<bubbleHelp/>
+				<caption>Name:</caption>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName>Tahoma</fontName>
+				<fontSize>9.75</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="EntityDetials" />
+				<formatOut/>
+				<height>20</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<hyperlink/>
+				<ignoreSkin>false</ignoreSkin>
+				<left>103</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>lblName</name>
+				<noPrefix>false</noPrefix>
+				<parent name="EntityDetials" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>125</parentBottomOffset>
+				<parentRightOffset>160</parentRightOffset>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<tabIndex>29</tabIndex>
+				<tag/>
+				<top>266</top>
+				<transparent>false</transparent>
+				<visible>false</visible>
+				<width>43</width>
+				<wordWrap>false</wordWrap>
+			</Label>
+			<TextBox name="txtName">
+				<alignment>0</alignment>
+				<autoTab>false</autoTab>
+				<backColor>-2147483643</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>2</borderStyle>
+				<bubbleHelp/>
+				<case>0</case>
+				<dataType>0</dataType>
+				<decimals>0</decimals>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="EntityDetials" />
+				<formatOut/>
+				<height>24</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<hintBackColor>-2147483648</hintBackColor>
+				<hintForeColor>-2147483648</hintForeColor>
+				<hintText/>
+				<ignoreSkin>false</ignoreSkin>
+				<integralHeight>false</integralHeight>
+				<left>155</left>
+				<maxLength>0</maxLength>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>txtName</name>
+				<parent name="EntityDetials" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>124</parentBottomOffset>
+				<parentRightOffset>28</parentRightOffset>
+				<passwordField>false</passwordField>
+				<readOnly>false</readOnly>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<scrollBars>0</scrollBars>
+				<scrollHorizontal>false</scrollHorizontal>
+				<scrollVertical>false</scrollVertical>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<selectionStyle>0</selectionStyle>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<tabIndex>28</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<text/>
+				<textOffset>0</textOffset>
+				<top>263</top>
+				<visible>false</visible>
+				<wantReturn>false</wantReturn>
+				<width>123</width>
+			</TextBox>
+			<Label name="lblLName">
+				<alignment>1</alignment>
+				<autoSize>false</autoSize>
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483633</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>0</borderStyle>
+				<bubbleHelp/>
+				<caption>Last Name:</caption>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName>Tahoma</fontName>
+				<fontSize>9.75</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="EntityDetials" />
+				<formatOut/>
+				<height>20</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<hyperlink/>
+				<ignoreSkin>false</ignoreSkin>
+				<left>77</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>lblLName</name>
+				<noPrefix>false</noPrefix>
+				<parent name="EntityDetials" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>97</parentBottomOffset>
+				<parentRightOffset>163</parentRightOffset>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<tabIndex>27</tabIndex>
+				<tag/>
+				<top>294</top>
+				<transparent>false</transparent>
+				<visible>false</visible>
+				<width>66</width>
+				<wordWrap>false</wordWrap>
+			</Label>
+			<Label name="lblFName">
+				<alignment>1</alignment>
+				<autoSize>false</autoSize>
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483633</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>0</borderStyle>
+				<bubbleHelp/>
+				<caption>First Name:</caption>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName>Tahoma</fontName>
+				<fontSize>9.75</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="EntityDetials" />
+				<formatOut/>
+				<height>20</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<hyperlink/>
+				<ignoreSkin>false</ignoreSkin>
+				<left>73</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>lblFName</name>
+				<noPrefix>false</noPrefix>
+				<parent name="EntityDetials" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>125</parentBottomOffset>
+				<parentRightOffset>167</parentRightOffset>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<tabIndex>26</tabIndex>
+				<tag/>
+				<top>266</top>
+				<transparent>false</transparent>
+				<visible>false</visible>
+				<width>66</width>
+				<wordWrap>false</wordWrap>
+			</Label>
+			<TextBox name="txtLName">
+				<alignment>0</alignment>
+				<autoTab>false</autoTab>
+				<backColor>-2147483643</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>2</borderStyle>
+				<bubbleHelp/>
+				<case>0</case>
+				<dataType>0</dataType>
+				<decimals>0</decimals>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="EntityDetials" />
+				<formatOut/>
+				<height>24</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<hintBackColor>-2147483648</hintBackColor>
+				<hintForeColor>-2147483648</hintForeColor>
+				<hintText/>
+				<ignoreSkin>false</ignoreSkin>
+				<integralHeight>false</integralHeight>
+				<left>156</left>
+				<maxLength>0</maxLength>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>txtLName</name>
+				<parent name="EntityDetials" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>91</parentBottomOffset>
+				<parentRightOffset>27</parentRightOffset>
+				<passwordField>false</passwordField>
+				<readOnly>false</readOnly>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<scrollBars>0</scrollBars>
+				<scrollHorizontal>false</scrollHorizontal>
+				<scrollVertical>false</scrollVertical>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<selectionStyle>0</selectionStyle>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<tabIndex>25</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<text/>
+				<textOffset>0</textOffset>
+				<top>296</top>
+				<visible>false</visible>
+				<wantReturn>false</wantReturn>
+				<width>123</width>
+			</TextBox>
+			<TextBox name="txtFName">
+				<alignment>0</alignment>
+				<autoTab>false</autoTab>
+				<backColor>-2147483643</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>2</borderStyle>
+				<bubbleHelp/>
+				<case>0</case>
+				<dataType>0</dataType>
+				<decimals>0</decimals>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="EntityDetials" />
+				<formatOut/>
+				<height>24</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<hintBackColor>-2147483648</hintBackColor>
+				<hintForeColor>-2147483648</hintForeColor>
+				<hintText/>
+				<ignoreSkin>false</ignoreSkin>
+				<integralHeight>false</integralHeight>
+				<left>155</left>
+				<maxLength>0</maxLength>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>txtFName</name>
+				<parent name="EntityDetials" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>124</parentBottomOffset>
+				<parentRightOffset>28</parentRightOffset>
+				<passwordField>false</passwordField>
+				<readOnly>false</readOnly>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<scrollBars>0</scrollBars>
+				<scrollHorizontal>false</scrollHorizontal>
+				<scrollVertical>false</scrollVertical>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<selectionStyle>0</selectionStyle>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<tabIndex>24</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<text/>
+				<textOffset>0</textOffset>
+				<top>263</top>
+				<visible>false</visible>
+				<wantReturn>false</wantReturn>
+				<width>123</width>
+			</TextBox>
+			<TextBox name="txtCountry">
+				<alignment>0</alignment>
+				<autoTab>false</autoTab>
+				<backColor>-2147483643</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>2</borderStyle>
+				<bubbleHelp/>
+				<case>0</case>
+				<dataType>0</dataType>
+				<decimals>0</decimals>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="EntityDetials" />
+				<formatOut/>
+				<height>24</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<hintBackColor>-2147483648</hintBackColor>
+				<hintForeColor>-2147483648</hintForeColor>
+				<hintText/>
+				<ignoreSkin>false</ignoreSkin>
+				<integralHeight>false</integralHeight>
+				<left>115</left>
+				<maxLength>0</maxLength>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>txtCountry</name>
+				<parent name="EntityDetials" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>164</parentBottomOffset>
+				<parentRightOffset>29</parentRightOffset>
+				<passwordField>false</passwordField>
+				<readOnly>false</readOnly>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<scrollBars>0</scrollBars>
+				<scrollHorizontal>false</scrollHorizontal>
+				<scrollVertical>false</scrollVertical>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<selectionStyle>0</selectionStyle>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<tabIndex>23</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<text/>
+				<textOffset>0</textOffset>
+				<top>223</top>
+				<visible>true</visible>
+				<wantReturn>false</wantReturn>
+				<width>162</width>
+			</TextBox>
+			<Label name="lblCountry">
+				<alignment>1</alignment>
+				<autoSize>false</autoSize>
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483633</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>0</borderStyle>
+				<bubbleHelp/>
+				<caption>Country:</caption>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName>Tahoma</fontName>
+				<fontSize>9.75</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="EntityDetials" />
+				<formatOut/>
+				<height>20</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<hyperlink/>
+				<ignoreSkin>false</ignoreSkin>
+				<left>58</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>lblCountry</name>
+				<noPrefix>false</noPrefix>
+				<parent name="EntityDetials" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>165</parentBottomOffset>
+				<parentRightOffset>198</parentRightOffset>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<tabIndex>22</tabIndex>
+				<tag/>
+				<top>226</top>
+				<transparent>false</transparent>
+				<visible>true</visible>
+				<width>50</width>
+				<wordWrap>false</wordWrap>
+			</Label>
+			<TextBox name="txtState">
+				<alignment>0</alignment>
+				<autoTab>false</autoTab>
+				<backColor>-2147483643</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>2</borderStyle>
+				<bubbleHelp/>
+				<case>0</case>
+				<dataType>0</dataType>
+				<decimals>0</decimals>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="EntityDetials" />
+				<formatOut/>
+				<height>24</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<hintBackColor>-2147483648</hintBackColor>
+				<hintForeColor>-2147483648</hintForeColor>
+				<hintText/>
+				<ignoreSkin>false</ignoreSkin>
+				<integralHeight>false</integralHeight>
+				<left>116</left>
+				<maxLength>0</maxLength>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>txtState</name>
+				<parent name="EntityDetials" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>198</parentBottomOffset>
+				<parentRightOffset>28</parentRightOffset>
+				<passwordField>false</passwordField>
+				<readOnly>false</readOnly>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<scrollBars>0</scrollBars>
+				<scrollHorizontal>false</scrollHorizontal>
+				<scrollVertical>false</scrollVertical>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<selectionStyle>0</selectionStyle>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<tabIndex>21</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<text/>
+				<textOffset>0</textOffset>
+				<top>189</top>
+				<visible>true</visible>
+				<wantReturn>false</wantReturn>
+				<width>162</width>
+			</TextBox>
+			<Label name="lblState">
+				<alignment>1</alignment>
+				<autoSize>false</autoSize>
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483633</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>0</borderStyle>
+				<bubbleHelp/>
+				<caption>State:</caption>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName>Tahoma</fontName>
+				<fontSize>9.75</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="EntityDetials" />
+				<formatOut/>
+				<height>20</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<hyperlink/>
+				<ignoreSkin>false</ignoreSkin>
+				<left>75</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>lblState</name>
+				<noPrefix>false</noPrefix>
+				<parent name="EntityDetials" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>201</parentBottomOffset>
+				<parentRightOffset>197</parentRightOffset>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<tabIndex>20</tabIndex>
+				<tag/>
+				<top>190</top>
+				<transparent>false</transparent>
+				<visible>true</visible>
+				<width>34</width>
+				<wordWrap>false</wordWrap>
+			</Label>
+			<TextBox name="txtCity">
+				<alignment>0</alignment>
+				<autoTab>false</autoTab>
+				<backColor>-2147483643</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>2</borderStyle>
+				<bubbleHelp/>
+				<case>0</case>
+				<dataType>0</dataType>
+				<decimals>0</decimals>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="EntityDetials" />
+				<formatOut/>
+				<height>24</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<hintBackColor>-2147483648</hintBackColor>
+				<hintForeColor>-2147483648</hintForeColor>
+				<hintText/>
+				<ignoreSkin>false</ignoreSkin>
+				<integralHeight>false</integralHeight>
+				<left>115</left>
+				<maxLength>0</maxLength>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>txtCity</name>
+				<parent name="EntityDetials" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>233</parentBottomOffset>
+				<parentRightOffset>29</parentRightOffset>
+				<passwordField>false</passwordField>
+				<readOnly>false</readOnly>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<scrollBars>0</scrollBars>
+				<scrollHorizontal>false</scrollHorizontal>
+				<scrollVertical>false</scrollVertical>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<selectionStyle>0</selectionStyle>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<tabIndex>19</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<text/>
+				<textOffset>0</textOffset>
+				<top>154</top>
+				<visible>true</visible>
+				<wantReturn>false</wantReturn>
+				<width>162</width>
+			</TextBox>
+			<Label name="lblCity">
+				<alignment>1</alignment>
+				<autoSize>false</autoSize>
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483633</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>0</borderStyle>
+				<bubbleHelp/>
+				<caption>City:</caption>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName>Tahoma</fontName>
+				<fontSize>9.75</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="EntityDetials" />
+				<formatOut/>
+				<height>20</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<hyperlink/>
+				<ignoreSkin>false</ignoreSkin>
+				<left>82</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>lblCity</name>
+				<noPrefix>false</noPrefix>
+				<parent name="EntityDetials" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>237</parentBottomOffset>
+				<parentRightOffset>196</parentRightOffset>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<tabIndex>18</tabIndex>
+				<tag/>
+				<top>154</top>
+				<transparent>false</transparent>
+				<visible>true</visible>
+				<width>28</width>
+				<wordWrap>false</wordWrap>
+			</Label>
+			<Label name="lblAddess">
+				<alignment>1</alignment>
+				<autoSize>false</autoSize>
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483633</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>0</borderStyle>
+				<bubbleHelp/>
+				<caption>Street Address:</caption>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName>Tahoma</fontName>
+				<fontSize>9.75</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="EntityDetials" />
+				<formatOut/>
+				<height>20</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<hyperlink/>
+				<ignoreSkin>false</ignoreSkin>
+				<left>18</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>lblAddess</name>
+				<noPrefix>false</noPrefix>
+				<parent name="EntityDetials" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>269</parentBottomOffset>
+				<parentRightOffset>195</parentRightOffset>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<tabIndex>17</tabIndex>
+				<tag/>
+				<top>122</top>
+				<transparent>false</transparent>
+				<visible>true</visible>
+				<width>93</width>
+				<wordWrap>false</wordWrap>
+			</Label>
+			<TextBox name="txtAddress">
+				<alignment>0</alignment>
+				<autoTab>false</autoTab>
+				<backColor>-2147483643</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>2</borderStyle>
+				<bubbleHelp/>
+				<case>0</case>
+				<dataType>0</dataType>
+				<decimals>0</decimals>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="EntityDetials" />
+				<formatOut/>
+				<height>24</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<hintBackColor>-2147483648</hintBackColor>
+				<hintForeColor>-2147483648</hintForeColor>
+				<hintText/>
+				<ignoreSkin>false</ignoreSkin>
+				<integralHeight>false</integralHeight>
+				<left>116</left>
+				<maxLength>0</maxLength>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>txtAddress</name>
+				<parent name="EntityDetials" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>266</parentBottomOffset>
+				<parentRightOffset>28</parentRightOffset>
+				<passwordField>false</passwordField>
+				<readOnly>false</readOnly>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<scrollBars>0</scrollBars>
+				<scrollHorizontal>false</scrollHorizontal>
+				<scrollVertical>false</scrollVertical>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<selectionStyle>0</selectionStyle>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<tabIndex>16</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<text/>
+				<textOffset>0</textOffset>
+				<top>121</top>
+				<visible>true</visible>
+				<wantReturn>false</wantReturn>
+				<width>162</width>
+			</TextBox>
+			<Label name="lblType">
+				<alignment>1</alignment>
+				<autoSize>false</autoSize>
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483633</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>0</borderStyle>
+				<bubbleHelp/>
+				<caption>Select Entity Type:</caption>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName>Tahoma</fontName>
+				<fontSize>9.75</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="EntityDetials" />
+				<formatOut/>
+				<height>18</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<hyperlink/>
+				<ignoreSkin>false</ignoreSkin>
+				<left>17</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>lblType</name>
+				<noPrefix>false</noPrefix>
+				<parent name="EntityDetials" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>380</parentBottomOffset>
+				<parentRightOffset>181</parentRightOffset>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<tabIndex>15</tabIndex>
+				<tag/>
+				<top>13</top>
+				<transparent>false</transparent>
+				<visible>true</visible>
+				<width>108</width>
+				<wordWrap>false</wordWrap>
+			</Label>
+			<OptionButton name="optPerson">
+				<alignment>0</alignment>
+				<autoSize>false</autoSize>
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483633</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>0</borderStyle>
+				<bubbleHelp/>
+				<caption>Person</caption>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="EntityDetials" />
+				<height>25</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<ignoreSkin>false</ignoreSkin>
+				<left>50</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>optPerson</name>
+				<parent name="EntityDetials" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>306</parentBottomOffset>
+				<parentRightOffset>151</parentRightOffset>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<tabIndex>14</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<top>80</top>
+				<transparent>false</transparent>
+				<value>false</value>
+				<visible>true</visible>
+				<width>105</width>
+			</OptionButton>
+			<OptionButton name="optSupplier">
+				<alignment>0</alignment>
+				<autoSize>false</autoSize>
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483633</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>0</borderStyle>
+				<bubbleHelp/>
+				<caption>Supplier</caption>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="EntityDetials" />
+				<height>25</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<ignoreSkin>false</ignoreSkin>
+				<left>50</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>optSupplier</name>
+				<parent name="EntityDetials" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>332</parentBottomOffset>
+				<parentRightOffset>151</parentRightOffset>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<tabIndex>13</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<top>54</top>
+				<transparent>false</transparent>
+				<value>false</value>
+				<visible>true</visible>
+				<width>105</width>
+			</OptionButton>
+			<OptionButton name="optCustomer">
+				<alignment>0</alignment>
+				<autoSize>false</autoSize>
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483633</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>0</borderStyle>
+				<bubbleHelp/>
+				<caption>Customer</caption>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="EntityDetials" />
+				<height>25</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<ignoreSkin>false</ignoreSkin>
+				<left>49</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>optCustomer</name>
+				<parent name="EntityDetials" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>358</parentBottomOffset>
+				<parentRightOffset>152</parentRightOffset>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<tabIndex>12</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<top>28</top>
+				<transparent>false</transparent>
+				<value>false</value>
+				<visible>true</visible>
+				<width>105</width>
+			</OptionButton>
+			<StatusLine name="entityStatusBar">
+				<alignment>0</alignment>
+				<autoSize>true</autoSize>
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483633</backColor>
+				<bevelColor>-2147483628</bevelColor>
+				<bevelInner>1</bevelInner>
+				<bevelInnerWidth>1</bevelInnerWidth>
+				<bevelOuter>2</bevelOuter>
+				<bevelOuterWidth>1</bevelOuterWidth>
+				<bevelShadowColor>-2147483632</bevelShadowColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>1</borderStyle>
+				<boundaryBrush>0</boundaryBrush>
+				<boundaryColor>-2147483633</boundaryColor>
+				<boundaryWidth>1</boundaryWidth>
+				<bubbleHelp/>
+				<caption>LogStatus</caption>
+				<clipControls>true</clipControls>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483630</foreColor>
+				<form name="EntityDetials" />
+				<height>21</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<ignoreSkin>false</ignoreSkin>
+				<left>0</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>entityStatusBar</name>
+				<parent name="EntityDetials" />
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<skinCategoryName/>
+				<tabIndex>11</tabIndex>
+				<tag/>
+				<top>390</top>
+				<visible>true</visible>
+				<width>306</width>
+				<wordWrap>false</wordWrap>
+			</StatusLine>
+			<Button name="btnCancel">
+				<autoSize>1</autoSize>
+				<backColor>-2147483633</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>0</borderStyle>
+				<bubbleHelp/>
+				<buttonPicture>0</buttonPicture>
+				<cancel>false</cancel>
+				<caption>Cancel</caption>
+				<default>false</default>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483630</foreColor>
+				<form name="EntityDetials" />
+				<height>23</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<ignoreSkin>false</ignoreSkin>
+				<left>166</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>btnCancel</name>
+				<parent name="EntityDetials" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>53</parentBottomOffset>
+				<parentRightOffset>60</parentRightOffset>
+				<picture/>
+				<pictureDisabled/>
+				<pictureDown/>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<skinCategoryName/>
+				<style>0</style>
+				<tabIndex>10</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<top>335</top>
+				<value>false</value>
+				<visible>true</visible>
+				<width>80</width>
+			</Button>
+			<Button name="btnOk">
+				<autoSize>1</autoSize>
+				<backColor>-2147483633</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>0</borderStyle>
+				<bubbleHelp/>
+				<buttonPicture>0</buttonPicture>
+				<cancel>false</cancel>
+				<caption>Ok</caption>
+				<default>false</default>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483630</foreColor>
+				<form name="EntityDetials" />
+				<height>23</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<ignoreSkin>false</ignoreSkin>
+				<left>51</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>btnOk</name>
+				<parent name="EntityDetials" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>53</parentBottomOffset>
+				<parentRightOffset>175</parentRightOffset>
+				<picture/>
+				<pictureDisabled/>
+				<pictureDown/>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<skinCategoryName/>
+				<style>0</style>
+				<tabIndex>9</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<top>335</top>
+				<value>false</value>
+				<visible>true</visible>
+				<width>80</width>
+			</Button>
+		</controlList>
+		<menuList>
+		</menuList>
+	</Form>
+
+	<Form locale="5129" name="AddEntity">
+		<_painterModifiedTimeStamp>2019:06:05:16:44:13.530</_painterModifiedTimeStamp>
+		<allowDocking>0</allowDocking>
+		<backBrush/>
+		<backBrushStyle>0</backBrushStyle>
+		<backColor>-2147483633</backColor>
+		<borderStyle>2</borderStyle>
+		<bubbleHelp/>
+		<caption>AddEntity</caption>
+		<clientHeight>272</clientHeight>
+		<clientWidth>330</clientWidth>
+		<clipControls>true</clipControls>
+		<controlBox>true</controlBox>
+		<description/>
+		<disableEvents>false</disableEvents>
+		<disableReason/>
+		<dragCursor/>
+		<enabled>true</enabled>
+		<height>311</height>
+		<helpContextId>0</helpContextId>
+		<helpKeyword/>
+		<icon/>
+		<ignoreSkin>false</ignoreSkin>
+		<left>223</left>
+		<maxButton>true</maxButton>
+		<mdiChild>0</mdiChild>
+		<mdiFrame>false</mdiFrame>
+		<minButton>true</minButton>
+		<minimumHeight>0</minimumHeight>
+		<minimumWidth>0</minimumWidth>
+		<mouseCursor/>
+		<mousePointer>0</mousePointer>
+		<name>AddEntity</name>
+		<paintedDialogBaseUnits>1048584</paintedDialogBaseUnits>
+		<printerForm>false</printerForm>
+		<scaleForm>true</scaleForm>
+		<scrollBars>0</scrollBars>
+		<secureForm>false</secureForm>
+		<securityLevelEnabled>0</securityLevelEnabled>
+		<securityLevelVisible>0</securityLevelVisible>
+		<skinCategoryName/>
+		<top>-2</top>
+		<visible>true</visible>
+		<webBrowserAutoRefreshInterval>0</webBrowserAutoRefreshInterval>
+		<webBrowserAutoRefreshURL/>
+		<webBrowserDisableBackButton>false</webBrowserDisableBackButton>
+		<webEncodingType/>
+		<webFileName/>
+		<width>346</width>
+		<windowState>0</windowState>
+		<controlList>
+		</controlList>
+		<menuList>
+		</menuList>
+	</Form>
+
+	<Form locale="5129" name="EntityListForm">
+		<_painterModifiedTimeStamp>2019:06:05:16:44:10.639</_painterModifiedTimeStamp>
+		<allowDocking>0</allowDocking>
+		<backBrush/>
+		<backBrushStyle>0</backBrushStyle>
+		<backColor>-2147483633</backColor>
+		<borderStyle>2</borderStyle>
+		<bubbleHelp/>
+		<caption>Entity List</caption>
+		<clientHeight>350</clientHeight>
+		<clientWidth>407</clientWidth>
+		<clipControls>true</clipControls>
+		<controlBox>true</controlBox>
+		<description/>
+		<disableEvents>false</disableEvents>
+		<disableReason/>
+		<dragCursor/>
+		<enabled>true</enabled>
+		<height>389</height>
+		<helpContextId>0</helpContextId>
+		<helpKeyword/>
+		<icon/>
+		<ignoreSkin>false</ignoreSkin>
+		<left>332</left>
+		<maxButton>true</maxButton>
+		<mdiChild>2</mdiChild>
+		<mdiFrame>false</mdiFrame>
+		<minButton>true</minButton>
+		<minimumHeight>0</minimumHeight>
+		<minimumWidth>0</minimumWidth>
+		<mouseCursor/>
+		<mousePointer>0</mousePointer>
+		<name>EntityListForm</name>
+		<paintedDialogBaseUnits>1048584</paintedDialogBaseUnits>
+		<printerForm>false</printerForm>
+		<scaleForm>true</scaleForm>
+		<scrollBars>0</scrollBars>
+		<secureForm>false</secureForm>
+		<securityLevelEnabled>0</securityLevelEnabled>
+		<securityLevelVisible>0</securityLevelVisible>
+		<skinCategoryName/>
+		<top>25</top>
+		<visible>true</visible>
+		<webBrowserAutoRefreshInterval>0</webBrowserAutoRefreshInterval>
+		<webBrowserAutoRefreshURL/>
+		<webBrowserDisableBackButton>false</webBrowserDisableBackButton>
+		<webEncodingType/>
+		<webFileName/>
+		<width>423</width>
+		<windowState>0</windowState>
+		<controlList>
+			<StatusLine name="entityStatus">
+				<alignment>0</alignment>
+				<autoSize>true</autoSize>
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483633</backColor>
+				<bevelColor>-2147483628</bevelColor>
+				<bevelInner>1</bevelInner>
+				<bevelInnerWidth>1</bevelInnerWidth>
+				<bevelOuter>2</bevelOuter>
+				<bevelOuterWidth>1</bevelOuterWidth>
+				<bevelShadowColor>-2147483632</bevelShadowColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>1</borderStyle>
+				<boundaryBrush>0</boundaryBrush>
+				<boundaryColor>-2147483633</boundaryColor>
+				<boundaryWidth>1</boundaryWidth>
+				<bubbleHelp/>
+				<caption>EntityStatus</caption>
+				<clipControls>true</clipControls>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483630</foreColor>
+				<form name="EntityListForm" />
+				<height>21</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<ignoreSkin>false</ignoreSkin>
+				<left>0</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>entityStatus</name>
+				<parent name="EntityListForm" />
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<skinCategoryName/>
+				<tabIndex>5</tabIndex>
+				<tag/>
+				<top>329</top>
+				<visible>true</visible>
+				<width>407</width>
+				<wordWrap>false</wordWrap>
+			</StatusLine>
+			<Button name="deleteEntityBtn">
+				<autoSize>1</autoSize>
+				<backColor>-2147483633</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>0</borderStyle>
+				<bubbleHelp/>
+				<buttonPicture>0</buttonPicture>
+				<cancel>false</cancel>
+				<caption>Delete</caption>
+				<default>false</default>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483630</foreColor>
+				<form name="EntityListForm" />
+				<height>23</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<ignoreSkin>false</ignoreSkin>
+				<left>190</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>deleteEntityBtn</name>
+				<parent name="EntityListForm" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>321</parentBottomOffset>
+				<parentRightOffset>129</parentRightOffset>
+				<picture/>
+				<pictureDisabled/>
+				<pictureDown/>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<skinCategoryName/>
+				<style>0</style>
+				<tabIndex>4</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<top>6</top>
+				<value>false</value>
+				<visible>true</visible>
+				<width>88</width>
+			</Button>
+			<Button name="editEntityBtn">
+				<autoSize>1</autoSize>
+				<backColor>-2147483633</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>0</borderStyle>
+				<bubbleHelp/>
+				<buttonPicture>0</buttonPicture>
+				<cancel>false</cancel>
+				<caption>Edit</caption>
+				<default>false</default>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483630</foreColor>
+				<form name="EntityListForm" />
+				<height>23</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<ignoreSkin>false</ignoreSkin>
+				<left>95</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>editEntityBtn</name>
+				<parent name="EntityListForm" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>322</parentBottomOffset>
+				<parentRightOffset>224</parentRightOffset>
+				<picture/>
+				<pictureDisabled/>
+				<pictureDown/>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<skinCategoryName/>
+				<style>0</style>
+				<tabIndex>3</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<top>5</top>
+				<value>false</value>
+				<visible>true</visible>
+				<width>88</width>
+			</Button>
+			<Button name="addEntitybtn">
+				<autoSize>1</autoSize>
+				<backColor>-2147483633</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>0</borderStyle>
+				<bubbleHelp/>
+				<buttonPicture>0</buttonPicture>
+				<cancel>false</cancel>
+				<caption>Add</caption>
+				<default>false</default>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483630</foreColor>
+				<form name="EntityListForm" />
+				<height>23</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<ignoreSkin>false</ignoreSkin>
+				<left>3</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>addEntitybtn</name>
+				<parent name="EntityListForm" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>322</parentBottomOffset>
+				<parentRightOffset>316</parentRightOffset>
+				<picture/>
+				<pictureDisabled/>
+				<pictureDown/>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<skinCategoryName/>
+				<style>0</style>
+				<tabIndex>2</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<top>5</top>
+				<value>false</value>
+				<visible>true</visible>
+				<width>88</width>
+			</Button>
+			<ListBox name="entityListBox">
+				<alternatingRowBackColor>16777200</alternatingRowBackColor>
+				<alternatingRowBackColorCount>0</alternatingRowBackColorCount>
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483643</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>2</borderStyle>
+				<bubbleHelp/>
+				<defaultLineHeight>0</defaultLineHeight>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="EntityListForm" />
+				<hasPictures>false</hasPictures>
+				<hasPlusMinus>false</hasPlusMinus>
+				<hasTreeLines>false</hasTreeLines>
+				<height>290</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<ignoreSkin>false</ignoreSkin>
+				<integralHeight>true</integralHeight>
+				<left>3</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<multiSelect>0</multiSelect>
+				<name>entityListBox</name>
+				<nameSeparator>\</nameSeparator>
+				<parent name="EntityListForm" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>29</parentBottomOffset>
+				<parentRightOffset>3</parentRightOffset>
+				<pictureClosed/>
+				<pictureLeaf/>
+				<pictureMinus/>
+				<pictureOpen/>
+				<picturePlus/>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<scrollBars>2</scrollBars>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<sortAsc>true</sortAsc>
+				<sortCased>false</sortCased>
+				<sorted>false</sorted>
+				<tabIndex>1</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<top>31</top>
+				<visible>true</visible>
+				<width>401</width>
+			</ListBox>
+		</controlList>
+		<menuList>
+		</menuList>
+	</Form>
+
 	<Form locale="5129" name="LogDetails">
-		<_painterModifiedTimeStamp>2019:06:05:14:15:38.796</_painterModifiedTimeStamp>
+		<_painterModifiedTimeStamp>2019:06:05:14:38:08.642</_painterModifiedTimeStamp>
 		<allowDocking>0</allowDocking>
 		<backBrush/>
 		<backBrushStyle>0</backBrushStyle>
@@ -1045,7 +2676,7 @@
 	</Form>
 
 	<Form locale="5129" name="AddLog">
-		<_painterModifiedTimeStamp>2019:06:05:14:15:38.796</_painterModifiedTimeStamp>
+		<_painterModifiedTimeStamp>2019:06:05:14:38:08.642</_painterModifiedTimeStamp>
 		<allowDocking>0</allowDocking>
 		<backBrush/>
 		<backBrushStyle>0</backBrushStyle>
@@ -1101,7 +2732,7 @@
 	</Form>
 
 	<Form locale="5129" name="LogListForm">
-		<_painterModifiedTimeStamp>2019:06:05:13:54:41.756</_painterModifiedTimeStamp>
+		<_painterModifiedTimeStamp>2019:06:05:14:38:08.642</_painterModifiedTimeStamp>
 		<allowDocking>0</allowDocking>
 		<backBrush/>
 		<backBrushStyle>0</backBrushStyle>
@@ -1436,14 +3067,14 @@
 	</Form>
 
 	<Form locale="5129" name="LotListForm">
-		<_painterModifiedTimeStamp>2019:06:05:13:54:41.756</_painterModifiedTimeStamp>
+		<_painterModifiedTimeStamp>2019:06:05:15:42:07.549</_painterModifiedTimeStamp>
 		<allowDocking>0</allowDocking>
 		<backBrush/>
 		<backBrushStyle>0</backBrushStyle>
 		<backColor>-2147483633</backColor>
 		<borderStyle>2</borderStyle>
 		<bubbleHelp/>
-		<caption>LotListForm</caption>
+		<caption>Lot List</caption>
 		<clientHeight>350</clientHeight>
 		<clientWidth>407</clientWidth>
 		<clipControls>true</clipControls>
@@ -1771,7 +3402,7 @@
 	</Form>
 
 	<Form locale="5129" name="MainMenu">
-		<_painterModifiedTimeStamp>2019:06:05:14:13:56.205</_painterModifiedTimeStamp>
+		<_painterModifiedTimeStamp>2019:06:05:15:52:48.638</_painterModifiedTimeStamp>
 		<allowDocking>0</allowDocking>
 		<backBrush/>
 		<backBrushStyle>0</backBrushStyle>
@@ -2023,11 +3654,61 @@
 				<shortCutKey/>
 				<shortCutFlags/>
 			</MenuItem>
+			<MenuItem name="menuEntitites">
+				<backColor>0</backColor>
+				<caption>&amp;Entities</caption>
+				<checked>false</checked>
+				<commandId>0</commandId>
+				<description/>
+				<disableReason/>
+				<enabled>true</enabled>
+				<foreColor>0</foreColor>
+				<form name="MainMenu" />
+				<hasSubMenu>true</hasSubMenu>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<helpList>false</helpList>
+				<level>1</level>
+				<name>menuEntitites</name>
+				<picture/>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<visible>true</visible>
+				<webFileName/>
+				<windowList>false</windowList>
+				<shortCutKey/>
+				<shortCutFlags/>
+			</MenuItem>
+			<MenuItem name="menuEntitiesList">
+				<backColor>0</backColor>
+				<caption>&amp;List</caption>
+				<checked>false</checked>
+				<commandId>0</commandId>
+				<description/>
+				<disableReason/>
+				<enabled>true</enabled>
+				<foreColor>0</foreColor>
+				<form name="MainMenu" />
+				<hasSubMenu>false</hasSubMenu>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<helpList>false</helpList>
+				<level>2</level>
+				<name>menuEntitiesList</name>
+				<picture/>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<visible>true</visible>
+				<webFileName/>
+				<windowList>false</windowList>
+				<shortCutKey/>
+				<shortCutFlags/>
+			</MenuItem>
 		</menuList>
 	</Form>
 
 	<Form locale="5129" name="RowDetials">
-		<_painterModifiedTimeStamp>2019:06:05:13:54:41.756</_painterModifiedTimeStamp>
+		<_painterModifiedTimeStamp>2019:06:05:14:57:31.909</_painterModifiedTimeStamp>
 		<allowDocking>0</allowDocking>
 		<backBrush/>
 		<backBrushStyle>0</backBrushStyle>
@@ -2035,7 +3716,7 @@
 		<borderStyle>2</borderStyle>
 		<bubbleHelp/>
 		<caption>RowDetials</caption>
-		<clientHeight>274</clientHeight>
+		<clientHeight>245</clientHeight>
 		<clientWidth>302</clientWidth>
 		<clipControls>true</clipControls>
 		<controlBox>true</controlBox>
@@ -2044,7 +3725,7 @@
 		<disableReason/>
 		<dragCursor/>
 		<enabled>true</enabled>
-		<height>313</height>
+		<height>284</height>
 		<helpContextId>0</helpContextId>
 		<helpKeyword/>
 		<icon/>
@@ -2077,6 +3758,339 @@
 		<width>318</width>
 		<windowState>0</windowState>
 		<controlList>
+			<Label name="lblSpecies">
+				<alignment>1</alignment>
+				<autoSize>false</autoSize>
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483633</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>0</borderStyle>
+				<bubbleHelp/>
+				<caption>Log Species:</caption>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName>Tahoma</fontName>
+				<fontSize>9.75</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="RowDetials" />
+				<formatOut/>
+				<height>21</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<hyperlink/>
+				<ignoreSkin>false</ignoreSkin>
+				<left>31</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>lblSpecies</name>
+				<noPrefix>false</noPrefix>
+				<parent name="RowDetials" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>155</parentBottomOffset>
+				<parentRightOffset>197</parentRightOffset>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<tabIndex>2</tabIndex>
+				<tag/>
+				<top>69</top>
+				<transparent>false</transparent>
+				<visible>true</visible>
+				<width>74</width>
+				<wordWrap>false</wordWrap>
+			</Label>
+			<ComboBox name="cboLogSpecies">
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483643</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>2</borderStyle>
+				<bubbleHelp/>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="RowDetials" />
+				<hasPictures>false</hasPictures>
+				<hasPlusMinus>false</hasPlusMinus>
+				<hasTreeLines>false</hasTreeLines>
+				<height>20</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<ignoreSkin>false</ignoreSkin>
+				<left>120</left>
+				<listWidth>0</listWidth>
+				<maxLength>0</maxLength>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>cboLogSpecies</name>
+				<parent name="RowDetials" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>155</parentBottomOffset>
+				<parentRightOffset>41</parentRightOffset>
+				<pictureClosed/>
+				<pictureLeaf/>
+				<pictureMinus/>
+				<pictureOpen/>
+				<picturePlus/>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<sortCased>false</sortCased>
+				<sorted>true</sorted>
+				<style>2</style>
+				<tabIndex>17</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<top>70</top>
+				<visible>true</visible>
+				<width>141</width>
+			</ComboBox>
+			<ComboBox name="cboLogGrade">
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483643</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>2</borderStyle>
+				<bubbleHelp/>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="RowDetials" />
+				<hasPictures>false</hasPictures>
+				<hasPlusMinus>false</hasPlusMinus>
+				<hasTreeLines>false</hasTreeLines>
+				<height>20</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<ignoreSkin>false</ignoreSkin>
+				<left>120</left>
+				<listWidth>0</listWidth>
+				<maxLength>0</maxLength>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>cboLogGrade</name>
+				<parent name="RowDetials" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>190</parentBottomOffset>
+				<parentRightOffset>41</parentRightOffset>
+				<pictureClosed/>
+				<pictureLeaf/>
+				<pictureMinus/>
+				<pictureOpen/>
+				<picturePlus/>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<sortCased>false</sortCased>
+				<sorted>true</sorted>
+				<style>2</style>
+				<tabIndex>13</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<top>35</top>
+				<visible>true</visible>
+				<width>141</width>
+			</ComboBox>
+			<ComboBox name="cboLogTreatment">
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483643</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>2</borderStyle>
+				<bubbleHelp/>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="RowDetials" />
+				<hasPictures>false</hasPictures>
+				<hasPlusMinus>false</hasPlusMinus>
+				<hasTreeLines>false</hasTreeLines>
+				<height>20</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<ignoreSkin>false</ignoreSkin>
+				<left>120</left>
+				<listWidth>0</listWidth>
+				<maxLength>0</maxLength>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>cboLogTreatment</name>
+				<parent name="RowDetials" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>115</parentBottomOffset>
+				<parentRightOffset>41</parentRightOffset>
+				<pictureClosed/>
+				<pictureLeaf/>
+				<pictureMinus/>
+				<pictureOpen/>
+				<picturePlus/>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<sortCased>false</sortCased>
+				<sorted>true</sorted>
+				<style>2</style>
+				<tabIndex>14</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<top>110</top>
+				<visible>true</visible>
+				<width>141</width>
+			</ComboBox>
+			<Label name="lblGrade">
+				<alignment>1</alignment>
+				<autoSize>false</autoSize>
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483633</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>0</borderStyle>
+				<bubbleHelp/>
+				<caption>Grade:</caption>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName>Tahoma</fontName>
+				<fontSize>9.75</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="RowDetials" />
+				<formatOut/>
+				<height>17</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<hyperlink/>
+				<ignoreSkin>false</ignoreSkin>
+				<left>66</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>lblGrade</name>
+				<noPrefix>false</noPrefix>
+				<parent name="RowDetials" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>193</parentBottomOffset>
+				<parentRightOffset>195</parentRightOffset>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<tabIndex>15</tabIndex>
+				<tag/>
+				<top>35</top>
+				<transparent>false</transparent>
+				<visible>true</visible>
+				<width>41</width>
+				<wordWrap>false</wordWrap>
+			</Label>
+			<Label name="lblTreatment">
+				<alignment>1</alignment>
+				<autoSize>false</autoSize>
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483633</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>0</borderStyle>
+				<bubbleHelp/>
+				<caption>Treatment:</caption>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName>Tahoma</fontName>
+				<fontSize>9.75</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="RowDetials" />
+				<formatOut/>
+				<height>21</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<hyperlink/>
+				<ignoreSkin>false</ignoreSkin>
+				<left>41</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>lblTreatment</name>
+				<noPrefix>false</noPrefix>
+				<parent name="RowDetials" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>115</parentBottomOffset>
+				<parentRightOffset>195</parentRightOffset>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<tabIndex>16</tabIndex>
+				<tag/>
+				<top>109</top>
+				<transparent>false</transparent>
+				<visible>true</visible>
+				<width>66</width>
+				<wordWrap>false</wordWrap>
+			</Label>
 			<StatusLine name="rowStatusLine">
 				<alignment>0</alignment>
 				<autoSize>true</autoSize>
@@ -2124,7 +4138,7 @@
 				<skinCategoryName/>
 				<tabIndex>12</tabIndex>
 				<tag/>
-				<top>253</top>
+				<top>224</top>
 				<visible>true</visible>
 				<width>302</width>
 				<wordWrap>false</wordWrap>
@@ -2156,14 +4170,14 @@
 				<helpContextId>0</helpContextId>
 				<helpKeyword/>
 				<ignoreSkin>false</ignoreSkin>
-				<left>168</left>
+				<left>166</left>
 				<mouseCursor/>
 				<mousePointer>0</mousePointer>
 				<name>btnCancel</name>
 				<parent name="RowDetials" />
 				<parentAspect>0</parentAspect>
-				<parentBottomOffset>37</parentBottomOffset>
-				<parentRightOffset>54</parentRightOffset>
+				<parentBottomOffset>57</parentBottomOffset>
+				<parentRightOffset>56</parentRightOffset>
 				<picture/>
 				<pictureDisabled/>
 				<pictureDown/>
@@ -2178,7 +4192,7 @@
 				<tabIndex>11</tabIndex>
 				<tabStop>true</tabStop>
 				<tag/>
-				<top>214</top>
+				<top>165</top>
 				<value>false</value>
 				<visible>true</visible>
 				<width>80</width>
@@ -2210,14 +4224,14 @@
 				<helpContextId>0</helpContextId>
 				<helpKeyword/>
 				<ignoreSkin>false</ignoreSkin>
-				<left>58</left>
+				<left>54</left>
 				<mouseCursor/>
 				<mousePointer>0</mousePointer>
 				<name>btnOk</name>
 				<parent name="RowDetials" />
 				<parentAspect>0</parentAspect>
-				<parentBottomOffset>36</parentBottomOffset>
-				<parentRightOffset>164</parentRightOffset>
+				<parentBottomOffset>58</parentBottomOffset>
+				<parentRightOffset>168</parentRightOffset>
 				<picture/>
 				<pictureDisabled/>
 				<pictureDown/>
@@ -2232,480 +4246,18 @@
 				<tabIndex>10</tabIndex>
 				<tabStop>true</tabStop>
 				<tag/>
-				<top>215</top>
+				<top>164</top>
 				<value>false</value>
 				<visible>true</visible>
 				<width>80</width>
 			</Button>
-			<ComboBox name="cboAreas">
-				<backBrush/>
-				<backBrushStyle>0</backBrushStyle>
-				<backColor>-2147483643</backColor>
-				<borderColorSingle>0</borderColorSingle>
-				<borderStyle>2</borderStyle>
-				<bubbleHelp/>
-				<description/>
-				<dragCursor/>
-				<enabled>true</enabled>
-				<focusBackColor>0</focusBackColor>
-				<focusForeColor>0</focusForeColor>
-				<fontBold>false</fontBold>
-				<fontItalic>false</fontItalic>
-				<fontName/>
-				<fontSize>8.25</fontSize>
-				<fontStrikethru>false</fontStrikethru>
-				<fontUnderline>false</fontUnderline>
-				<foreColor>-2147483640</foreColor>
-				<form name="RowDetials" />
-				<hasPictures>false</hasPictures>
-				<hasPlusMinus>false</hasPlusMinus>
-				<hasTreeLines>false</hasTreeLines>
-				<height>20</height>
-				<helpContextId>0</helpContextId>
-				<helpKeyword/>
-				<ignoreSkin>false</ignoreSkin>
-				<left>167</left>
-				<listWidth>0</listWidth>
-				<maxLength>0</maxLength>
-				<mouseCursor/>
-				<mousePointer>0</mousePointer>
-				<name>cboAreas</name>
-				<parent name="RowDetials" />
-				<parentAspect>0</parentAspect>
-				<parentBottomOffset>94</parentBottomOffset>
-				<parentRightOffset>20</parentRightOffset>
-				<pictureClosed/>
-				<pictureLeaf/>
-				<pictureMinus/>
-				<pictureOpen/>
-				<picturePlus/>
-				<relativeLeft>false</relativeLeft>
-				<relativeTop>false</relativeTop>
-				<relativeWidth>false</relativeWidth>
-				<securityLevelEnabled>0</securityLevelEnabled>
-				<securityLevelVisible>0</securityLevelVisible>
-				<show3D>3</show3D>
-				<skinCategoryName/>
-				<sortCased>false</sortCased>
-				<sorted>true</sorted>
-				<style>2</style>
-				<tabIndex>8</tabIndex>
-				<tabStop>true</tabStop>
-				<tag/>
-				<top>160</top>
-				<visible>true</visible>
-				<width>115</width>
-			</ComboBox>
-			<TextBox name="txtSpecies">
-				<alignment>0</alignment>
-				<autoTab>false</autoTab>
-				<backColor>-2147483643</backColor>
-				<borderColorSingle>0</borderColorSingle>
-				<borderStyle>2</borderStyle>
-				<bubbleHelp/>
-				<case>0</case>
-				<dataType>0</dataType>
-				<decimals>0</decimals>
-				<description/>
-				<dragCursor/>
-				<enabled>true</enabled>
-				<focusBackColor>0</focusBackColor>
-				<focusForeColor>0</focusForeColor>
-				<fontBold>false</fontBold>
-				<fontItalic>false</fontItalic>
-				<fontName/>
-				<fontSize>8.25</fontSize>
-				<fontStrikethru>false</fontStrikethru>
-				<fontUnderline>false</fontUnderline>
-				<foreColor>-2147483640</foreColor>
-				<form name="RowDetials" />
-				<formatOut/>
-				<height>21</height>
-				<helpContextId>0</helpContextId>
-				<helpKeyword/>
-				<hintBackColor>-2147483648</hintBackColor>
-				<hintForeColor>-2147483648</hintForeColor>
-				<hintText/>
-				<ignoreSkin>false</ignoreSkin>
-				<integralHeight>false</integralHeight>
-				<left>167</left>
-				<maxLength>0</maxLength>
-				<mouseCursor/>
-				<mousePointer>0</mousePointer>
-				<name>txtSpecies</name>
-				<parent name="RowDetials" />
-				<parentAspect>0</parentAspect>
-				<parentBottomOffset>130</parentBottomOffset>
-				<parentRightOffset>19</parentRightOffset>
-				<passwordField>false</passwordField>
-				<readOnly>false</readOnly>
-				<relativeHeight>false</relativeHeight>
-				<relativeLeft>false</relativeLeft>
-				<relativeTop>false</relativeTop>
-				<relativeWidth>false</relativeWidth>
-				<scrollBars>0</scrollBars>
-				<scrollHorizontal>false</scrollHorizontal>
-				<scrollVertical>false</scrollVertical>
-				<securityLevelEnabled>0</securityLevelEnabled>
-				<securityLevelVisible>0</securityLevelVisible>
-				<selectionStyle>0</selectionStyle>
-				<show3D>3</show3D>
-				<skinCategoryName/>
-				<tabIndex>7</tabIndex>
-				<tabStop>true</tabStop>
-				<tag/>
-				<text/>
-				<textOffset>0</textOffset>
-				<top>123</top>
-				<visible>true</visible>
-				<wantReturn>false</wantReturn>
-				<width>116</width>
-			</TextBox>
-			<TextBox name="txtMaxLength">
-				<alignment>0</alignment>
-				<autoTab>false</autoTab>
-				<backColor>-2147483643</backColor>
-				<borderColorSingle>0</borderColorSingle>
-				<borderStyle>2</borderStyle>
-				<bubbleHelp/>
-				<case>0</case>
-				<dataType>0</dataType>
-				<decimals>0</decimals>
-				<description/>
-				<dragCursor/>
-				<enabled>true</enabled>
-				<focusBackColor>0</focusBackColor>
-				<focusForeColor>0</focusForeColor>
-				<fontBold>false</fontBold>
-				<fontItalic>false</fontItalic>
-				<fontName/>
-				<fontSize>8.25</fontSize>
-				<fontStrikethru>false</fontStrikethru>
-				<fontUnderline>false</fontUnderline>
-				<foreColor>-2147483640</foreColor>
-				<form name="RowDetials" />
-				<formatOut/>
-				<height>21</height>
-				<helpContextId>0</helpContextId>
-				<helpKeyword/>
-				<hintBackColor>-2147483648</hintBackColor>
-				<hintForeColor>-2147483648</hintForeColor>
-				<hintText/>
-				<ignoreSkin>false</ignoreSkin>
-				<integralHeight>false</integralHeight>
-				<left>167</left>
-				<maxLength>0</maxLength>
-				<mouseCursor/>
-				<mousePointer>0</mousePointer>
-				<name>txtMaxLength</name>
-				<parent name="RowDetials" />
-				<parentAspect>0</parentAspect>
-				<parentBottomOffset>172</parentBottomOffset>
-				<parentRightOffset>18</parentRightOffset>
-				<passwordField>false</passwordField>
-				<readOnly>false</readOnly>
-				<relativeHeight>false</relativeHeight>
-				<relativeLeft>false</relativeLeft>
-				<relativeTop>false</relativeTop>
-				<relativeWidth>false</relativeWidth>
-				<scrollBars>0</scrollBars>
-				<scrollHorizontal>false</scrollHorizontal>
-				<scrollVertical>false</scrollVertical>
-				<securityLevelEnabled>0</securityLevelEnabled>
-				<securityLevelVisible>0</securityLevelVisible>
-				<selectionStyle>0</selectionStyle>
-				<show3D>3</show3D>
-				<skinCategoryName/>
-				<tabIndex>6</tabIndex>
-				<tabStop>true</tabStop>
-				<tag/>
-				<text/>
-				<textOffset>0</textOffset>
-				<top>81</top>
-				<visible>true</visible>
-				<wantReturn>false</wantReturn>
-				<width>117</width>
-			</TextBox>
-			<TextBox name="txtMinLength">
-				<alignment>0</alignment>
-				<autoTab>false</autoTab>
-				<backColor>-2147483643</backColor>
-				<borderColorSingle>0</borderColorSingle>
-				<borderStyle>2</borderStyle>
-				<bubbleHelp/>
-				<case>0</case>
-				<dataType>0</dataType>
-				<decimals>0</decimals>
-				<description/>
-				<dragCursor/>
-				<enabled>true</enabled>
-				<focusBackColor>0</focusBackColor>
-				<focusForeColor>0</focusForeColor>
-				<fontBold>false</fontBold>
-				<fontItalic>false</fontItalic>
-				<fontName/>
-				<fontSize>8.25</fontSize>
-				<fontStrikethru>false</fontStrikethru>
-				<fontUnderline>false</fontUnderline>
-				<foreColor>-2147483640</foreColor>
-				<form name="RowDetials" />
-				<formatOut/>
-				<height>21</height>
-				<helpContextId>0</helpContextId>
-				<helpKeyword/>
-				<hintBackColor>-2147483648</hintBackColor>
-				<hintForeColor>-2147483648</hintForeColor>
-				<hintText/>
-				<ignoreSkin>false</ignoreSkin>
-				<integralHeight>false</integralHeight>
-				<left>165</left>
-				<maxLength>0</maxLength>
-				<mouseCursor/>
-				<mousePointer>0</mousePointer>
-				<name>txtMinLength</name>
-				<parent name="RowDetials" />
-				<parentAspect>0</parentAspect>
-				<parentBottomOffset>203</parentBottomOffset>
-				<parentRightOffset>17</parentRightOffset>
-				<passwordField>false</passwordField>
-				<readOnly>false</readOnly>
-				<relativeHeight>false</relativeHeight>
-				<relativeLeft>false</relativeLeft>
-				<relativeTop>false</relativeTop>
-				<relativeWidth>false</relativeWidth>
-				<scrollBars>0</scrollBars>
-				<scrollHorizontal>false</scrollHorizontal>
-				<scrollVertical>false</scrollVertical>
-				<securityLevelEnabled>0</securityLevelEnabled>
-				<securityLevelVisible>0</securityLevelVisible>
-				<selectionStyle>0</selectionStyle>
-				<show3D>3</show3D>
-				<skinCategoryName/>
-				<tabIndex>5</tabIndex>
-				<tabStop>true</tabStop>
-				<tag/>
-				<text/>
-				<textOffset>0</textOffset>
-				<top>50</top>
-				<visible>true</visible>
-				<wantReturn>false</wantReturn>
-				<width>120</width>
-			</TextBox>
-			<Label name="lblArea">
-				<alignment>1</alignment>
-				<autoSize>false</autoSize>
-				<backBrush/>
-				<backBrushStyle>0</backBrushStyle>
-				<backColor>-2147483633</backColor>
-				<borderColorSingle>0</borderColorSingle>
-				<borderStyle>0</borderStyle>
-				<bubbleHelp/>
-				<caption>Area:</caption>
-				<description/>
-				<dragCursor/>
-				<enabled>true</enabled>
-				<fontBold>false</fontBold>
-				<fontItalic>false</fontItalic>
-				<fontName>Tahoma</fontName>
-				<fontSize>9.75</fontSize>
-				<fontStrikethru>false</fontStrikethru>
-				<fontUnderline>false</fontUnderline>
-				<foreColor>-2147483640</foreColor>
-				<form name="RowDetials" />
-				<formatOut/>
-				<height>24</height>
-				<helpContextId>0</helpContextId>
-				<helpKeyword/>
-				<hyperlink/>
-				<ignoreSkin>false</ignoreSkin>
-				<left>128</left>
-				<mouseCursor/>
-				<mousePointer>0</mousePointer>
-				<name>lblArea</name>
-				<noPrefix>false</noPrefix>
-				<parent name="RowDetials" />
-				<parentAspect>0</parentAspect>
-				<parentBottomOffset>94</parentBottomOffset>
-				<parentRightOffset>140</parentRightOffset>
-				<relativeHeight>false</relativeHeight>
-				<relativeLeft>false</relativeLeft>
-				<relativeTop>false</relativeTop>
-				<relativeWidth>false</relativeWidth>
-				<securityLevelEnabled>0</securityLevelEnabled>
-				<securityLevelVisible>0</securityLevelVisible>
-				<show3D>3</show3D>
-				<skinCategoryName/>
-				<tabIndex>4</tabIndex>
-				<tag/>
-				<top>156</top>
-				<transparent>false</transparent>
-				<visible>true</visible>
-				<width>34</width>
-				<wordWrap>false</wordWrap>
-			</Label>
-			<Label name="lblSpecies">
-				<alignment>1</alignment>
-				<autoSize>false</autoSize>
-				<backBrush/>
-				<backBrushStyle>0</backBrushStyle>
-				<backColor>-2147483633</backColor>
-				<borderColorSingle>0</borderColorSingle>
-				<borderStyle>0</borderStyle>
-				<bubbleHelp/>
-				<caption>Species:</caption>
-				<description/>
-				<dragCursor/>
-				<enabled>true</enabled>
-				<fontBold>false</fontBold>
-				<fontItalic>false</fontItalic>
-				<fontName>Tahoma</fontName>
-				<fontSize>9.75</fontSize>
-				<fontStrikethru>false</fontStrikethru>
-				<fontUnderline>false</fontUnderline>
-				<foreColor>-2147483640</foreColor>
-				<form name="RowDetials" />
-				<formatOut/>
-				<height>24</height>
-				<helpContextId>0</helpContextId>
-				<helpKeyword/>
-				<hyperlink/>
-				<ignoreSkin>false</ignoreSkin>
-				<left>111</left>
-				<mouseCursor/>
-				<mousePointer>0</mousePointer>
-				<name>lblSpecies</name>
-				<noPrefix>false</noPrefix>
-				<parent name="RowDetials" />
-				<parentAspect>0</parentAspect>
-				<parentBottomOffset>129</parentBottomOffset>
-				<parentRightOffset>140</parentRightOffset>
-				<relativeHeight>false</relativeHeight>
-				<relativeLeft>false</relativeLeft>
-				<relativeTop>false</relativeTop>
-				<relativeWidth>false</relativeWidth>
-				<securityLevelEnabled>0</securityLevelEnabled>
-				<securityLevelVisible>0</securityLevelVisible>
-				<show3D>3</show3D>
-				<skinCategoryName/>
-				<tabIndex>3</tabIndex>
-				<tag/>
-				<top>121</top>
-				<transparent>false</transparent>
-				<visible>true</visible>
-				<width>51</width>
-				<wordWrap>false</wordWrap>
-			</Label>
-			<Label name="lblMaxLength">
-				<alignment>1</alignment>
-				<autoSize>false</autoSize>
-				<backBrush/>
-				<backBrushStyle>0</backBrushStyle>
-				<backColor>-2147483633</backColor>
-				<borderColorSingle>0</borderColorSingle>
-				<borderStyle>0</borderStyle>
-				<bubbleHelp/>
-				<caption>Maximum Length (m):</caption>
-				<description/>
-				<dragCursor/>
-				<enabled>true</enabled>
-				<fontBold>false</fontBold>
-				<fontItalic>false</fontItalic>
-				<fontName>Tahoma</fontName>
-				<fontSize>9.75</fontSize>
-				<fontStrikethru>false</fontStrikethru>
-				<fontUnderline>false</fontUnderline>
-				<foreColor>-2147483640</foreColor>
-				<form name="RowDetials" />
-				<formatOut/>
-				<height>24</height>
-				<helpContextId>0</helpContextId>
-				<helpKeyword/>
-				<hyperlink/>
-				<ignoreSkin>false</ignoreSkin>
-				<left>33</left>
-				<mouseCursor/>
-				<mousePointer>0</mousePointer>
-				<name>lblMaxLength</name>
-				<noPrefix>false</noPrefix>
-				<parent name="RowDetials" />
-				<parentAspect>0</parentAspect>
-				<parentBottomOffset>171</parentBottomOffset>
-				<parentRightOffset>140</parentRightOffset>
-				<relativeHeight>false</relativeHeight>
-				<relativeLeft>false</relativeLeft>
-				<relativeTop>false</relativeTop>
-				<relativeWidth>false</relativeWidth>
-				<securityLevelEnabled>0</securityLevelEnabled>
-				<securityLevelVisible>0</securityLevelVisible>
-				<show3D>3</show3D>
-				<skinCategoryName/>
-				<tabIndex>2</tabIndex>
-				<tag/>
-				<top>79</top>
-				<transparent>false</transparent>
-				<visible>true</visible>
-				<width>129</width>
-				<wordWrap>false</wordWrap>
-			</Label>
-			<Label name="lblMinLength">
-				<alignment>1</alignment>
-				<autoSize>false</autoSize>
-				<backBrush/>
-				<backBrushStyle>0</backBrushStyle>
-				<backColor>-2147483633</backColor>
-				<borderColorSingle>0</borderColorSingle>
-				<borderStyle>0</borderStyle>
-				<bubbleHelp/>
-				<caption>Minimum Length (m):</caption>
-				<description/>
-				<dragCursor/>
-				<enabled>true</enabled>
-				<fontBold>false</fontBold>
-				<fontItalic>false</fontItalic>
-				<fontName>Tahoma</fontName>
-				<fontSize>9.75</fontSize>
-				<fontStrikethru>false</fontStrikethru>
-				<fontUnderline>false</fontUnderline>
-				<foreColor>-2147483640</foreColor>
-				<form name="RowDetials" />
-				<formatOut/>
-				<height>24</height>
-				<helpContextId>0</helpContextId>
-				<helpKeyword/>
-				<hyperlink/>
-				<ignoreSkin>false</ignoreSkin>
-				<left>34</left>
-				<mouseCursor/>
-				<mousePointer>0</mousePointer>
-				<name>lblMinLength</name>
-				<noPrefix>false</noPrefix>
-				<parent name="RowDetials" />
-				<parentAspect>0</parentAspect>
-				<parentBottomOffset>205</parentBottomOffset>
-				<parentRightOffset>143</parentRightOffset>
-				<relativeHeight>false</relativeHeight>
-				<relativeLeft>false</relativeLeft>
-				<relativeTop>false</relativeTop>
-				<relativeWidth>false</relativeWidth>
-				<securityLevelEnabled>0</securityLevelEnabled>
-				<securityLevelVisible>0</securityLevelVisible>
-				<show3D>3</show3D>
-				<skinCategoryName/>
-				<tabIndex>1</tabIndex>
-				<tag/>
-				<top>45</top>
-				<transparent>false</transparent>
-				<visible>true</visible>
-				<width>125</width>
-				<wordWrap>false</wordWrap>
-			</Label>
 		</controlList>
 		<menuList>
 		</menuList>
 	</Form>
 
 	<Form locale="5129" name="AddRow">
-		<_painterModifiedTimeStamp>2019:06:05:13:54:41.756</_painterModifiedTimeStamp>
+		<_painterModifiedTimeStamp>2019:06:05:14:57:31.910</_painterModifiedTimeStamp>
 		<allowDocking>0</allowDocking>
 		<backBrush/>
 		<backBrushStyle>0</backBrushStyle>
@@ -2761,14 +4313,14 @@
 	</Form>
 
 	<Form locale="5129" name="RowListForm">
-		<_painterModifiedTimeStamp>2019:06:05:13:54:41.756</_painterModifiedTimeStamp>
+		<_painterModifiedTimeStamp>2019:06:05:15:41:50.668</_painterModifiedTimeStamp>
 		<allowDocking>0</allowDocking>
 		<backBrush/>
 		<backBrushStyle>0</backBrushStyle>
 		<backColor>-2147483633</backColor>
 		<borderStyle>2</borderStyle>
 		<bubbleHelp/>
-		<caption>RowListForm</caption>
+		<caption>Row List</caption>
 		<clientHeight>350</clientHeight>
 		<clientWidth>463</clientWidth>
 		<clipControls>true</clipControls>
