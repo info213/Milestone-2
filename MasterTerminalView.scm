@@ -1,4 +1,4 @@
-/* JADE COMMAND FILE NAME P:\University\INFO213\Assignments\Milestone-2\MasterTerminalView.jcf */
+/* JADE COMMAND FILE NAME C:\Users\barry\INFO213\MasterTerminalView.jcf */
 jadeVersionNumber "18.0.01";
 schemaDefinition
 MasterTerminalView subschemaOf MasterTerminal completeDefinition, patchVersioningEnabled = false;
@@ -10,18 +10,18 @@ localeDefinitions
 		setModifiedTimeStamp "barry" "18.0.01" 2019:05:31:11:57:42.987;
 libraryDefinitions
 typeHeaders
-	MasterTerminalView subclassOf MasterTerminal transient, sharedTransientAllowed, transientAllowed, subclassSharedTransientAllowed, subclassTransientAllowed, number = 2048;
-	GMasterTerminalView subclassOf GMasterTerminal transient, sharedTransientAllowed, transientAllowed, subclassSharedTransientAllowed, subclassTransientAllowed, number = 2049;
-	SMasterTerminalView subclassOf SMasterTerminal transient, sharedTransientAllowed, transientAllowed, subclassSharedTransientAllowed, subclassTransientAllowed, number = 2050;
-	AreaListForm subclassOf Form transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 5, number = 2051;
-	LogDetails subclassOf Form transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 11, number = 2052;
-	AddLog subclassOf LogDetails transient, transientAllowed, subclassTransientAllowed, number = 2058;
-	LogListForm subclassOf Form transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 5, number = 2059;
-	LotListForm subclassOf Form transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 5, number = 2060;
-	MainMenu subclassOf Form transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 8, number = 2061;
-	RowDetials subclassOf Form transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 11, number = 2062;
-	AddRow subclassOf RowDetials transient, transientAllowed, subclassTransientAllowed, number = 2063;
-	RowListForm subclassOf Form transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 5, number = 2064;
+	MasterTerminalView subclassOf MasterTerminal transient, sharedTransientAllowed, transientAllowed, subclassSharedTransientAllowed, subclassTransientAllowed, number = 2063;
+	GMasterTerminalView subclassOf GMasterTerminal transient, sharedTransientAllowed, transientAllowed, subclassSharedTransientAllowed, subclassTransientAllowed, number = 2064;
+	SMasterTerminalView subclassOf SMasterTerminal transient, sharedTransientAllowed, transientAllowed, subclassSharedTransientAllowed, subclassTransientAllowed, number = 2065;
+	AreaListForm subclassOf Form transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 5, number = 2066;
+	LogDetails subclassOf Form transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 16, number = 2096;
+	AddLog subclassOf LogDetails transient, transientAllowed, subclassTransientAllowed, number = 2101;
+	LogListForm subclassOf Form transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 5, number = 2102;
+	LotListForm subclassOf Form transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 5, number = 2103;
+	MainMenu subclassOf Form transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 8, number = 2104;
+	RowDetials subclassOf Form transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 11, number = 2105;
+	AddRow subclassOf RowDetials transient, transientAllowed, subclassTransientAllowed, number = 2106;
+	RowListForm subclassOf Form transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 5, number = 2107;
  
 interfaceDefs
 membershipDefinitions
@@ -120,53 +120,71 @@ typeDefinitions
 	)
 	LogDetails completeDefinition
 	(
-		setModifiedTimeStamp "barry" "18.0.01" 2019:06:04:15:34:30.335;
+		setModifiedTimeStamp "barry" "18.0.01" 2019:06:05:13:19:06.092;
 	referenceDefinitions
 		btnCancel:                     Button  number = 10, ordinal = 10;
 		setModifiedTimeStamp "barry" "18.0.01" 2019:06:02:18:15:17.410;
 		btnOk:                         Button  number = 9, ordinal = 9;
 		setModifiedTimeStamp "barry" "18.0.01" 2019:06:02:18:15:17.410;
-		cboRows:                       ComboBox  number = 8, ordinal = 8;
-		setModifiedTimeStamp "barry" "18.0.01" 2019:06:02:18:15:17.409;
+		cboLogGrade:                   ComboBox  number = 7, ordinal = 13;
+		setModifiedTimeStamp "barry" "18.0.01" 2019:06:05:13:18:37.897;
+		cboLogSpecies:                 ComboBox  number = 1, ordinal = 12;
+		setModifiedTimeStamp "barry" "18.0.01" 2019:06:05:13:18:37.897;
+		cboLogTreatment:               ComboBox  number = 8, ordinal = 14;
+		setModifiedTimeStamp "barry" "18.0.01" 2019:06:05:13:18:37.897;
 		lblDescription:                Label  number = 3, ordinal = 3;
 		setModifiedTimeStamp "barry" "18.0.01" 2019:06:02:18:15:17.396;
+		lblGrade:                      Label  number = 12, ordinal = 15;
+		setModifiedTimeStamp "barry" "18.0.01" 2019:06:05:13:18:37.897;
 		lblLength:                     Label  number = 5, ordinal = 5;
 		setModifiedTimeStamp "barry" "18.0.01" 2019:06:02:18:15:17.405;
-		lblRow:                        Label  number = 7, ordinal = 7;
-		setModifiedTimeStamp "barry" "18.0.01" 2019:06:02:18:15:17.408;
 		lblSpecies:                    Label  number = 2, ordinal = 2;
 		setModifiedTimeStamp "barry" "18.0.01" 2019:06:02:18:15:17.396;
+		lblSpecies_1:                  Label  number = 13, ordinal = 16;
+		setModifiedTimeStamp "barry" "18.0.01" 2019:06:05:13:18:37.897;
 		logStatus:                     StatusLine  number = 11, ordinal = 11;
 		setModifiedTimeStamp "barry" "18.0.01" 2019:06:02:18:23:20.967;
 		txtDescription:                TextBox  number = 4, ordinal = 4;
 		setModifiedTimeStamp "barry" "18.0.01" 2019:06:02:18:15:17.403;
 		txtLength:                     TextBox  number = 6, ordinal = 6;
 		setModifiedTimeStamp "barry" "18.0.01" 2019:06:02:18:15:17.406;
-		txtSpecies:                    TextBox  number = 1, ordinal = 1;
-		setModifiedTimeStamp "barry" "18.0.01" 2019:06:02:18:15:17.396;
  
 	jadeMethodDefinitions
 		btnCancel_click(btn: Button input) updating, number = 1001;
 		setModifiedTimeStamp "barry" "18.0.01" 2019:06:02:18:17:18.339;
 		btnOk_click(btn: Button input) updating, number = 1006;
 		setModifiedTimeStamp "barry" "18.0.01" 2019:06:04:15:47:22.009;
-		cboRows_displayRow(
+		cboLogGrade_displayRow(
 			combobox: ComboBox input; 
 			obj: Object; 
 			lstIndex: Integer; 
 			bcontinue: Boolean io): String updating, number = 1005;
-		setModifiedTimeStamp "barry" "18.0.01" 2019:06:03:15:30:21.027;
+		setModifiedTimeStamp "barry" "18.0.01" 2019:06:05:13:22:06.545;
+		cboLogSpecies_displayRow(
+			combobox: ComboBox input; 
+			obj: Object; 
+			lstIndex: Integer; 
+			bcontinue: Boolean io): String updating, number = 1007;
+		setModifiedTimeStamp "barry" "18.0.01" 2019:06:05:13:22:17.350;
+		cboLogTreatment_displayRow(
+			combobox: ComboBox input; 
+			obj: Object; 
+			lstIndex: Integer; 
+			bcontinue: Boolean io): String updating, number = 1008;
+		setModifiedTimeStamp "barry" "18.0.01" 2019:06:05:13:22:25.619;
 		clearTextBoxes() number = 1002;
 		setModifiedTimeStamp "barry" "18.0.01" 2019:06:02:18:18:30.549;
 		isDataValid(): Boolean protected, number = 1004;
 		setModifiedTimeStamp "barry" "18.0.01" 2019:06:03:15:20:11.357;
 		load() updating, number = 1003;
-		setModifiedTimeStamp "barry" "18.0.01" 2019:06:03:15:22:51.769;
+		setModifiedTimeStamp "barry" "18.0.01" 2019:06:05:13:47:55.628;
  
 	eventMethodMappings
 		btnCancel_click = click of Button;
 		btnOk_click = click of Button;
-		cboRows_displayRow = displayRow of ComboBox;
+		cboLogGrade_displayRow = displayRow of ComboBox;
+		cboLogSpecies_displayRow = displayRow of ComboBox;
+		cboLogTreatment_displayRow = displayRow of ComboBox;
 		load = load of Form;
 	)
 	AddLog completeDefinition
@@ -203,13 +221,13 @@ typeDefinitions
 		deleteLogBtn_click(btn: Button input) updating, number = 1004;
 		setModifiedTimeStamp "jwt60" "18.0.01" 2019:06:04:14:58:07.457;
 		load() updating, number = 1002;
-		setModifiedTimeStamp "barry" "18.0.01" 2019:06:03:15:09:21.252;
+		setModifiedTimeStamp "barry" "18.0.01" 2019:06:05:13:42:21.128;
 		logListBox_displayRow(
 			listbox: ListBox input; 
 			obj: Object; 
 			lstIndex: Integer; 
 			bcontinue: Boolean io): String updating, number = 1001;
-		setModifiedTimeStamp "barry" "18.0.01" 2019:06:04:14:18:22.407;
+		setModifiedTimeStamp "barry" "18.0.01" 2019:06:05:13:23:05.280;
  
 	eventMethodMappings
 		addLogBtn_click = click of Button;
@@ -392,7 +410,7 @@ MasterTerminalViewDb
 	(
 		setModifiedTimeStamp "barry" "18.0.01" 2019:05:31:11:57:43.405;
 	databaseFileDefinitions
-		"masterterminalview" number=52;
+		"masterterminalview" number=58;
 		setModifiedTimeStamp "barry" "18.0.01" 2019:05:31:11:57:43.405;
 	defaultFileDefinition "masterterminalview";
 	classMapDefinitions
@@ -486,9 +504,33 @@ end;
 
 }
 
-cboRows_displayRow
+cboLogGrade_displayRow
 {
-cboRows_displayRow(combobox: ComboBox input; obj: Object; lstIndex: Integer; bcontinue: Boolean io):String updating;
+cboLogGrade_displayRow(combobox: ComboBox input; obj: Object; lstIndex: Integer; bcontinue: Boolean io):String updating;
+
+vars
+
+begin
+	return Object.getInstanceIdForObject(obj).String;
+end;
+
+}
+
+cboLogSpecies_displayRow
+{
+cboLogSpecies_displayRow(combobox: ComboBox input; obj: Object; lstIndex: Integer; bcontinue: Boolean io):String updating;
+
+vars
+
+begin
+	return Object.getInstanceIdForObject(obj).String;
+end;
+
+}
+
+cboLogTreatment_displayRow
+{
+cboLogTreatment_displayRow(combobox: ComboBox input; obj: Object; lstIndex: Integer; bcontinue: Boolean io):String updating;
 
 vars
 
@@ -545,9 +587,19 @@ load
 load() updating;
 
 vars
+	allGrades, allSpecies, allTreatments: ObjectArray;
 
 begin
-	self.cboRows.displayCollection(app.myTerminal.allRows, true, 0, null, "");
+	allSpecies := app.terminal.getAllSpecies();
+
+	// self.cboLogGrade.displayCollection(app.terminal.allGrades, true, 0, null, "");
+	self.cboLogSpecies.displayCollection(allSpecies, false, 0, null, "");
+	// self.cboLogTreatment.displayCollection(app.terminal.allTreatments, true, 0, null, "");
+	
+epilog
+	delete allGrades;
+	delete allSpecies;
+	delete allTreatments;
 end;
 
 }
@@ -628,9 +680,17 @@ load
 load() updating;
 
 vars
+	logInstances: ObjectArray;
 
 begin
-	self.logListBox.displayCollection(app.myTerminal.allLogs, true, 0, null, "");
+	create logInstances transient;
+
+	Log.allInstances(logInstances, 0, false);
+
+	self.logListBox.displayCollection(logInstances, false, 0, null, "");
+	
+epilog
+	delete logInstances;
 end;
 
 }
@@ -644,7 +704,7 @@ vars
 	
 begin
 	log := obj.Log;
-	return log.getInfo();
+	return log.specification.String;
 	
 end;
 }

@@ -1,4 +1,4 @@
-/* JADE COMMAND FILE NAME P:\University\INFO213\Assignments\Milestone-2\MasterTerminalTesting.jcf */
+/* JADE COMMAND FILE NAME C:\Users\barry\INFO213\MasterTerminalTesting.jcf */
 jadeVersionNumber "18.0.01";
 schemaDefinition
 MasterTerminalTesting subschemaOf MasterTerminal completeDefinition, patchVersioningEnabled = false;
@@ -109,7 +109,7 @@ MasterTerminalTestingDb
 	(
 		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:00:22:22.262;
 	databaseFileDefinitions
-		"masterterminaltesting" number=51;
+		"masterterminaltesting" number=57;
 		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:00:22:22.262;
 	defaultFileDefinition "masterterminaltesting";
 	classMapDefinitions

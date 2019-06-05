@@ -1,4 +1,4 @@
-/* JADE COMMAND FILE NAME P:\University\INFO213\Assignments\Milestone-2\MasterTerminal.jcf */
+/* JADE COMMAND FILE NAME C:\Users\barry\INFO213\MasterTerminal.jcf */
 jadeVersionNumber "18.0.01";
 schemaDefinition
 MasterTerminal subschemaOf RootSchema completeDefinition, patchVersioningEnabled = false;
@@ -23,7 +23,7 @@ typeHeaders
 	MasterTerminal subclassOf RootSchemaApp transient, sharedTransientAllowed, transientAllowed, subclassSharedTransientAllowed, subclassTransientAllowed, highestOrdinal = 3, number = 2055;
 	Cargo subclassOf Object abstract, highestOrdinal = 3, number = 2054;
 	Log subclassOf Cargo highestOrdinal = 3, number = 2067;
-	Distribution subclassOf Object abstract, highestSubId = 3, highestOrdinal = 7, number = 2090;
+	Distribution subclassOf Object abstract, highestSubId = 3, highestOrdinal = 7, number = 2048;
 	Voyage subclassOf Distribution number = 2091;
 	GMasterTerminal subclassOf RootSchemaGlobal transient, sharedTransientAllowed, transientAllowed, subclassSharedTransientAllowed, subclassTransientAllowed, number = 2056;
 	Location subclassOf Object highestOrdinal = 4, number = 2070;
@@ -34,20 +34,21 @@ typeHeaders
 	Terminal subclassOf Location highestSubId = 1, highestOrdinal = 6, number = 2071;
 	LogRow subclassOf Object highestSubId = 1, highestOrdinal = 3, number = 2083;
 	LogSpecification subclassOf Object highestOrdinal = 3, number = 2068;
-	Lot subclassOf Object highestOrdinal = 5, number = 2092;
-	StorageArea subclassOf Object abstract, highestSubId = 1, highestOrdinal = 3, number = 2078;
+	Lot subclassOf Object highestOrdinal = 5, number = 2049;
+	StorageArea subclassOf Object abstract, highestSubId = 1, highestOrdinal = 3, number = 2050;
 	LogArea subclassOf StorageArea highestSubId = 2, highestOrdinal = 2, number = 2079;
-	Vehicle subclassOf Object abstract, highestSubId = 1, highestOrdinal = 3, number = 2076;
-	Ship subclassOf Vehicle number = 2093;
-	SMasterTerminal subclassOf RootSchemaSession transient, sharedTransientAllowed, transientAllowed, subclassSharedTransientAllowed, subclassTransientAllowed, number = 2057;
-	MainForm subclassOf Form transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 16, number = 2053;
-	CargoByIdDict subclassOf MemberKeyDictionary loadFactor = 66, number = 2080;
-	LogByIdDict subclassOf CargoByIdDict loadFactor = 66, number = 2081;
+	Vehicle subclassOf Object abstract, highestSubId = 1, highestOrdinal = 3, number = 2053;
+	Ship subclassOf Vehicle number = 2057;
+	SMasterTerminal subclassOf RootSchemaSession transient, sharedTransientAllowed, transientAllowed, subclassSharedTransientAllowed, subclassTransientAllowed, number = 2058;
+	MainForm subclassOf Form transient, transientAllowed, subclassTransientAllowed, highestOrdinal = 16, number = 2059;
+	CargoByIdDict subclassOf MemberKeyDictionary loadFactor = 66, number = 2060;
+	LogByIdDict subclassOf CargoByIdDict loadFactor = 66, number = 2061;
 	LogRowBySpecificationDict subclassOf MemberKeyDictionary duplicatesAllowed, loadFactor = 66, number = 2084;
 	LotArray subclassOf Array number = 2095;
+	StringObjectArray subclassOf ObjectArray number = 2110;
 	PersonArray subclassOf Array number = 2077;
 	StorageAreaArray subclassOf Array number = 2082;
-	VehicleArray subclassOf Array number = 2094;
+	VehicleArray subclassOf Array number = 2062;
  
 interfaceDefs
 membershipDefinitions
@@ -55,6 +56,7 @@ membershipDefinitions
 	LogByIdDict of Log ;
 	LogRowBySpecificationDict of LogRow ;
 	LotArray of Lot ;
+	StringObjectArray of StringArray ;
 	PersonArray of Person ;
 	StorageAreaArray of StorageArea ;
 	VehicleArray of Vehicle ;
@@ -196,7 +198,7 @@ typeDefinitions
 		loadGrades() updating, number = 1011;
 		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:22:37:07.210;
 		loadSpecies() updating, number = 1008;
-		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:22:21:30.953;
+		setModifiedTimeStamp "barry" "18.0.01" 2019:06:05:13:49:46.321;
 		loadTreatments() updating, number = 1001;
 		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:22:21:33.279;
 		openFile(): String number = 1010;
@@ -310,9 +312,9 @@ typeDefinitions
 		allGrades:                     IntegerArray  readonly, number = 1, ordinal = 1;
 		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:22:11:18.974;
 		allSpecies:                    StringArray  readonly, number = 2, ordinal = 5;
-		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:22:12:31.366;
+		setModifiedTimeStamp "barry" "18.0.01" 2019:06:05:13:40:48.961;
 		allTreatments:                 StringArray  readonly, number = 3, ordinal = 3;
-		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:22:11:41.242;
+		setModifiedTimeStamp "barry" "18.0.01" 2019:06:05:13:41:03;
 		storageAreas:                  StorageAreaArray   explicitInverse, readonly, subId = 1, number = 4, ordinal = 6;
 		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:23:22:13.790;
  
@@ -331,12 +333,14 @@ typeDefinitions
 		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:22:17:30.976;
 		deallocateStorageArea(storageArea: StorageArea) updating, number = 1006;
 		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:02:50:50.818;
+		getAllSpecies(): ObjectArray number = 1009;
+		setModifiedTimeStamp "barry" "18.0.01" 2019:06:05:13:45:43.094;
 		receiveCargo(distribution: Distribution input) updating, number = 1007;
 		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:04:28:28.056;
 		registerGrade(grade: Integer): Boolean updating, number = 1002;
 		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:22:12:47.162;
 		registerSpecies(species: String): Boolean updating, number = 1003;
-		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:22:12:58.001;
+		setModifiedTimeStamp "barry" "18.0.01" 2019:06:05:13:36:08.297;
 		registerTreatment(treatment: String): Boolean updating, number = 1004;
 		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:22:13:08.069;
 	)
@@ -546,6 +550,13 @@ typeDefinitions
 	(
 		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:05:02:45:50.985;
 	)
+	ObjectArray completeDefinition
+	(
+	)
+	StringObjectArray completeDefinition
+	(
+		setModifiedTimeStamp "barry" "18.0.01" 2019:06:05:13:35:03.139;
+	)
 	PersonArray completeDefinition
 	(
 		setModifiedTimeStamp "JackT" "18.0.01" 2019:06:04:22:45:26.677;
@@ -619,6 +630,7 @@ MasterTerminalDb
 		Ship in "masterterminal";
 		VehicleArray in "masterterminal";
 		LotArray in "masterterminal";
+		StringObjectArray in "masterterminal";
 	)
 schemaViewDefinitions
 exportedPackageDefinitions
@@ -912,11 +924,9 @@ begin
 	
 	speciesArray := parseStringArray("treeType");
 	
-	beginTransaction;
-		foreach species in speciesArray do
-			app.terminal.registerSpecies(species);
-		endforeach;
-	commitTransaction;
+	foreach species in speciesArray do
+		app.terminal.registerSpecies(species);
+	endforeach;
 	
 epilog
 	delete speciesArray;
@@ -1211,6 +1221,23 @@ begin
 			self.storageAreas.remove(storageArea);
 		commitTransaction;
 	endif;
+end;
+
+}
+
+getAllSpecies
+{
+getAllSpecies(): ObjectArray;
+
+vars
+	objectArray: ObjectArray;
+
+begin
+	create objectArray transient;
+
+	objectArray.addAll(self.allSpecies);
+	
+	return objectArray;
 end;
 
 }

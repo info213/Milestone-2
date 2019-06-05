@@ -44,7 +44,7 @@
 	</Global>
 
 	<Form locale="5129" name="AreaListForm">
-		<_painterModifiedTimeStamp>2019:06:05:12:56:49.322</_painterModifiedTimeStamp>
+		<_painterModifiedTimeStamp>2019:06:05:13:07:46.127</_painterModifiedTimeStamp>
 		<allowDocking>0</allowDocking>
 		<backBrush/>
 		<backBrushStyle>0</backBrushStyle>
@@ -379,7 +379,7 @@
 	</Form>
 
 	<Form locale="5129" name="LogDetails">
-		<_painterModifiedTimeStamp>2019:06:05:12:56:49.322</_painterModifiedTimeStamp>
+		<_painterModifiedTimeStamp>2019:06:05:13:41:27.952</_painterModifiedTimeStamp>
 		<allowDocking>0</allowDocking>
 		<backBrush/>
 		<backBrushStyle>0</backBrushStyle>
@@ -387,7 +387,7 @@
 		<borderStyle>2</borderStyle>
 		<bubbleHelp/>
 		<caption>LogDetails</caption>
-		<clientHeight>286</clientHeight>
+		<clientHeight>317</clientHeight>
 		<clientWidth>320</clientWidth>
 		<clipControls>true</clipControls>
 		<controlBox>true</controlBox>
@@ -396,7 +396,7 @@
 		<disableReason/>
 		<dragCursor/>
 		<enabled>true</enabled>
-		<height>325</height>
+		<height>356</height>
 		<helpContextId>0</helpContextId>
 		<helpKeyword/>
 		<icon/>
@@ -429,6 +429,287 @@
 		<width>336</width>
 		<windowState>0</windowState>
 		<controlList>
+			<Label name="lblSpecies_1">
+				<alignment>1</alignment>
+				<autoSize>false</autoSize>
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483633</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>0</borderStyle>
+				<bubbleHelp/>
+				<caption>Treatment:</caption>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName>Tahoma</fontName>
+				<fontSize>9.75</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="LogDetails" />
+				<formatOut/>
+				<height>21</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<hyperlink/>
+				<ignoreSkin>false</ignoreSkin>
+				<left>64</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>lblSpecies_1</name>
+				<noPrefix>false</noPrefix>
+				<parent name="LogDetails" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>181</parentBottomOffset>
+				<parentRightOffset>190</parentRightOffset>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<tabIndex>16</tabIndex>
+				<tag/>
+				<top>115</top>
+				<transparent>false</transparent>
+				<visible>true</visible>
+				<width>66</width>
+				<wordWrap>false</wordWrap>
+			</Label>
+			<Label name="lblGrade">
+				<alignment>1</alignment>
+				<autoSize>false</autoSize>
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483633</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>0</borderStyle>
+				<bubbleHelp/>
+				<caption>Grade:</caption>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName>Tahoma</fontName>
+				<fontSize>9.75</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="LogDetails" />
+				<formatOut/>
+				<height>17</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<hyperlink/>
+				<ignoreSkin>false</ignoreSkin>
+				<left>91</left>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>lblGrade</name>
+				<noPrefix>false</noPrefix>
+				<parent name="LogDetails" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>220</parentBottomOffset>
+				<parentRightOffset>188</parentRightOffset>
+				<relativeHeight>false</relativeHeight>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<tabIndex>15</tabIndex>
+				<tag/>
+				<top>80</top>
+				<transparent>false</transparent>
+				<visible>true</visible>
+				<width>41</width>
+				<wordWrap>false</wordWrap>
+			</Label>
+			<ComboBox name="cboLogTreatment">
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483643</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>2</borderStyle>
+				<bubbleHelp/>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="LogDetails" />
+				<hasPictures>false</hasPictures>
+				<hasPlusMinus>false</hasPlusMinus>
+				<hasTreeLines>false</hasTreeLines>
+				<height>20</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<ignoreSkin>false</ignoreSkin>
+				<left>143</left>
+				<listWidth>0</listWidth>
+				<maxLength>0</maxLength>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>cboLogTreatment</name>
+				<parent name="LogDetails" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>181</parentBottomOffset>
+				<parentRightOffset>36</parentRightOffset>
+				<pictureClosed/>
+				<pictureLeaf/>
+				<pictureMinus/>
+				<pictureOpen/>
+				<picturePlus/>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<sortCased>false</sortCased>
+				<sorted>true</sorted>
+				<style>2</style>
+				<tabIndex>14</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<top>116</top>
+				<visible>true</visible>
+				<width>141</width>
+			</ComboBox>
+			<ComboBox name="cboLogGrade">
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483643</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>2</borderStyle>
+				<bubbleHelp/>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="LogDetails" />
+				<hasPictures>false</hasPictures>
+				<hasPlusMinus>false</hasPlusMinus>
+				<hasTreeLines>false</hasTreeLines>
+				<height>20</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<ignoreSkin>false</ignoreSkin>
+				<left>145</left>
+				<listWidth>0</listWidth>
+				<maxLength>0</maxLength>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>cboLogGrade</name>
+				<parent name="LogDetails" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>217</parentBottomOffset>
+				<parentRightOffset>34</parentRightOffset>
+				<pictureClosed/>
+				<pictureLeaf/>
+				<pictureMinus/>
+				<pictureOpen/>
+				<picturePlus/>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<sortCased>false</sortCased>
+				<sorted>true</sorted>
+				<style>2</style>
+				<tabIndex>13</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<top>80</top>
+				<visible>true</visible>
+				<width>141</width>
+			</ComboBox>
+			<ComboBox name="cboLogSpecies">
+				<backBrush/>
+				<backBrushStyle>0</backBrushStyle>
+				<backColor>-2147483643</backColor>
+				<borderColorSingle>0</borderColorSingle>
+				<borderStyle>2</borderStyle>
+				<bubbleHelp/>
+				<description/>
+				<dragCursor/>
+				<enabled>true</enabled>
+				<focusBackColor>0</focusBackColor>
+				<focusForeColor>0</focusForeColor>
+				<fontBold>false</fontBold>
+				<fontItalic>false</fontItalic>
+				<fontName/>
+				<fontSize>8.25</fontSize>
+				<fontStrikethru>false</fontStrikethru>
+				<fontUnderline>false</fontUnderline>
+				<foreColor>-2147483640</foreColor>
+				<form name="LogDetails" />
+				<hasPictures>false</hasPictures>
+				<hasPlusMinus>false</hasPlusMinus>
+				<hasTreeLines>false</hasTreeLines>
+				<height>20</height>
+				<helpContextId>0</helpContextId>
+				<helpKeyword/>
+				<ignoreSkin>false</ignoreSkin>
+				<left>145</left>
+				<listWidth>0</listWidth>
+				<maxLength>0</maxLength>
+				<mouseCursor/>
+				<mousePointer>0</mousePointer>
+				<name>cboLogSpecies</name>
+				<parent name="LogDetails" />
+				<parentAspect>0</parentAspect>
+				<parentBottomOffset>250</parentBottomOffset>
+				<parentRightOffset>34</parentRightOffset>
+				<pictureClosed/>
+				<pictureLeaf/>
+				<pictureMinus/>
+				<pictureOpen/>
+				<picturePlus/>
+				<relativeLeft>false</relativeLeft>
+				<relativeTop>false</relativeTop>
+				<relativeWidth>false</relativeWidth>
+				<securityLevelEnabled>0</securityLevelEnabled>
+				<securityLevelVisible>0</securityLevelVisible>
+				<show3D>3</show3D>
+				<skinCategoryName/>
+				<sortCased>false</sortCased>
+				<sorted>true</sorted>
+				<style>2</style>
+				<tabIndex>12</tabIndex>
+				<tabStop>true</tabStop>
+				<tag/>
+				<top>47</top>
+				<visible>true</visible>
+				<width>141</width>
+			</ComboBox>
 			<StatusLine name="logStatus">
 				<alignment>0</alignment>
 				<autoSize>true</autoSize>
@@ -476,7 +757,7 @@
 				<skinCategoryName/>
 				<tabIndex>11</tabIndex>
 				<tag/>
-				<top>265</top>
+				<top>296</top>
 				<visible>true</visible>
 				<width>320</width>
 				<wordWrap>false</wordWrap>
@@ -508,14 +789,14 @@
 				<helpContextId>0</helpContextId>
 				<helpKeyword/>
 				<ignoreSkin>false</ignoreSkin>
-				<left>178</left>
+				<left>183</left>
 				<mouseCursor/>
 				<mousePointer>0</mousePointer>
 				<name>btnCancel</name>
 				<parent name="LogDetails" />
 				<parentAspect>0</parentAspect>
-				<parentBottomOffset>39</parentBottomOffset>
-				<parentRightOffset>62</parentRightOffset>
+				<parentBottomOffset>40</parentBottomOffset>
+				<parentRightOffset>57</parentRightOffset>
 				<picture/>
 				<pictureDisabled/>
 				<pictureDown/>
@@ -530,7 +811,7 @@
 				<tabIndex>10</tabIndex>
 				<tabStop>true</tabStop>
 				<tag/>
-				<top>224</top>
+				<top>254</top>
 				<value>false</value>
 				<visible>true</visible>
 				<width>80</width>
@@ -562,14 +843,14 @@
 				<helpContextId>0</helpContextId>
 				<helpKeyword/>
 				<ignoreSkin>false</ignoreSkin>
-				<left>67</left>
+				<left>55</left>
 				<mouseCursor/>
 				<mousePointer>0</mousePointer>
 				<name>btnOk</name>
 				<parent name="LogDetails" />
 				<parentAspect>0</parentAspect>
-				<parentBottomOffset>40</parentBottomOffset>
-				<parentRightOffset>173</parentRightOffset>
+				<parentBottomOffset>41</parentBottomOffset>
+				<parentRightOffset>185</parentRightOffset>
 				<picture/>
 				<pictureDisabled/>
 				<pictureDown/>
@@ -584,122 +865,11 @@
 				<tabIndex>9</tabIndex>
 				<tabStop>true</tabStop>
 				<tag/>
-				<top>223</top>
+				<top>253</top>
 				<value>false</value>
 				<visible>true</visible>
 				<width>80</width>
 			</Button>
-			<ComboBox name="cboRows">
-				<backBrush/>
-				<backBrushStyle>0</backBrushStyle>
-				<backColor>-2147483643</backColor>
-				<borderColorSingle>0</borderColorSingle>
-				<borderStyle>2</borderStyle>
-				<bubbleHelp/>
-				<description/>
-				<dragCursor/>
-				<enabled>true</enabled>
-				<focusBackColor>0</focusBackColor>
-				<focusForeColor>0</focusForeColor>
-				<fontBold>false</fontBold>
-				<fontItalic>false</fontItalic>
-				<fontName/>
-				<fontSize>8.25</fontSize>
-				<fontStrikethru>false</fontStrikethru>
-				<fontUnderline>false</fontUnderline>
-				<foreColor>-2147483640</foreColor>
-				<form name="LogDetails" />
-				<hasPictures>false</hasPictures>
-				<hasPlusMinus>false</hasPlusMinus>
-				<hasTreeLines>false</hasTreeLines>
-				<height>20</height>
-				<helpContextId>0</helpContextId>
-				<helpKeyword/>
-				<ignoreSkin>false</ignoreSkin>
-				<left>142</left>
-				<listWidth>0</listWidth>
-				<maxLength>0</maxLength>
-				<mouseCursor/>
-				<mousePointer>0</mousePointer>
-				<name>cboRows</name>
-				<parent name="LogDetails" />
-				<parentAspect>0</parentAspect>
-				<parentBottomOffset>91</parentBottomOffset>
-				<parentRightOffset>40</parentRightOffset>
-				<pictureClosed/>
-				<pictureLeaf/>
-				<pictureMinus/>
-				<pictureOpen/>
-				<picturePlus/>
-				<relativeLeft>false</relativeLeft>
-				<relativeTop>false</relativeTop>
-				<relativeWidth>false</relativeWidth>
-				<securityLevelEnabled>0</securityLevelEnabled>
-				<securityLevelVisible>0</securityLevelVisible>
-				<show3D>3</show3D>
-				<skinCategoryName/>
-				<sortCased>false</sortCased>
-				<sorted>true</sorted>
-				<style>2</style>
-				<tabIndex>8</tabIndex>
-				<tabStop>true</tabStop>
-				<tag/>
-				<top>175</top>
-				<visible>true</visible>
-				<width>138</width>
-			</ComboBox>
-			<Label name="lblRow">
-				<alignment>1</alignment>
-				<autoSize>false</autoSize>
-				<backBrush/>
-				<backBrushStyle>0</backBrushStyle>
-				<backColor>-2147483633</backColor>
-				<borderColorSingle>0</borderColorSingle>
-				<borderStyle>0</borderStyle>
-				<bubbleHelp/>
-				<caption>Row:</caption>
-				<description/>
-				<dragCursor/>
-				<enabled>true</enabled>
-				<fontBold>false</fontBold>
-				<fontItalic>false</fontItalic>
-				<fontName>Tahoma</fontName>
-				<fontSize>9.75</fontSize>
-				<fontStrikethru>false</fontStrikethru>
-				<fontUnderline>false</fontUnderline>
-				<foreColor>-2147483640</foreColor>
-				<form name="LogDetails" />
-				<formatOut/>
-				<height>21</height>
-				<helpContextId>0</helpContextId>
-				<helpKeyword/>
-				<hyperlink/>
-				<ignoreSkin>false</ignoreSkin>
-				<left>99</left>
-				<mouseCursor/>
-				<mousePointer>0</mousePointer>
-				<name>lblRow</name>
-				<noPrefix>false</noPrefix>
-				<parent name="LogDetails" />
-				<parentAspect>0</parentAspect>
-				<parentBottomOffset>91</parentBottomOffset>
-				<parentRightOffset>188</parentRightOffset>
-				<relativeHeight>false</relativeHeight>
-				<relativeLeft>false</relativeLeft>
-				<relativeTop>false</relativeTop>
-				<relativeWidth>false</relativeWidth>
-				<securityLevelEnabled>0</securityLevelEnabled>
-				<securityLevelVisible>0</securityLevelVisible>
-				<show3D>3</show3D>
-				<skinCategoryName/>
-				<tabIndex>7</tabIndex>
-				<tag/>
-				<top>174</top>
-				<transparent>false</transparent>
-				<visible>true</visible>
-				<width>33</width>
-				<wordWrap>false</wordWrap>
-			</Label>
 			<TextBox name="txtLength">
 				<alignment>0</alignment>
 				<autoTab>false</autoTab>
@@ -732,15 +902,15 @@
 				<hintText/>
 				<ignoreSkin>false</ignoreSkin>
 				<integralHeight>false</integralHeight>
-				<left>142</left>
+				<left>144</left>
 				<maxLength>0</maxLength>
 				<mouseCursor/>
 				<mousePointer>0</mousePointer>
 				<name>txtLength</name>
 				<parent name="LogDetails" />
 				<parentAspect>0</parentAspect>
-				<parentBottomOffset>133</parentBottomOffset>
-				<parentRightOffset>40</parentRightOffset>
+				<parentBottomOffset>103</parentBottomOffset>
+				<parentRightOffset>38</parentRightOffset>
 				<passwordField>false</passwordField>
 				<readOnly>false</readOnly>
 				<relativeHeight>false</relativeHeight>
@@ -760,7 +930,7 @@
 				<tag/>
 				<text/>
 				<textOffset>0</textOffset>
-				<top>129</top>
+				<top>190</top>
 				<visible>true</visible>
 				<wantReturn>false</wantReturn>
 				<width>138</width>
@@ -792,15 +962,15 @@
 				<helpKeyword/>
 				<hyperlink/>
 				<ignoreSkin>false</ignoreSkin>
-				<left>40</left>
+				<left>42</left>
 				<mouseCursor/>
 				<mousePointer>0</mousePointer>
 				<name>lblLength</name>
 				<noPrefix>false</noPrefix>
 				<parent name="LogDetails" />
 				<parentAspect>0</parentAspect>
-				<parentBottomOffset>132</parentBottomOffset>
-				<parentRightOffset>189</parentRightOffset>
+				<parentBottomOffset>102</parentBottomOffset>
+				<parentRightOffset>187</parentRightOffset>
 				<relativeHeight>false</relativeHeight>
 				<relativeLeft>false</relativeLeft>
 				<relativeTop>false</relativeTop>
@@ -811,7 +981,7 @@
 				<skinCategoryName/>
 				<tabIndex>5</tabIndex>
 				<tag/>
-				<top>133</top>
+				<top>194</top>
 				<transparent>false</transparent>
 				<visible>true</visible>
 				<width>91</width>
@@ -849,15 +1019,15 @@
 				<hintText/>
 				<ignoreSkin>false</ignoreSkin>
 				<integralHeight>false</integralHeight>
-				<left>142</left>
+				<left>144</left>
 				<maxLength>0</maxLength>
 				<mouseCursor/>
 				<mousePointer>0</mousePointer>
 				<name>txtDescription</name>
 				<parent name="LogDetails" />
 				<parentAspect>0</parentAspect>
-				<parentBottomOffset>172</parentBottomOffset>
-				<parentRightOffset>40</parentRightOffset>
+				<parentBottomOffset>142</parentBottomOffset>
+				<parentRightOffset>38</parentRightOffset>
 				<passwordField>false</passwordField>
 				<readOnly>false</readOnly>
 				<relativeHeight>false</relativeHeight>
@@ -877,7 +1047,7 @@
 				<tag/>
 				<text/>
 				<textOffset>0</textOffset>
-				<top>90</top>
+				<top>151</top>
 				<visible>true</visible>
 				<wantReturn>false</wantReturn>
 				<width>138</width>
@@ -909,15 +1079,15 @@
 				<helpKeyword/>
 				<hyperlink/>
 				<ignoreSkin>false</ignoreSkin>
-				<left>39</left>
+				<left>41</left>
 				<mouseCursor/>
 				<mousePointer>0</mousePointer>
 				<name>lblDescription</name>
 				<noPrefix>false</noPrefix>
 				<parent name="LogDetails" />
 				<parentAspect>0</parentAspect>
-				<parentBottomOffset>172</parentBottomOffset>
-				<parentRightOffset>190</parentRightOffset>
+				<parentBottomOffset>142</parentBottomOffset>
+				<parentRightOffset>188</parentRightOffset>
 				<relativeHeight>false</relativeHeight>
 				<relativeLeft>false</relativeLeft>
 				<relativeTop>false</relativeTop>
@@ -928,7 +1098,7 @@
 				<skinCategoryName/>
 				<tabIndex>3</tabIndex>
 				<tag/>
-				<top>93</top>
+				<top>154</top>
 				<transparent>false</transparent>
 				<visible>true</visible>
 				<width>91</width>
@@ -968,7 +1138,7 @@
 				<noPrefix>false</noPrefix>
 				<parent name="LogDetails" />
 				<parentAspect>0</parentAspect>
-				<parentBottomOffset>219</parentBottomOffset>
+				<parentBottomOffset>250</parentBottomOffset>
 				<parentRightOffset>190</parentRightOffset>
 				<relativeHeight>false</relativeHeight>
 				<relativeLeft>false</relativeLeft>
@@ -986,78 +1156,13 @@
 				<width>74</width>
 				<wordWrap>false</wordWrap>
 			</Label>
-			<TextBox name="txtSpecies">
-				<alignment>0</alignment>
-				<autoTab>false</autoTab>
-				<backColor>-2147483643</backColor>
-				<borderColorSingle>0</borderColorSingle>
-				<borderStyle>2</borderStyle>
-				<bubbleHelp/>
-				<case>0</case>
-				<dataType>0</dataType>
-				<decimals>0</decimals>
-				<description/>
-				<dragCursor/>
-				<enabled>true</enabled>
-				<focusBackColor>0</focusBackColor>
-				<focusForeColor>0</focusForeColor>
-				<fontBold>false</fontBold>
-				<fontItalic>false</fontItalic>
-				<fontName/>
-				<fontSize>8.25</fontSize>
-				<fontStrikethru>false</fontStrikethru>
-				<fontUnderline>false</fontUnderline>
-				<foreColor>-2147483640</foreColor>
-				<form name="LogDetails" />
-				<formatOut/>
-				<height>24</height>
-				<helpContextId>0</helpContextId>
-				<helpKeyword/>
-				<hintBackColor>-2147483648</hintBackColor>
-				<hintForeColor>-2147483648</hintForeColor>
-				<hintText/>
-				<ignoreSkin>false</ignoreSkin>
-				<integralHeight>false</integralHeight>
-				<left>142</left>
-				<maxLength>0</maxLength>
-				<mouseCursor/>
-				<mousePointer>0</mousePointer>
-				<name>txtSpecies</name>
-				<parent name="LogDetails" />
-				<parentAspect>0</parentAspect>
-				<parentBottomOffset>217</parentBottomOffset>
-				<parentRightOffset>40</parentRightOffset>
-				<passwordField>false</passwordField>
-				<readOnly>false</readOnly>
-				<relativeHeight>false</relativeHeight>
-				<relativeLeft>false</relativeLeft>
-				<relativeTop>false</relativeTop>
-				<relativeWidth>false</relativeWidth>
-				<scrollBars>0</scrollBars>
-				<scrollHorizontal>false</scrollHorizontal>
-				<scrollVertical>false</scrollVertical>
-				<securityLevelEnabled>0</securityLevelEnabled>
-				<securityLevelVisible>0</securityLevelVisible>
-				<selectionStyle>0</selectionStyle>
-				<show3D>3</show3D>
-				<skinCategoryName/>
-				<tabIndex>1</tabIndex>
-				<tabStop>true</tabStop>
-				<tag/>
-				<text/>
-				<textOffset>0</textOffset>
-				<top>45</top>
-				<visible>true</visible>
-				<wantReturn>false</wantReturn>
-				<width>138</width>
-			</TextBox>
 		</controlList>
 		<menuList>
 		</menuList>
 	</Form>
 
 	<Form locale="5129" name="AddLog">
-		<_painterModifiedTimeStamp>2019:06:05:12:56:49.322</_painterModifiedTimeStamp>
+		<_painterModifiedTimeStamp>2019:06:05:13:41:27.953</_painterModifiedTimeStamp>
 		<allowDocking>0</allowDocking>
 		<backBrush/>
 		<backBrushStyle>0</backBrushStyle>
@@ -1113,7 +1218,7 @@
 	</Form>
 
 	<Form locale="5129" name="LogListForm">
-		<_painterModifiedTimeStamp>2019:06:05:12:56:49.322</_painterModifiedTimeStamp>
+		<_painterModifiedTimeStamp>2019:06:05:13:07:46.127</_painterModifiedTimeStamp>
 		<allowDocking>0</allowDocking>
 		<backBrush/>
 		<backBrushStyle>0</backBrushStyle>
@@ -1448,7 +1553,7 @@
 	</Form>
 
 	<Form locale="5129" name="LotListForm">
-		<_painterModifiedTimeStamp>2019:06:05:12:56:49.322</_painterModifiedTimeStamp>
+		<_painterModifiedTimeStamp>2019:06:05:13:07:46.127</_painterModifiedTimeStamp>
 		<allowDocking>0</allowDocking>
 		<backBrush/>
 		<backBrushStyle>0</backBrushStyle>
@@ -1783,7 +1888,7 @@
 	</Form>
 
 	<Form locale="5129" name="MainMenu">
-		<_painterModifiedTimeStamp>2019:06:05:12:56:49.322</_painterModifiedTimeStamp>
+		<_painterModifiedTimeStamp>2019:06:05:13:07:46.127</_painterModifiedTimeStamp>
 		<allowDocking>0</allowDocking>
 		<backBrush/>
 		<backBrushStyle>0</backBrushStyle>
@@ -2039,7 +2144,7 @@
 	</Form>
 
 	<Form locale="5129" name="RowDetials">
-		<_painterModifiedTimeStamp>2019:06:05:12:56:49.322</_painterModifiedTimeStamp>
+		<_painterModifiedTimeStamp>2019:06:05:13:07:46.127</_painterModifiedTimeStamp>
 		<allowDocking>0</allowDocking>
 		<backBrush/>
 		<backBrushStyle>0</backBrushStyle>
@@ -2717,7 +2822,7 @@
 	</Form>
 
 	<Form locale="5129" name="AddRow">
-		<_painterModifiedTimeStamp>2019:06:05:12:56:49.322</_painterModifiedTimeStamp>
+		<_painterModifiedTimeStamp>2019:06:05:13:07:46.127</_painterModifiedTimeStamp>
 		<allowDocking>0</allowDocking>
 		<backBrush/>
 		<backBrushStyle>0</backBrushStyle>
@@ -2773,7 +2878,7 @@
 	</Form>
 
 	<Form locale="5129" name="RowListForm">
-		<_painterModifiedTimeStamp>2019:06:05:12:56:49.322</_painterModifiedTimeStamp>
+		<_painterModifiedTimeStamp>2019:06:05:13:07:46.127</_painterModifiedTimeStamp>
 		<allowDocking>0</allowDocking>
 		<backBrush/>
 		<backBrushStyle>0</backBrushStyle>
